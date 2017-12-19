@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of wibmo-sdk.'
+  s.version          = '0.2.0'
+  s.summary          = 'A pod for merchants to test iap transactions at there end.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,12 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This pod is especially created for merchatns to check the iap transactions for success, failure. 
+Merchant can use to test various iap configurations for allowing only wallet, only cards etc for iap transactions. 
+An Example app would be available later for viewing the usage for the pod.
                        DESC
 
-  s.homepage         = 'https://github.com/manjunatha vaddhiraju/wibmo-sdk'
+  s.homepage         = 'https://github.com/wibmo/wibmo-iap-sdk-ios.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache License 2.0', :file => 'LICENSE' }
   s.author           = { 'manjunatha vaddhiraju' => 'manjunatha.vaddhiraju@wibmo.com' }
   s.source           = { :git => 'https://github.com/wibmo/wibmo-iap-sdk-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
