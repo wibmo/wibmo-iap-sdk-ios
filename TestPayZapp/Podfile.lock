@@ -1,0 +1,15 @@
+PODS:
+  - SBJson (5.0.0)
+  - wibmo-sdk (0.2.0):
+    - SBJson (= 5.0)
+
+DEPENDENCIES:
+  - wibmo-sdk
+
+SPEC CHECKSUMS:
+  SBJson: 73c848dc34be51fda282fab12bda6c426f5ead08
+  wibmo-sdk: 109419ce2ea60ba70a56dbc2a8c5ec67bba2af2b
+
+PODFILE CHECKSUM: 0ed147c5b3ae9caeddfd6b6c6a346236a4365bf3
+
+COCOAPODS: 1.4.0.beta.2

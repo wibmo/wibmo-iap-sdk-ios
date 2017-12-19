@@ -1,0 +1,28 @@
+{
+  "name": "wibmo-sdk",
+  "version": "0.1.0",
+  "summary": "A short description of wibmo-sdk.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/manjunatha vaddhiraju/wibmo-sdk",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "manjunatha vaddhiraju": "manjunatha.vaddhiraju@wibmo.com"
+  },
+  "source": {
+    "git": "https://github.com/manjunatha vaddhiraju/wibmo-sdk.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "*.h",
+  "vendored_libraries": "*.a",
+  "dependencies": {
+    "SBJson": [
+      "5.0"
+    ]
+  }
+}
