@@ -164,16 +164,16 @@ _Error Codes and Description_
 
 | Code  | Description | 
 | ----- | ----------- |
-| “053” | Merchant Txn Id/WibmotxnId not passed! |
-| “053” | Bad merchantId |
-| “053” | Merchant not active! |
-| “053” | Invalid client IP in void request! |
-| "051" | Internal Error | 
-| “204” | User Abort |
-| “070” | Message hash failed |
-| “080” | Too Early; Re-try after some time |
-| "000" | Success |
-| "050" | Failure |
+| 053   | Merchant Txn Id/WibmotxnId not passed! |
+| 053   | Bad merchantId |
+| 053   | Merchant not active! |
+| 053   | Invalid client IP in void request! |
+| 051   | Internal Error | 
+| 204   | User Abort |
+| 070   | Message hash failed |
+| 080   | Too Early; Re-try after some time |
+| 000   | Success |
+| 050   | Failure |
 
 _Status Code and Description_ 
 
