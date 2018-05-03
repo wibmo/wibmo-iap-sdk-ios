@@ -23,19 +23,19 @@ To be able to integrate PayZapp into your iOS App you will need the following
 Format for URLScheme: pz<Merchant ID>
 Eg: If your Merchant ID is 123456789 then URLScheme is pz123456789
 
-![](README/URlScheme.png)
+![](images/URlScheme.png)
 
 Note: Merchant ID’s are different for different configuration environments. i.e. Its different for production and UAT environments. 
 
 2. In your target's Info.plist add
 Add dictionary item LSApplicationQueriesSchemes
-![](README/LSApplicationQueriesSchemes.png)
+![](images/LSApplicationQueriesSchemes.png)
 
 ### Usage 
 1. \#import “WibmoSDK.h" in your ViewController.
 2. Include in your AppDelegate methods, and post appropriate notification.
 
-```
+```objc
 - (BOOL)application:(UIApplication *)iApplication openURL:(NSURL *)iURL sourceApplication:(NSString *)iSourceApplication
          annotation:(id)iAnnotation {
     if (iURL && [[iURL scheme] isEqualToString:@"pz81516121"]) {
@@ -45,7 +45,7 @@ Add dictionary item LSApplicationQueriesSchemes
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)iURL {
-    if (iURL && [[iURL scheme] isEqualToString:@"pz81516121"]) {
+    if (iURL && [[iURL scheme] isEqualToString:@"pz123456789"]) {
         [[NSNotificationCenter defaultCenter] postNotificationName:PROCESS_INAPP_PAYMENT object:[iURL absoluteString]];
     }
     return YES;
@@ -53,9 +53,9 @@ Add dictionary item LSApplicationQueriesSchemes
 ```
 
 **Note:** For application supporting only iOS 9 and above please use the below method. 
-```
+```objc
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    if (iURL && [[iURL scheme] isEqualToString:@"pz81516121"]) {
+    if (iURL && [[iURL scheme] isEqualToString:@"pz123456789"]) {
         [[NSNotificationCenter defaultCenter] postNotificationName:PROCESS_INAPP_PAYMENT object:[iURL absoluteString]];
     }
     return YES;
@@ -65,7 +65,7 @@ Add dictionary item LSApplicationQueriesSchemes
 3. To initiate payment do :- 
 	1. Initialise WSMerchantInfo, WSTransactionInfo, WSCustomerInfo, WSUrlInfo
 	2. Initialise WibmoSDK  and make payment. Eg:- 
-```
+```objc
 WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo merchanInfo:aMerchantInfo customerInfo:aCustomerInfo withDelegate:self];
     [aWibmoSDK setUrlInfo:aUralInfo];
     [self.navigationController presentViewController:aWibmoSDK animated:YES completion:^{
@@ -83,7 +83,7 @@ WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo
 
 **Note:** WSUrlInfo can point to different url based on your environment. i.e. production or staging or UAT.
 	3. Implement WibmoSDK protocols (listed below) as per your requirement.
-```
+```objc
 - (void)paymentSuccessfulWithTranscation:(NSDictionary *)iTransaction;
 - (void)paymentFailedWithError:(NSError *)iError;
 - (void)paymentCancelled;
@@ -91,7 +91,7 @@ WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo
 ```
 
 Eg:
-```
+```objc
 - (void)paymentSuccessfulWithTranscation:(NSDictionary *)iTransaction {
     NSString *aTransactionID = [iTransaction valueForKey:@"wibmoTxnId"];
     self.aPaymentDetails = iTransaction;
@@ -134,7 +134,7 @@ Eg:
 ```
 
 Note: Error Response Dictionary Eg: 
-```
+```javascript
 {
 "resCode": "000",
 "resDesc": "SUCCESS",
@@ -160,15 +160,27 @@ Note: Error Response Dictionary Eg:
 
 **Important:** 
 _Error Codes and Description_ 
-“053” 	Merchant Txn Id/WibmotxnId not passed!
-“053” 	Bad merchantId“053” 	Merchant not active!“053” 	Invalid client IP in void request!"051" 	INTERNAL ERROR
-“204” 	User Abort
-“070” 	Message hash failed
-“080” 	Too Early; Re-try after some time"000" 	Success"050" 	Failure
+
+
+| Code  | Description | 
+| ----- | ----------- |
+| “053” | Merchant Txn Id/WibmotxnId not passed! |
+| “053” | Bad merchantId |
+| “053” | Merchant not active! |
+| “053” | Invalid client IP in void request! |
+| "051" | Internal Error | 
+| “204” | User Abort |
+| “070” | Message hash failed |
+| “080” | Too Early; Re-try after some time |
+| "000" | Success |
+| "050" | Failure |
 
 _Status Code and Description_ 
-50020 	Success
-50021 	Failed
+
+| Code  | Description | 
+| ----- | ----------- |
+| 50020 | Success|
+| 50021 | Failed |
 
 
    
