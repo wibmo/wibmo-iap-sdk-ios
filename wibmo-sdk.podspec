@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A pod for merchants to make iap transactions at there end.'
 
 # This description is used to generate tags and improve search results.
@@ -28,11 +28,11 @@ An Example app is available for viewing the usage for the pod.
   s.license          = { :type => 'Apache License 2.0', :file => 'LICENSE' }
   s.author           = { 'Wibmo Engg' => 'wibmoengg@wibmo.com' }
   s.source           = { :git => 'https://github.com/wibmo/wibmo-iap-sdk-ios.git', :tag => s.version.to_s }
+  s.swift_version    = '4.0'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
   s.vendored_frameworks = 'WibmoSDK.framework'
-  s.dependency 'Alamofire'
-  s.dependency 'WibmoAnalytics'
+  s.dependency 'Alamofire'  
   s.dependency 'ProcedureKit'
 end
