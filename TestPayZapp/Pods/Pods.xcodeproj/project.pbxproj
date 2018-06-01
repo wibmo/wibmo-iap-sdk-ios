@@ -7,149 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01EA79D7ABA8672D94C7BE5165D901A5 /* SBJson5StreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C38B0C813DCF5F51907FCFC63694EFA /* SBJson5StreamParserState.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		11A3C7057967E72FDC73799E8CEC0A01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		20622ED8BA26239AD13391A4A0CC4C26 /* SBJson5StreamTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D9E7B0FC60F140031DDA9DD436F567C /* SBJson5StreamTokeniser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E1AF97C2012AA8C5A032D5FC1216D0B /* SBJson5StreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E4B717B194D52F63ADDCCC201B7189 /* SBJson5StreamWriterState.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4403A22CEE7089D63ECD4B552D2BD5BE /* SBJson5Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C74002AFFB0E3CB4C73D11EC02A81CD /* SBJson5Parser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4D16B88D06418CAFD5C171FFEBFC4D44 /* Pods-TestPayZappStagingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A4720A5250AB046B9943A98243E91 /* Pods-TestPayZappStagingTests-dummy.m */; };
-		99BC8EB483547BAF6329FF3670087FB8 /* SBJson5Writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1609E90FEFC7A950F6230A5599D9833D /* SBJson5Writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DF8DFBA75554ACC9EB9C38FEDD8713B /* SBJson5StreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAECAF88695D4C4B266EF63187089DA /* SBJson5StreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ECEB0346E74E47F4CBCAE1F46F7AB17 /* SBJson5.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F07AB09C27CC46F6CFB668E76A5FE1 /* SBJson5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7C2676C32A8E980DFA36CA6F683F5BB /* SBJson5Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = D9691FABADC2983EEB533371156EBD02 /* SBJson5Writer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B454BFD924F56C4D25073FF4F8033425 /* SBJson5StreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9768B625281A36B188A97A112D7A138A /* SBJson5StreamWriterState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B6C90E36E780E5FD3EDBCF86E5767089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B912E232DFBF97B2BA33EC22B1E43EB1 /* SBJson5StreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC6AECDDECDB76AF78449BD5D95E92 /* SBJson5StreamTokeniser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BBF7B3551594069872D53C9896E00AF7 /* SBJson5StreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BF90D7B8CFB7422D4A7BEC9AC92AB4 /* SBJson5StreamWriter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C64378D4FE4A4BC13E2463896BFC1717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CA9B1827C9DA66D6EC6D059D5C83D6FB /* SBJson5StreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC749DE06B3DAAFEFE3146B91FEF8AD1 /* SBJson5StreamParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CFA68517F683575134A200A7E76DBC0D /* SBJson5StreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD03BB7AF7F8F82C969715DB5B261F0 /* SBJson5StreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6BC98264F2C7635F2E84C52647CCB99 /* SBJson5StreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEAB9FE2E7088EE45EB64A1F87FECE /* SBJson5StreamParserState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DDC63E65FF34EBCA07149B3A36DE0CCF /* SBJson-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AFAE6CE829B407E4DB96391EA52B1E /* SBJson-dummy.m */; };
-		F5ACB4E82E937B20BCD2351FBD4EDD00 /* Pods-TestPayZappStaging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1C2A50C08FD75F7AC7C6B29E84E36 /* Pods-TestPayZappStaging-dummy.m */; };
-		F7D4990DD8CC29E01564556D80C1298F /* SBJson5Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E6357D917E5D804DB5D70C790D87CF0 /* SBJson5Parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03090B1FFF58120C1F9FB86DFAA07656 /* SBJson5StreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 463A7C87F419A38D1E84B7AA567C490E /* SBJson5StreamTokeniser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1A67E8BEA2635F4A6A98CA58A0EA0265 /* SBJson5.h in Headers */ = {isa = PBXBuildFile; fileRef = 78ACD492A3517A3CA5B6F9769E8059E9 /* SBJson5.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D7571F7D84118321CEDA96DA912026D /* SBJson5StreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6655D40084E2C0FF1BCA51191369F342 /* SBJson5StreamParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2D388AD0DE070B3083229C018748FE14 /* SBJson5StreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C8C33D34B91AEF4A9F92AAAA3FF9D7 /* SBJson5StreamWriterState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3079F8237A645DEC65E5939AC1638D4F /* SBJson5Writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 104C40F7A643468DA6ACF4BC2080E6D3 /* SBJson5Writer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37973A62785B2AA0CDC80160F7FED65F /* Pods-TestPayZappStaging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1C2A50C08FD75F7AC7C6B29E84E36 /* Pods-TestPayZappStaging-dummy.m */; };
+		4821F093B0ABE2968E97D63907E94CBD /* SBJson5StreamTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = EEFCEDC852AF25BBC647777072FCE5A9 /* SBJson5StreamTokeniser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E9371C29D6C5EFB152EE6501B3E5686 /* SBJson5Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CAFF9ABD4B56FDBDF20350936EE3C6 /* SBJson5Writer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		74D4738E31B597DAB427B2346B10DAB8 /* SBJson5StreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 8045738BC6C9FAF6AEFC4CAED4E8903B /* SBJson5StreamParserState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		808D7657A2DAA2D5A068D47CDDDC6E68 /* SBJson5StreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA0C3E83E80D4289831157AC175D390 /* SBJson5StreamWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81EEB6013B9A7BB0A6B7FD5D6F9919D9 /* SBJson5StreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B766D16BC0EAF3F24283EE53F732C661 /* SBJson5StreamParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DFD4C8E2C0114EA8CBF7F7F5D82D7D1 /* Pods-TestPayZappStagingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A4720A5250AB046B9943A98243E91 /* Pods-TestPayZappStagingTests-dummy.m */; };
+		9FDF4F736113E0F88FE4576A13B9516C /* SBJson5Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = B523B1F0A31E511CCD273942364CF9F8 /* SBJson5Parser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A0910ACD7C69F08267F1C60AA30B8785 /* SBJson5StreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E3190FCE51E9002A56765B42AAD348 /* SBJson5StreamWriter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AE121F1A4B3C3F3693CEBDF1E331E46E /* SBJson5Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = A913CD761866655FC16400BEA7207912 /* SBJson5Parser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC2111BAFC5C4D225F56B942859C32E8 /* SBJson-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E357A9387E553F94F454163159C0BF9 /* SBJson-dummy.m */; };
+		CD9264F03A1646BD931AB0CE93787540 /* SBJson5StreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7EF44B371AAE3D7AEEF8B01512E9B /* SBJson5StreamParserState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD61F91D3FD4CB963C5643A71D653219 /* SBJson5StreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = E5008DC5A0258C2085BFB565FBF314E8 /* SBJson5StreamWriterState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2C46A3D5493EA09D353B3CEF2D80FDDF /* PBXContainerItemProxy */ = {
+		3BFD0FF0A1D801281D1B4FD440BC8A41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B3C843C23B19D912169DDA38282A92D6;
+			remoteGlobalIDString = 14A8D65212E0E03DAD39E31C9FC0F3E4;
 			remoteInfo = SBJson;
+		};
+		D44027EEB63CAD38F6BDCFBF9FE00BE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5EC03CEB0720744F2C50CAE8F72FA55;
+			remoteInfo = "Pods-TestPayZappStaging";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04645EDEEE712FA8E461137E8E927244 /* Pods-TestPayZappStaging-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStaging-frameworks.sh"; sourceTree = "<group>"; };
-		0E6357D917E5D804DB5D70C790D87CF0 /* SBJson5Parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5Parser.h; path = Classes/SBJson5Parser.h; sourceTree = "<group>"; };
+		104C40F7A643468DA6ACF4BC2080E6D3 /* SBJson5Writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5Writer.h; path = Classes/SBJson5Writer.h; sourceTree = "<group>"; };
 		11F2EB0A242289813D5CCC9C02D2EF72 /* Pods-TestPayZappStaging-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStaging-resources.sh"; sourceTree = "<group>"; };
-		1609E90FEFC7A950F6230A5599D9833D /* SBJson5Writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5Writer.h; path = Classes/SBJson5Writer.h; sourceTree = "<group>"; };
-		29CB8E162FBBD011152EA36AC974934D /* WSMerchantInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WSMerchantInfo.h; sourceTree = "<group>"; };
-		2CFEAB9FE2E7088EE45EB64A1F87FECE /* SBJson5StreamParserState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamParserState.m; path = Classes/SBJson5StreamParserState.m; sourceTree = "<group>"; };
-		2EDC6AECDDECDB76AF78449BD5D95E92 /* SBJson5StreamTokeniser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamTokeniser.m; path = Classes/SBJson5StreamTokeniser.m; sourceTree = "<group>"; };
+		32B7EF44B371AAE3D7AEEF8B01512E9B /* SBJson5StreamParserState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamParserState.m; path = Classes/SBJson5StreamParserState.m; sourceTree = "<group>"; };
 		3A95B48C78355D6B6C34AB823EDCCA83 /* Pods-TestPayZappStagingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStagingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		416CCCA10E563B68ABAB773F21E758DA /* WSConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WSConstant.h; sourceTree = "<group>"; };
-		47FE43C8CBB62A3662921EB9E54F5DEA /* WSCustomerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WSCustomerInfo.h; sourceTree = "<group>"; };
+		413652D9971064A12A23A37370BDAFB0 /* SBJson-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBJson-prefix.pch"; sourceTree = "<group>"; };
+		463A7C87F419A38D1E84B7AA567C490E /* SBJson5StreamTokeniser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamTokeniser.m; path = Classes/SBJson5StreamTokeniser.m; sourceTree = "<group>"; };
 		5445075FFF397FF6871CEADD34BBA59B /* libPods-TestPayZappStaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestPayZappStaging.a"; path = "libPods-TestPayZappStaging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5875B5C923543F08EB8D8F7A9844EE01 /* Pods-TestPayZappStaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStaging.debug.xcconfig"; sourceTree = "<group>"; };
 		5E40C70BFF577EFD188C9BC7CA06C6F2 /* Pods-TestPayZappStagingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestPayZappStagingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6AFE2AC38E3834EC29AD765DE90C01F9 /* WibmoSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WibmoSDK.h; sourceTree = "<group>"; };
+		64CAFF9ABD4B56FDBDF20350936EE3C6 /* SBJson5Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5Writer.m; path = Classes/SBJson5Writer.m; sourceTree = "<group>"; };
+		6655D40084E2C0FF1BCA51191369F342 /* SBJson5StreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamParser.h; path = Classes/SBJson5StreamParser.h; sourceTree = "<group>"; };
 		6EC1C2A50C08FD75F7AC7C6B29E84E36 /* Pods-TestPayZappStaging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestPayZappStaging-dummy.m"; sourceTree = "<group>"; };
-		7723EF02FA3BCE5A46152B89CFA7D496 /* WSUrlInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WSUrlInfo.h; sourceTree = "<group>"; };
-		7C74002AFFB0E3CB4C73D11EC02A81CD /* SBJson5Parser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5Parser.m; path = Classes/SBJson5Parser.m; sourceTree = "<group>"; };
+		78ACD492A3517A3CA5B6F9769E8059E9 /* SBJson5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5.h; path = Classes/SBJson5.h; sourceTree = "<group>"; };
+		8045738BC6C9FAF6AEFC4CAED4E8903B /* SBJson5StreamParserState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamParserState.h; path = Classes/SBJson5StreamParserState.h; sourceTree = "<group>"; };
 		8A0A4720A5250AB046B9943A98243E91 /* Pods-TestPayZappStagingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestPayZappStagingTests-dummy.m"; sourceTree = "<group>"; };
-		8AD03BB7AF7F8F82C969715DB5B261F0 /* SBJson5StreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamParser.h; path = Classes/SBJson5StreamParser.h; sourceTree = "<group>"; };
-		8B1E6821F785A5F5BF434F29A6D6B713 /* libWibmoSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libWibmoSDK.a; sourceTree = "<group>"; };
-		8D9E7B0FC60F140031DDA9DD436F567C /* SBJson5StreamTokeniser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamTokeniser.h; path = Classes/SBJson5StreamTokeniser.h; sourceTree = "<group>"; };
+		8AA0C3E83E80D4289831157AC175D390 /* SBJson5StreamWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamWriter.h; path = Classes/SBJson5StreamWriter.h; sourceTree = "<group>"; };
+		8E357A9387E553F94F454163159C0BF9 /* SBJson-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SBJson-dummy.m"; sourceTree = "<group>"; };
 		937A816A4DE8E57D0DA94FB05BDFD7EF /* libSBJson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSBJson.a; path = libSBJson.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9768B625281A36B188A97A112D7A138A /* SBJson5StreamWriterState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamWriterState.m; path = Classes/SBJson5StreamWriterState.m; sourceTree = "<group>"; };
 		99B39478492BCB335761A82AE68EEBF5 /* Pods-TestPayZappStaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStaging.release.xcconfig"; sourceTree = "<group>"; };
-		9C38B0C813DCF5F51907FCFC63694EFA /* SBJson5StreamParserState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamParserState.h; path = Classes/SBJson5StreamParserState.h; sourceTree = "<group>"; };
-		A4BF90D7B8CFB7422D4A7BEC9AC92AB4 /* SBJson5StreamWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamWriter.m; path = Classes/SBJson5StreamWriter.m; sourceTree = "<group>"; };
+		A913CD761866655FC16400BEA7207912 /* SBJson5Parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5Parser.h; path = Classes/SBJson5Parser.h; sourceTree = "<group>"; };
 		AA0F00E6EA30D224E283794B49DD8AF2 /* Pods-TestPayZappStagingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStagingTests-frameworks.sh"; sourceTree = "<group>"; };
-		AC749DE06B3DAAFEFE3146B91FEF8AD1 /* SBJson5StreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamParser.m; path = Classes/SBJson5StreamParser.m; sourceTree = "<group>"; };
 		ADD085651546E400FA974409F63AE447 /* Pods-TestPayZappStagingTests.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStagingTests.distribution.xcconfig"; sourceTree = "<group>"; };
 		B516A3146D337EC3D0845617316B517F /* libPods-TestPayZappStagingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestPayZappStagingTests.a"; path = "libPods-TestPayZappStagingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B523B1F0A31E511CCD273942364CF9F8 /* SBJson5Parser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5Parser.m; path = Classes/SBJson5Parser.m; sourceTree = "<group>"; };
 		B5666800F0AE5235FA6165D267490D07 /* Pods-TestPayZappStaging.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStaging.distribution.xcconfig"; sourceTree = "<group>"; };
+		B766D16BC0EAF3F24283EE53F732C661 /* SBJson5StreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamParser.m; path = Classes/SBJson5StreamParser.m; sourceTree = "<group>"; };
 		BB452B30AD388EA19CDE0B749890A90A /* Pods-TestPayZappStaging-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestPayZappStaging-acknowledgements.plist"; sourceTree = "<group>"; };
 		BCCFC59A5D57A273B894846966506812 /* Pods-TestPayZappStagingTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStagingTests-resources.sh"; sourceTree = "<group>"; };
 		C2D94BE1138F1E4E8DC2AD9ABDB3B763 /* Pods-TestPayZappStaging-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestPayZappStaging-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C8E4B717B194D52F63ADDCCC201B7189 /* SBJson5StreamWriterState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamWriterState.h; path = Classes/SBJson5StreamWriterState.h; sourceTree = "<group>"; };
-		D3AFAE6CE829B407E4DB96391EA52B1E /* SBJson-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SBJson-dummy.m"; sourceTree = "<group>"; };
+		D3E3190FCE51E9002A56765B42AAD348 /* SBJson5StreamWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamWriter.m; path = Classes/SBJson5StreamWriter.m; sourceTree = "<group>"; };
+		D5C8C33D34B91AEF4A9F92AAAA3FF9D7 /* SBJson5StreamWriterState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamWriterState.h; path = Classes/SBJson5StreamWriterState.h; sourceTree = "<group>"; };
 		D67268B8C1E0F5DE24B511A2CC762EC8 /* Pods-TestPayZappStagingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestPayZappStagingTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D7F07AB09C27CC46F6CFB668E76A5FE1 /* SBJson5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5.h; path = Classes/SBJson5.h; sourceTree = "<group>"; };
-		D9691FABADC2983EEB533371156EBD02 /* SBJson5Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5Writer.m; path = Classes/SBJson5Writer.m; sourceTree = "<group>"; };
-		D9DCA7F539D5610F0DA5547E7750CD11 /* WSTransactionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WSTransactionInfo.h; sourceTree = "<group>"; };
-		DBC1E61F6FF504A6300F4D2FCCB7B922 /* SBJson.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBJson.xcconfig; sourceTree = "<group>"; };
 		DC540EFE21C6C80632251D9916E7484E /* Pods-TestPayZappStagingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStagingTests.release.xcconfig"; sourceTree = "<group>"; };
-		E23A87E7A0ADBDABA165CD71D649DA87 /* SBJson-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBJson-prefix.pch"; sourceTree = "<group>"; };
-		EAAECAF88695D4C4B266EF63187089DA /* SBJson5StreamWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamWriter.h; path = Classes/SBJson5StreamWriter.h; sourceTree = "<group>"; };
+		E04F3805BC1A7DA68BD65504DA9F66DD /* SBJson.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBJson.xcconfig; sourceTree = "<group>"; };
+		E5008DC5A0258C2085BFB565FBF314E8 /* SBJson5StreamWriterState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamWriterState.m; path = Classes/SBJson5StreamWriterState.m; sourceTree = "<group>"; };
+		EB303A7F8C430772DE4705204AE906C6 /* WibmoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WibmoSDK.framework; sourceTree = "<group>"; };
+		EEFCEDC852AF25BBC647777072FCE5A9 /* SBJson5StreamTokeniser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamTokeniser.h; path = Classes/SBJson5StreamTokeniser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B7C8DFC6BBE07E9573FB95F0B028F0E8 /* Frameworks */ = {
+		122C9E1E6488A7C3C773E3BAB37BF87B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64378D4FE4A4BC13E2463896BFC1717 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BACC867CF90677C2BD2097829A2098B8 /* Frameworks */ = {
+		AAEF808255DB1EB55DD86AE35D8BFCC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A3C7057967E72FDC73799E8CEC0A01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF6511BA285B4C0F83BB1904E6377964 /* Frameworks */ = {
+		C4D6290A2D2BCDD8643B9B20B6D137F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C90E36E780E5FD3EDBCF86E5767089 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		197A67C965AEFC0381643B8545EDB2C2 /* Support Files */ = {
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBC1E61F6FF504A6300F4D2FCCB7B922 /* SBJson.xcconfig */,
-				D3AFAE6CE829B407E4DB96391EA52B1E /* SBJson-dummy.m */,
-				E23A87E7A0ADBDABA165CD71D649DA87 /* SBJson-prefix.pch */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SBJson";
-			sourceTree = "<group>";
-		};
-		1A471DDCD4DEE01240C1FCEB45F2C314 /* SBJson */ = {
-			isa = PBXGroup;
-			children = (
-				D7F07AB09C27CC46F6CFB668E76A5FE1 /* SBJson5.h */,
-				0E6357D917E5D804DB5D70C790D87CF0 /* SBJson5Parser.h */,
-				7C74002AFFB0E3CB4C73D11EC02A81CD /* SBJson5Parser.m */,
-				8AD03BB7AF7F8F82C969715DB5B261F0 /* SBJson5StreamParser.h */,
-				AC749DE06B3DAAFEFE3146B91FEF8AD1 /* SBJson5StreamParser.m */,
-				9C38B0C813DCF5F51907FCFC63694EFA /* SBJson5StreamParserState.h */,
-				2CFEAB9FE2E7088EE45EB64A1F87FECE /* SBJson5StreamParserState.m */,
-				8D9E7B0FC60F140031DDA9DD436F567C /* SBJson5StreamTokeniser.h */,
-				2EDC6AECDDECDB76AF78449BD5D95E92 /* SBJson5StreamTokeniser.m */,
-				EAAECAF88695D4C4B266EF63187089DA /* SBJson5StreamWriter.h */,
-				A4BF90D7B8CFB7422D4A7BEC9AC92AB4 /* SBJson5StreamWriter.m */,
-				C8E4B717B194D52F63ADDCCC201B7189 /* SBJson5StreamWriterState.h */,
-				9768B625281A36B188A97A112D7A138A /* SBJson5StreamWriterState.m */,
-				1609E90FEFC7A950F6230A5599D9833D /* SBJson5Writer.h */,
-				D9691FABADC2983EEB533371156EBD02 /* SBJson5Writer.m */,
-				197A67C965AEFC0381643B8545EDB2C2 /* Support Files */,
-			);
-			name = SBJson;
-			path = SBJson;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3A0962C999A6A5E77268A6A76AA3513B /* Pods-TestPayZappStaging */ = {
@@ -178,19 +144,56 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		72BE4095BA34D13FE15BD8683412726B /* wibmo-sdk */ = {
+		60E27B38A380B0200F27AB490BD8CD42 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6AFE2AC38E3834EC29AD765DE90C01F9 /* WibmoSDK.h */,
-				416CCCA10E563B68ABAB773F21E758DA /* WSConstant.h */,
-				47FE43C8CBB62A3662921EB9E54F5DEA /* WSCustomerInfo.h */,
-				29CB8E162FBBD011152EA36AC974934D /* WSMerchantInfo.h */,
-				D9DCA7F539D5610F0DA5547E7750CD11 /* WSTransactionInfo.h */,
-				7723EF02FA3BCE5A46152B89CFA7D496 /* WSUrlInfo.h */,
-				E2ECDD41C3AF1FAC37E4499AEDDCE793 /* Frameworks */,
+				E04F3805BC1A7DA68BD65504DA9F66DD /* SBJson.xcconfig */,
+				8E357A9387E553F94F454163159C0BF9 /* SBJson-dummy.m */,
+				413652D9971064A12A23A37370BDAFB0 /* SBJson-prefix.pch */,
 			);
-			name = "wibmo-sdk";
-			path = "wibmo-sdk";
+			name = "Support Files";
+			path = "../Target Support Files/SBJson";
+			sourceTree = "<group>";
+		};
+		6261973176BF4D6CA71AD36E3F7ECB59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB303A7F8C430772DE4705204AE906C6 /* WibmoSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		705B33D3D0988B5E64039472273D1D16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7877F96836DC86FA2B98FEDFF7D3B886 /* SBJson */,
+				BD9C06D5F58B11D139E51D23FEE2ACB9 /* wibmo-sdk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7877F96836DC86FA2B98FEDFF7D3B886 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				78ACD492A3517A3CA5B6F9769E8059E9 /* SBJson5.h */,
+				A913CD761866655FC16400BEA7207912 /* SBJson5Parser.h */,
+				B523B1F0A31E511CCD273942364CF9F8 /* SBJson5Parser.m */,
+				6655D40084E2C0FF1BCA51191369F342 /* SBJson5StreamParser.h */,
+				B766D16BC0EAF3F24283EE53F732C661 /* SBJson5StreamParser.m */,
+				8045738BC6C9FAF6AEFC4CAED4E8903B /* SBJson5StreamParserState.h */,
+				32B7EF44B371AAE3D7AEEF8B01512E9B /* SBJson5StreamParserState.m */,
+				EEFCEDC852AF25BBC647777072FCE5A9 /* SBJson5StreamTokeniser.h */,
+				463A7C87F419A38D1E84B7AA567C490E /* SBJson5StreamTokeniser.m */,
+				8AA0C3E83E80D4289831157AC175D390 /* SBJson5StreamWriter.h */,
+				D3E3190FCE51E9002A56765B42AAD348 /* SBJson5StreamWriter.m */,
+				D5C8C33D34B91AEF4A9F92AAAA3FF9D7 /* SBJson5StreamWriterState.h */,
+				E5008DC5A0258C2085BFB565FBF314E8 /* SBJson5StreamWriterState.m */,
+				104C40F7A643468DA6ACF4BC2080E6D3 /* SBJson5Writer.h */,
+				64CAFF9ABD4B56FDBDF20350936EE3C6 /* SBJson5Writer.m */,
+				60E27B38A380B0200F27AB490BD8CD42 /* Support Files */,
+			);
+			name = SBJson;
+			path = SBJson;
 			sourceTree = "<group>";
 		};
 		7959C9DC2852BF0870B2C7F69E9ABD52 /* Targets Support Files */ = {
@@ -206,44 +209,20 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C1E3808BFF79B1EA73FB5622A88E26AF /* Pods */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				705B33D3D0988B5E64039472273D1D16 /* Pods */,
 				45390AB0221A27116C04E7022F3FCA8F /* Products */,
 				7959C9DC2852BF0870B2C7F69E9ABD52 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		BD9C06D5F58B11D139E51D23FEE2ACB9 /* wibmo-sdk */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				6261973176BF4D6CA71AD36E3F7ECB59 /* Frameworks */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C1E3808BFF79B1EA73FB5622A88E26AF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1A471DDCD4DEE01240C1FCEB45F2C314 /* SBJson */,
-				72BE4095BA34D13FE15BD8683412726B /* wibmo-sdk */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E2ECDD41C3AF1FAC37E4499AEDDCE793 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8B1E6821F785A5F5BF434F29A6D6B713 /* libWibmoSDK.a */,
-			);
-			name = Frameworks;
+			name = "wibmo-sdk";
+			path = "wibmo-sdk";
 			sourceTree = "<group>";
 		};
 		E9E206E80D081F6BCA38E8A419E11CA2 /* Pods-TestPayZappStagingTests */ = {
@@ -265,48 +244,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		55C9774727BB50D401DC49553F13E4DA /* Headers */ = {
+		CE6A2715FFC285553260B58EAD228613 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ECEB0346E74E47F4CBCAE1F46F7AB17 /* SBJson5.h in Headers */,
-				F7D4990DD8CC29E01564556D80C1298F /* SBJson5Parser.h in Headers */,
-				CFA68517F683575134A200A7E76DBC0D /* SBJson5StreamParser.h in Headers */,
-				01EA79D7ABA8672D94C7BE5165D901A5 /* SBJson5StreamParserState.h in Headers */,
-				20622ED8BA26239AD13391A4A0CC4C26 /* SBJson5StreamTokeniser.h in Headers */,
-				9DF8DFBA75554ACC9EB9C38FEDD8713B /* SBJson5StreamWriter.h in Headers */,
-				2E1AF97C2012AA8C5A032D5FC1216D0B /* SBJson5StreamWriterState.h in Headers */,
-				99BC8EB483547BAF6329FF3670087FB8 /* SBJson5Writer.h in Headers */,
+				1A67E8BEA2635F4A6A98CA58A0EA0265 /* SBJson5.h in Headers */,
+				AE121F1A4B3C3F3693CEBDF1E331E46E /* SBJson5Parser.h in Headers */,
+				1D7571F7D84118321CEDA96DA912026D /* SBJson5StreamParser.h in Headers */,
+				74D4738E31B597DAB427B2346B10DAB8 /* SBJson5StreamParserState.h in Headers */,
+				4821F093B0ABE2968E97D63907E94CBD /* SBJson5StreamTokeniser.h in Headers */,
+				808D7657A2DAA2D5A068D47CDDDC6E68 /* SBJson5StreamWriter.h in Headers */,
+				2D388AD0DE070B3083229C018748FE14 /* SBJson5StreamWriterState.h in Headers */,
+				3079F8237A645DEC65E5939AC1638D4F /* SBJson5Writer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		555CC8220B70D58A421D4AFA4FE3DFEB /* Pods-TestPayZappStaging */ = {
+		14A8D65212E0E03DAD39E31C9FC0F3E4 /* SBJson */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB4CCA4DD2983D81568C2FF51A26881E /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStaging" */;
+			buildConfigurationList = EE256B9F2C653881CB3D1CC365FAA68C /* Build configuration list for PBXNativeTarget "SBJson" */;
 			buildPhases = (
-				5F6E1A257A1214B07D4FF0B67592AC1E /* Sources */,
-				BACC867CF90677C2BD2097829A2098B8 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				55B13F5BE68ACF60EBA0FFA754031AF9 /* PBXTargetDependency */,
-			);
-			name = "Pods-TestPayZappStaging";
-			productName = "Pods-TestPayZappStaging";
-			productReference = 5445075FFF397FF6871CEADD34BBA59B /* libPods-TestPayZappStaging.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B3C843C23B19D912169DDA38282A92D6 /* SBJson */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EEF6444746336C0A5E5EFA63398BCA44 /* Build configuration list for PBXNativeTarget "SBJson" */;
-			buildPhases = (
-				24FBAFE7FCC31297B3483E784B163748 /* Sources */,
-				B7C8DFC6BBE07E9573FB95F0B028F0E8 /* Frameworks */,
-				55C9774727BB50D401DC49553F13E4DA /* Headers */,
+				13902256F42247A963701BE7E8C6B376 /* Sources */,
+				AAEF808255DB1EB55DD86AE35D8BFCC3 /* Frameworks */,
+				CE6A2715FFC285553260B58EAD228613 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -317,20 +279,38 @@
 			productReference = 937A816A4DE8E57D0DA94FB05BDFD7EF /* libSBJson.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CBCDF5AA75D914CA2AD0FCAD3F00256A /* Pods-TestPayZappStagingTests */ = {
+		5C6029970666DC88EC4AA498944954B1 /* Pods-TestPayZappStagingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43F2B6B4EBDB20FE71594002C05182A9 /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStagingTests" */;
+			buildConfigurationList = BF016483F65655AA7BEEE8834A5CB5EA /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStagingTests" */;
 			buildPhases = (
-				2EA6F2F3F057E1FF981220767A997CCB /* Sources */,
-				DF6511BA285B4C0F83BB1904E6377964 /* Frameworks */,
+				85A55415CA4296B560117E2211209B23 /* Sources */,
+				122C9E1E6488A7C3C773E3BAB37BF87B /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9112C583CB496B72EE6047024D9FE63 /* PBXTargetDependency */,
 			);
 			name = "Pods-TestPayZappStagingTests";
 			productName = "Pods-TestPayZappStagingTests";
 			productReference = B516A3146D337EC3D0845617316B517F /* libPods-TestPayZappStagingTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B5EC03CEB0720744F2C50CAE8F72FA55 /* Pods-TestPayZappStaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEA38981A31993F7ECEA66CD4AB0D70B /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStaging" */;
+			buildPhases = (
+				509518058404D4120355EDD67A3CC6DB /* Sources */,
+				C4D6290A2D2BCDD8643B9B20B6D137F8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99D2137D984B1CB61C4A6B82C6798714 /* PBXTargetDependency */,
+			);
+			name = "Pods-TestPayZappStaging";
+			productName = "Pods-TestPayZappStaging";
+			productReference = 5445075FFF397FF6871CEADD34BBA59B /* libPods-TestPayZappStaging.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -339,8 +319,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -354,247 +334,64 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				555CC8220B70D58A421D4AFA4FE3DFEB /* Pods-TestPayZappStaging */,
-				CBCDF5AA75D914CA2AD0FCAD3F00256A /* Pods-TestPayZappStagingTests */,
-				B3C843C23B19D912169DDA38282A92D6 /* SBJson */,
+				B5EC03CEB0720744F2C50CAE8F72FA55 /* Pods-TestPayZappStaging */,
+				5C6029970666DC88EC4AA498944954B1 /* Pods-TestPayZappStagingTests */,
+				14A8D65212E0E03DAD39E31C9FC0F3E4 /* SBJson */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		24FBAFE7FCC31297B3483E784B163748 /* Sources */ = {
+		13902256F42247A963701BE7E8C6B376 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC63E65FF34EBCA07149B3A36DE0CCF /* SBJson-dummy.m in Sources */,
-				4403A22CEE7089D63ECD4B552D2BD5BE /* SBJson5Parser.m in Sources */,
-				CA9B1827C9DA66D6EC6D059D5C83D6FB /* SBJson5StreamParser.m in Sources */,
-				D6BC98264F2C7635F2E84C52647CCB99 /* SBJson5StreamParserState.m in Sources */,
-				B912E232DFBF97B2BA33EC22B1E43EB1 /* SBJson5StreamTokeniser.m in Sources */,
-				BBF7B3551594069872D53C9896E00AF7 /* SBJson5StreamWriter.m in Sources */,
-				B454BFD924F56C4D25073FF4F8033425 /* SBJson5StreamWriterState.m in Sources */,
-				A7C2676C32A8E980DFA36CA6F683F5BB /* SBJson5Writer.m in Sources */,
+				BC2111BAFC5C4D225F56B942859C32E8 /* SBJson-dummy.m in Sources */,
+				9FDF4F736113E0F88FE4576A13B9516C /* SBJson5Parser.m in Sources */,
+				81EEB6013B9A7BB0A6B7FD5D6F9919D9 /* SBJson5StreamParser.m in Sources */,
+				CD9264F03A1646BD931AB0CE93787540 /* SBJson5StreamParserState.m in Sources */,
+				03090B1FFF58120C1F9FB86DFAA07656 /* SBJson5StreamTokeniser.m in Sources */,
+				A0910ACD7C69F08267F1C60AA30B8785 /* SBJson5StreamWriter.m in Sources */,
+				FD61F91D3FD4CB963C5643A71D653219 /* SBJson5StreamWriterState.m in Sources */,
+				5E9371C29D6C5EFB152EE6501B3E5686 /* SBJson5Writer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2EA6F2F3F057E1FF981220767A997CCB /* Sources */ = {
+		509518058404D4120355EDD67A3CC6DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D16B88D06418CAFD5C171FFEBFC4D44 /* Pods-TestPayZappStagingTests-dummy.m in Sources */,
+				37973A62785B2AA0CDC80160F7FED65F /* Pods-TestPayZappStaging-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F6E1A257A1214B07D4FF0B67592AC1E /* Sources */ = {
+		85A55415CA4296B560117E2211209B23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5ACB4E82E937B20BCD2351FBD4EDD00 /* Pods-TestPayZappStaging-dummy.m in Sources */,
+				9DFD4C8E2C0114EA8CBF7F7F5D82D7D1 /* Pods-TestPayZappStagingTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		55B13F5BE68ACF60EBA0FFA754031AF9 /* PBXTargetDependency */ = {
+		99D2137D984B1CB61C4A6B82C6798714 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SBJson;
-			target = B3C843C23B19D912169DDA38282A92D6 /* SBJson */;
-			targetProxy = 2C46A3D5493EA09D353B3CEF2D80FDDF /* PBXContainerItemProxy */;
+			target = 14A8D65212E0E03DAD39E31C9FC0F3E4 /* SBJson */;
+			targetProxy = 3BFD0FF0A1D801281D1B4FD440BC8A41 /* PBXContainerItemProxy */;
+		};
+		E9112C583CB496B72EE6047024D9FE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TestPayZappStaging";
+			target = B5EC03CEB0720744F2C50CAE8F72FA55 /* Pods-TestPayZappStaging */;
+			targetProxy = D44027EEB63CAD38F6BDCFBF9FE00BE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C721B9F666C3C4F4C817AEBE6502A06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A95B48C78355D6B6C34AB823EDCCA83 /* Pods-TestPayZappStagingTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2C9E407276B633D1175962417B2A34FE /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBC1E61F6FF504A6300F4D2FCCB7B922 /* SBJson.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		3C933F7EE6808FF38921088C60BABB86 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5666800F0AE5235FA6165D267490D07 /* Pods-TestPayZappStaging.distribution.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		6874A37196AA22557A4DAA30FD7D6E6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBC1E61F6FF504A6300F4D2FCCB7B922 /* SBJson.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6AFCBCED035E1E30324B3A4647CC0177 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5875B5C923543F08EB8D8F7A9844EE01 /* Pods-TestPayZappStaging.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		757D504D65CE4F9795D65CD07853FA60 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBC1E61F6FF504A6300F4D2FCCB7B922 /* SBJson.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		75B42804D5C75E0273AD9D933F9B0846 /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADD085651546E400FA974409F63AE447 /* Pods-TestPayZappStagingTests.distribution.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Distribution;
-		};
-		83C7B481B49095BB056A9B99B76051ED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC540EFE21C6C80632251D9916E7484E /* Pods-TestPayZappStagingTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8E2E61B5C26BC81FE7AB4095EFC760D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99B39478492BCB335761A82AE68EEBF5 /* Pods-TestPayZappStaging.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -604,10 +401,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -615,6 +414,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -623,61 +423,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -702,14 +448,148 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		E70DCA6431F40CD96BA486C90C848C07 /* Distribution */ = {
+		27DBE85255BFBFF6E4BD5FDC5DED869A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5875B5C923543F08EB8D8F7A9844EE01 /* Pods-TestPayZappStaging.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4427AEF5D40E2A70FD2EB77CB54DCDA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04F3805BC1A7DA68BD65504DA9F66DD /* SBJson.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SBJson;
+				PRODUCT_NAME = SBJson;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6621F6A1497ACB4030138BF92597BC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04F3805BC1A7DA68BD65504DA9F66DD /* SBJson.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SBJson;
+				PRODUCT_NAME = SBJson;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A60D550B231D9B10F6CC7BC4BE6613B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC540EFE21C6C80632251D9916E7484E /* Pods-TestPayZappStagingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B578E0CD31EDBD7A7772DEFC0B96DEB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A95B48C78355D6B6C34AB823EDCCA83 /* Pods-TestPayZappStagingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C064592DB32E6264A06C1729657027B5 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04F3805BC1A7DA68BD65504DA9F66DD /* SBJson.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SBJson/SBJson-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SBJson;
+				PRODUCT_NAME = SBJson;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		C816922BA164345CF763AB710DDEFF01 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -719,10 +599,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -730,6 +612,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -738,6 +621,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -758,9 +642,132 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Distribution;
+		};
+		E5A7385D8A539A88C853BC39484F5CD7 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADD085651546E400FA974409F63AE447 /* Pods-TestPayZappStagingTests.distribution.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FD3A9AE8364EB0042562317B396D18D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99B39478492BCB335761A82AE68EEBF5 /* Pods-TestPayZappStaging.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF7B7121E626727F0D6F1E8E8781415E /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5666800F0AE5235FA6165D267490D07 /* Pods-TestPayZappStaging.distribution.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
 		};
@@ -770,39 +777,39 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
-				E70DCA6431F40CD96BA486C90C848C07 /* Distribution */,
-				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				C816922BA164345CF763AB710DDEFF01 /* Distribution */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43F2B6B4EBDB20FE71594002C05182A9 /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStagingTests" */ = {
+		AEA38981A31993F7ECEA66CD4AB0D70B /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStaging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C721B9F666C3C4F4C817AEBE6502A06 /* Debug */,
-				75B42804D5C75E0273AD9D933F9B0846 /* Distribution */,
-				83C7B481B49095BB056A9B99B76051ED /* Release */,
+				27DBE85255BFBFF6E4BD5FDC5DED869A /* Debug */,
+				FF7B7121E626727F0D6F1E8E8781415E /* Distribution */,
+				FD3A9AE8364EB0042562317B396D18D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB4CCA4DD2983D81568C2FF51A26881E /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStaging" */ = {
+		BF016483F65655AA7BEEE8834A5CB5EA /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStagingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6AFCBCED035E1E30324B3A4647CC0177 /* Debug */,
-				3C933F7EE6808FF38921088C60BABB86 /* Distribution */,
-				8E2E61B5C26BC81FE7AB4095EFC760D3 /* Release */,
+				B578E0CD31EDBD7A7772DEFC0B96DEB5 /* Debug */,
+				E5A7385D8A539A88C853BC39484F5CD7 /* Distribution */,
+				A60D550B231D9B10F6CC7BC4BE6613B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEF6444746336C0A5E5EFA63398BCA44 /* Build configuration list for PBXNativeTarget "SBJson" */ = {
+		EE256B9F2C653881CB3D1CC365FAA68C /* Build configuration list for PBXNativeTarget "SBJson" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6874A37196AA22557A4DAA30FD7D6E6E /* Debug */,
-				2C9E407276B633D1175962417B2A34FE /* Distribution */,
-				757D504D65CE4F9795D65CD07853FA60 /* Release */,
+				6621F6A1497ACB4030138BF92597BC20 /* Debug */,
+				C064592DB32E6264A06C1729657027B5 /* Distribution */,
+				4427AEF5D40E2A70FD2EB77CB54DCDA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

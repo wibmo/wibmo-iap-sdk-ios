@@ -1,0 +1,1 @@
+../../../../wibmo-sdk/WibmoSDK.framework/Headers/WSTransactionInfo.h

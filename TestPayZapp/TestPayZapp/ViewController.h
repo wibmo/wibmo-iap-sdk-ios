@@ -8,7 +8,7 @@
 
 
 #import <UIKit/UIKit.h>
-#import "WSConstant.h"
+#import <WibmoSDK/WSConstant.h>
 
 
 @interface ViewController : UIViewController

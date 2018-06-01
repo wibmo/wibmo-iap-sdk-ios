@@ -8,9 +8,9 @@
 
 
 #import "ViewController.h"
-#import "WibmoSDK.h"
-#import "WSConstant.h"
-#import "WSUrlInfo.h"
+#import <WibmoSDK/WibmoSDK.h>
+#import <WibmoSDK/WSConstant.h>
+#import <WibmoSDK/WSUrlInfo.h>
 #import <SBJson/SBJson5.h>
 
 #define SCREEN_WIDTH            [UIScreen mainScreen].bounds.size.width

@@ -1,15 +1,20 @@
 PODS:
   - SBJson (5.0.0)
-  - wibmo-sdk (0.2.0):
-    - SBJson (= 5.0)
+  - wibmo-sdk (0.8.0)
 
 DEPENDENCIES:
+  - SBJson
   - wibmo-sdk
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SBJson
+    - wibmo-sdk
 
 SPEC CHECKSUMS:
   SBJson: 73c848dc34be51fda282fab12bda6c426f5ead08
-  wibmo-sdk: 109419ce2ea60ba70a56dbc2a8c5ec67bba2af2b
+  wibmo-sdk: bdfd500fead994302de3a12fe79863e4d42f89ab
 
-PODFILE CHECKSUM: 0ed147c5b3ae9caeddfd6b6c6a346236a4365bf3
+PODFILE CHECKSUM: 2079e93756c624a7434fe81e76f2dcb2e19a765a
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.5.2

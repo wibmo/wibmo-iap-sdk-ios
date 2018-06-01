@@ -8,7 +8,7 @@
 
 
 #import "AppDelegate.h"
-#import "WibmoSDK.h"
+#import <WibmoSDK/WibmoSDK.h>
 
 
 @interface AppDelegate ()

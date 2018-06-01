@@ -1,1 +1,0 @@
-../../../wibmo-sdk/WSUrlInfo.h
