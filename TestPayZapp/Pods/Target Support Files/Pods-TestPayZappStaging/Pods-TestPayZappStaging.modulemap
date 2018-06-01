@@ -1,0 +1,6 @@
+module Pods_TestPayZappStaging {
+  umbrella header "Pods-TestPayZappStaging-umbrella.h"
+
+  export *
+  module * { export * }
+}

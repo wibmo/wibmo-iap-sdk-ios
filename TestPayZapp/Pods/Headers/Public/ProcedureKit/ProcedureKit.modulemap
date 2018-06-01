@@ -1,0 +1,6 @@
+module ProcedureKit {
+  umbrella header "ProcedureKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
