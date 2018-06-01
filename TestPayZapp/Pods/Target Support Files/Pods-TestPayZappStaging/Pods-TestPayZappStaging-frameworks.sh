@@ -143,12 +143,21 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ProcedureKit/ProcedureKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework"
   install_framework "${PODS_ROOT}/wibmo-sdk/WibmoSDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ProcedureKit/ProcedureKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework"
   install_framework "${PODS_ROOT}/wibmo-sdk/WibmoSDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Distribution" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ProcedureKit/ProcedureKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework"
   install_framework "${PODS_ROOT}/wibmo-sdk/WibmoSDK.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

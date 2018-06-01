@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F95F9B89F11BACDEFB14F28 /* libPods-TestPayZappStagingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E8237CA30968C0AD50A410E /* libPods-TestPayZappStagingTests.a */; };
-		266124478BF03B4BE5A13FC2 /* libPods-TestPayZappStaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CB76D33B71015990C7B1C0 /* libPods-TestPayZappStaging.a */; };
+		1786051D2B15EA35EA909C0F /* Pods_TestPayZappStaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CD3D8A6DA89C280A1124CE /* Pods_TestPayZappStaging.framework */; };
+		8B39D6478B8087284243966C /* Pods_TestPayZappStagingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EA8883BB219A5C3E9922FD /* Pods_TestPayZappStagingTests.framework */; };
 		BDB3E3DA1B8575D9009CEA50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB3E3D91B8575D9009CEA50 /* main.m */; };
 		BDB3E3DD1B8575D9009CEA50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB3E3DC1B8575D9009CEA50 /* AppDelegate.m */; };
 		BDB3E3E01B8575D9009CEA50 /* TestPayZapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDB3E3DE1B8575D9009CEA50 /* TestPayZapp.xcdatamodeld */; };
@@ -32,10 +32,10 @@
 /* Begin PBXFileReference section */
 		34DA77DEAC9F41D70036D7F4 /* Pods-TestPayZappStagingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStagingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStagingTests/Pods-TestPayZappStagingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E5AA6288FF30271F7FECB43 /* Pods-TestPayZappStaging.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStaging.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.distribution.xcconfig"; sourceTree = "<group>"; };
-		4E8237CA30968C0AD50A410E /* libPods-TestPayZappStagingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestPayZappStagingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7805017ADD8D5674C558A4 /* Pods-TestPayZappStagingTests.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStagingTests.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStagingTests/Pods-TestPayZappStagingTests.distribution.xcconfig"; sourceTree = "<group>"; };
+		61EA8883BB219A5C3E9922FD /* Pods_TestPayZappStagingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStagingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CD3D8A6DA89C280A1124CE /* Pods_TestPayZappStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F6CD311BB3D63700073360 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82CB76D33B71015990C7B1C0 /* libPods-TestPayZappStaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestPayZappStaging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19EE8F32AE4B092267C77E4 /* Pods-TestPayZappStaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStaging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB3E3D41B8575D9009CEA50 /* TestPayZappStaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPayZappStaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB3E3D91B8575D9009CEA50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266124478BF03B4BE5A13FC2 /* libPods-TestPayZappStaging.a in Frameworks */,
+				1786051D2B15EA35EA909C0F /* Pods_TestPayZappStaging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F95F9B89F11BACDEFB14F28 /* libPods-TestPayZappStagingTests.a in Frameworks */,
+				8B39D6478B8087284243966C /* Pods_TestPayZappStagingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +90,8 @@
 		BA32D857BE00C747D65DEC86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				82CB76D33B71015990C7B1C0 /* libPods-TestPayZappStaging.a */,
-				4E8237CA30968C0AD50A410E /* libPods-TestPayZappStagingTests.a */,
+				75CD3D8A6DA89C280A1124CE /* Pods_TestPayZappStaging.framework */,
+				61EA8883BB219A5C3E9922FD /* Pods_TestPayZappStagingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,10 +267,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ProcedureKit/ProcedureKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SBJson/SBJson.framework",
 				"${PODS_ROOT}/wibmo-sdk/WibmoSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProcedureKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBJson.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WibmoSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +441,10 @@
 					"$(PROJECT_DIR)/TestPayZapp/include",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enstage.hdfc.staging.TestPayZapp;
 				PRODUCT_NAME = TestPayZappStaging;
 				PROVISIONING_PROFILE = "";
@@ -588,6 +598,10 @@
 					"$(PROJECT_DIR)/TestPayZapp",
 					"$(PROJECT_DIR)/TestPayZapp/include",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enstage.hdfc.staging.TestPayZapp;
 				PRODUCT_NAME = TestPayZappStaging;
 				PROVISIONING_PROFILE = "";
@@ -618,6 +632,10 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.enstage.hdfc.staging.TestPayZapp;
 				PRODUCT_NAME = TestPayZappStaging;
 				PROVISIONING_PROFILE = "";

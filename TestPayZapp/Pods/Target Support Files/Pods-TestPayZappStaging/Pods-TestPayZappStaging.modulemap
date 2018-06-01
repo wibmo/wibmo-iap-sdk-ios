@@ -1,4 +1,4 @@
-module Pods_TestPayZappStaging {
+framework module Pods_TestPayZappStaging {
   umbrella header "Pods-TestPayZappStaging-umbrella.h"
 
   export *

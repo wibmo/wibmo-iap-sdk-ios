@@ -1,4 +1,4 @@
-module ProcedureKit {
+framework module ProcedureKit {
   umbrella header "ProcedureKit-umbrella.h"
 
   export *
