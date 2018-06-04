@@ -143,9 +143,9 @@
 		1E325C9D613C7AEA35CA552F8A1D6A14 /* SBJson5StreamWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamWriter.h; path = Classes/SBJson5StreamWriter.h; sourceTree = "<group>"; };
 		1E6C7E6EA87CE4C0043FB55A9E5F5D57 /* Pods-TestPayZappStaging.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStaging.distribution.xcconfig"; sourceTree = "<group>"; };
 		21DF06D9DDCD60FBD78328A62C393780 /* Pods-TestPayZappStaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStaging.debug.xcconfig"; sourceTree = "<group>"; };
-		24F4FF705E4FD9593B0909E0C760938C /* ProcedureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProcedureKit.framework; path = ProcedureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F4FF705E4FD9593B0909E0C760938C /* ProcedureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProcedureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		275A1F51718E850B5859BC0EAC351F63 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Sources/ProcedureKit/Group.swift; sourceTree = "<group>"; };
-		28B45CED924BB9168138CEDBADCE98B7 /* Pods_TestPayZappStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TestPayZappStaging.framework; path = "Pods-TestPayZappStaging.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B45CED924BB9168138CEDBADCE98B7 /* Pods_TestPayZappStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A769575975E1DF9E49B03646AD651A /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		29E72073FE42CC025D67036F8B967360 /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Sources/ProcedureKit/Logging.swift; sourceTree = "<group>"; };
 		2E32BABA63348F7F925274C5D2667173 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		3FF3DA7E59BE2322D2AA66F3289C9A03 /* Profiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profiler.swift; path = Sources/ProcedureKit/Profiler.swift; sourceTree = "<group>"; };
 		4008D4A7C88F5396A004F7B8E216E0C1 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		458BAA252C8D49C3BAA63096CB75A250 /* SBJson5StreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5StreamParser.h; path = Classes/SBJson5StreamParser.h; sourceTree = "<group>"; };
-		4868CF27C5364572DE9C294BB5F84700 /* Pods_TestPayZappStagingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TestPayZappStagingTests.framework; path = "Pods-TestPayZappStagingTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4868CF27C5364572DE9C294BB5F84700 /* Pods_TestPayZappStagingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStagingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF72450116846A31C3E033AE22005A4 /* BlockObservers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockObservers.swift; path = Sources/ProcedureKit/BlockObservers.swift; sourceTree = "<group>"; };
 		5262A4A445A685881F0B2C171AFC9935 /* SBJson5StreamParserState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5StreamParserState.m; path = Classes/SBJson5StreamParserState.m; sourceTree = "<group>"; };
 		5573D7517087FECB89249AE74F77E6AC /* SBJson.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SBJson.modulemap; sourceTree = "<group>"; };
@@ -193,12 +193,12 @@
 		8E328F6553E183BDDB83D8D0C16D6CA4 /* Pods-TestPayZappStagingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestPayZappStagingTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8EF55D6366081DD53A6F3DCABF5D38B5 /* AnyObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyObserver.swift; path = Sources/ProcedureKit/AnyObserver.swift; sourceTree = "<group>"; };
 		92384EAA5F8710863F0DB22FDB2F357F /* Pods-TestPayZappStagingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStagingTests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9452A6954CA2F0742DAD16A38E0C28CC /* Collection+ProcedureKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+ProcedureKit.swift"; path = "Sources/ProcedureKit/Collection+ProcedureKit.swift"; sourceTree = "<group>"; };
 		952B0C0B73B731B56CCB7B44A5465291 /* MutualExclusion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutualExclusion.swift; path = Sources/ProcedureKit/MutualExclusion.swift; sourceTree = "<group>"; };
 		967E27508D9A68FDD8257B89504EC9BA /* PendingEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PendingEvent.swift; path = Sources/ProcedureKit/PendingEvent.swift; sourceTree = "<group>"; };
 		969A6E62E74DC9C4C144C09BA01C205B /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		98DCED6F78D68BE41B7D06673260D57B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98DCED6F78D68BE41B7D06673260D57B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4407718EBED32B0A447EC34C5F2BB0 /* Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delay.swift; path = Sources/ProcedureKit/Delay.swift; sourceTree = "<group>"; };
 		9D659B5C4C22CB57D7180504E8A7C7A8 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		9E101912EDC7AA8A2EC6D8F64B50F813 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 		B95D3BA5403C347A767078512E194CDF /* SilentCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentCondition.swift; path = Sources/ProcedureKit/SilentCondition.swift; sourceTree = "<group>"; };
 		BC87B0C4E73114B7B808FB00D4628746 /* SBJson5Writer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SBJson5Writer.m; path = Classes/SBJson5Writer.m; sourceTree = "<group>"; };
 		BF8765F001EAA310CB6C0F5CD5E947AE /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		BF9DC1EA71CAF56EB69F4F5247A9D274 /* SBJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SBJson.framework; path = SBJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9DC1EA71CAF56EB69F4F5247A9D274 /* SBJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2787EBD4EC5D31AD04C8BF252C4D5A5 /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/ProcedureKit/Any.swift; sourceTree = "<group>"; };
 		C3D93D5A997E71245AE8D4518F79007E /* ProcedureKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcedureKit-prefix.pch"; sourceTree = "<group>"; };
 		C41F74BB9372E34E3FDDA4864453061B /* SBJson5Parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SBJson5Parser.h; path = Classes/SBJson5Parser.h; sourceTree = "<group>"; };
@@ -297,7 +297,6 @@
 			children = (
 				A25E5AF5A7C6146DD90CFCE34BAC5C34 /* Frameworks */,
 			);
-			name = "wibmo-sdk";
 			path = "wibmo-sdk";
 			sourceTree = "<group>";
 		};
@@ -334,7 +333,6 @@
 				10B6A9B47EFD467109C1504487DCAC36 /* Validation.swift */,
 				2326D5FDA5F4CF0946192B9C71C0CCD8 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -447,7 +445,6 @@
 				6558D16DF974DC2973B8EC4A3616D387 /* Standard */,
 				37C2FBA353B4408FC5C45E9A1CBF595A /* Support Files */,
 			);
-			name = ProcedureKit;
 			path = ProcedureKit;
 			sourceTree = "<group>";
 		};
@@ -498,7 +495,6 @@
 				BC87B0C4E73114B7B808FB00D4628746 /* SBJson5Writer.m */,
 				F8333A1FDB1681814A5D01124731FF28 /* Support Files */,
 			);
-			name = SBJson;
 			path = SBJson;
 			sourceTree = "<group>";
 		};
@@ -1016,6 +1012,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -1329,6 +1326,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Distribution;
@@ -1492,6 +1490,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

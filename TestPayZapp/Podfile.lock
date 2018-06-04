@@ -4,7 +4,7 @@ PODS:
     - ProcedureKit/Standard (= 4.5.0)
   - ProcedureKit/Standard (4.5.0)
   - SBJson (5.0.0)
-  - wibmo-sdk (1.0.2):
+  - wibmo-sdk (1.0.3):
     - Alamofire
     - ProcedureKit
 
@@ -23,7 +23,7 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   ProcedureKit: 023e4600e921fe0b8d94f2d19ed680df83aa28ba
   SBJson: 73c848dc34be51fda282fab12bda6c426f5ead08
-  wibmo-sdk: a18e5f153d7114e7ab2ea42d3ca5c508e15bfd0a
+  wibmo-sdk: af11f240e316440b616f320750449b8b70544516
 
 PODFILE CHECKSUM: c6ab77c155bcdcb1c631696abd1a00e3c291cacf
 
