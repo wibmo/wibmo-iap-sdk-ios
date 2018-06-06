@@ -6,7 +6,7 @@ target 'TestPayZappStaging' do
   use_frameworks!
 
   # Pods for TestPayZappStaging
-	pod 'wibmo-sdk'
+  pod 'wibmo-sdk'
 
   target 'TestPayZappStagingTests' do
     inherit! :search_paths

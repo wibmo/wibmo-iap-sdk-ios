@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEAF44BC8402AB80621D555693363FB1"
+               BlueprintIdentifier = "F4DE382C7F59DBF7AAB96216173B71C3"
                BuildableName = "Pods_TestPayZappStaging.framework"
                BlueprintName = "Pods-TestPayZappStaging"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEAF44BC8402AB80621D555693363FB1"
+            BlueprintIdentifier = "F4DE382C7F59DBF7AAB96216173B71C3"
             BuildableName = "Pods_TestPayZappStaging.framework"
             BlueprintName = "Pods-TestPayZappStaging"
             ReferencedContainer = "container:Pods.xcodeproj">

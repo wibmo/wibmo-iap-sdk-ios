@@ -7,51 +7,198 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16DA816AD25483E5674DFF8D19E4784C /* Pods-TestPayZappStaging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B95ABA33C3535D86EFFC760A30D89044 /* Pods-TestPayZappStaging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0509FAA0DD9723AE7A6EA0AEA198A344 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9C3A5E1E7BF029EE5FA581E0DC566 /* Transform.swift */; };
+		0861368058D13766FCA6B19F74264EC8 /* NegatedCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AF07EF233C21471741F845605C199 /* NegatedCondition.swift */; };
+		08CA45AB4F0E3EC9CB8BF7B42081E48C /* NoFailedDependenciesCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF8C40B8ADB6AEA8DF63BEABF3347C /* NoFailedDependenciesCondition.swift */; };
+		0A43F620B46AAA2E412429E125F6846C /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258617592374F6FCAB16A8612F077A0 /* ResponseSerialization.swift */; };
+		0B2499B107C2BEE476054649DA997723 /* BlockObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F335DD0D84B63B48B4C29B2C6E38E20F /* BlockObservers.swift */; };
+		1336548AB5D8A9FFCCBBE646FCC08E64 /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED00E9359FCC77218108C8E0EA7870B1 /* Reduce.swift */; };
+		143EBE055EE71A84DAC577ABE752108E /* Capability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16081D7CB7CC25FE687B71A869DEBD /* Capability.swift */; };
+		1AE0473357E73296021E985117082D30 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CF90482B58B0AEB7EAA98DAF8B230D /* Condition.swift */; };
+		1BBDB9BD131605C3936E6537CD5CC954 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1BC06B51CEBC12CB7B3192BEDE74C88A /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E7381849E747F40218F0F275FAAD8 /* NetworkObserver.swift */; };
+		2314036426FA8AC0B5BB6B7604723B33 /* Collection+ProcedureKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4D5035DFB4A509C6D488BFBA17A6B /* Collection+ProcedureKit.swift */; };
 		2F2D4EF25B780000495B9345FEF95B2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		475351325887FF908E2FCC2777681234 /* Pods-TestPayZappStaging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E04D849AD2849DF52BFFA75FE09408 /* Pods-TestPayZappStaging-dummy.m */; };
+		3279DB64A8E996C0CCDF186651FD9120 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C312E5633C3F6245F404B6B3A7443096 /* Logging.swift */; };
+		33D66B10A4618FA18B935B9D2F801678 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA7F0C4F750FB2D229B635A47B9FF74 /* Reachability.swift */; };
+		37EFAAB2B856D21C98AF04877FC33FB2 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0DE0CF3B4FE27D0608FFC810A128C /* Map.swift */; };
+		3A4246D77DAC8E07393FB65DE584A004 /* Operation+ProcedureKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F37D58B8D58E32CC8A72A7AEDAD73DB /* Operation+ProcedureKit.swift */; };
+		3E59780BD4967C3129A08ECDBEFC0CE5 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A5C58C1C42BFFB964FF1485D9173FB /* Block.swift */; };
+		41FF55C561EDCF2AE2ECA9D4DEA1079E /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8689626F0973F554181361F5A2434F8C /* ParameterEncoding.swift */; };
+		4C25C16BFDB9070D5FAED6251FAED1B7 /* TimeoutObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFAE82A443DA26524994B8E71766B2 /* TimeoutObserver.swift */; };
+		4C4352FD602883F25311922A96C48196 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBD0BC6CD0EF9A99B2FD7C42FD9C2C /* Repeat.swift */; };
+		4D3E94F63DF0BFFD8BEA5EC64E16AA84 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9462AB504C1A4618F7D246088C35B2E4 /* Response.swift */; };
+		4F62DD94A1554CB71EC36BACA74B8B41 /* SilentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25DA9F84224D426BDEA655A598AD0D /* SilentCondition.swift */; };
+		4FAB030E3BAFE7CC8D8FB4B93B6E8A88 /* ProcedureKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B93F37813FA2A365A012B1ADD6B94 /* ProcedureKit-dummy.m */; };
+		53F89189EE19A27622E5DA210EBF5FB7 /* BlockCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34016B3739F71DD99681803BA793EEC /* BlockCondition.swift */; };
+		54900E5ED81580F7CC8C5B0B4C76486D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EE0D6FFDE217D1F9A543DED38F15E5 /* Errors.swift */; };
+		5739C007BCCF5CCA3551F7C5CCB73509 /* ProcedureObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7E072C50C3AE3C46AFA8CDF0B05E96 /* ProcedureObserver.swift */; };
+		58DBFBC7A6DC5B0F2EB55F1E2BFAECFD /* Pods-TestPayZappStaging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B95ABA33C3535D86EFFC760A30D89044 /* Pods-TestPayZappStaging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AD69A0F963CB85808F27C30586EA52A /* Composed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D346CE0DAFF5E116E4D19D0A009B86C /* Composed.swift */; };
+		5F3E6864A780E6CDC8BA3AB409DD63BE /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BF0D9C0B6D85F2BFDF0A4C1E34C94C /* Procedure.swift */; };
+		66181556F53CAC472A6B2DC5D08D1338 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A26259B905B60F5930B3E8131C684BF /* ServerTrustPolicy.swift */; };
+		66F00FD68C0ED466AE980402A405A925 /* ProcedureProcotol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8512C88A3E3839265B2EF550D86C2 /* ProcedureProcotol.swift */; };
+		67813E1A5C0174DFE28F83C650FD25F2 /* ProcedureEventQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B3024004F045B8E1F7D29832D2394 /* ProcedureEventQueue.swift */; };
+		67CAC6E318FE93D35EC94E458A924815 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B1F693D7EEE9D065025F5E8DD3E42 /* TaskDelegate.swift */; };
+		6C4E93A6CEF6DC84247288D0EBBBB5B8 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C6569795D7DA1EFBB4162F8FBCEF1 /* Filter.swift */; };
+		704D1BE2EBB28589DC235A5AA89A4138 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB205D4D9EC355036B8F20C6DCDBE65B /* Result.swift */; };
+		7142C1741A4B43ABB599DA4B9CF1A478 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7E681C4AC299D0384CB13F6C4A76229D /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF66B3DF5A7A84586446B188F84A2C9 /* NetworkReachabilityManager.swift */; };
+		7FF7BBAC2AF0FFCE2B902888FA628BD9 /* ProcedureFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E70994F27B6FDDA75265942131BFF /* ProcedureFuture.swift */; };
+		80780192D7C0B494FFC2535D1FA0D125 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB5C7C5655126B31B20555A1B0A663A /* Alamofire.swift */; };
+		86A00BA7EA2B403B3B8470E8E91421E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8727832D7613C3593E5B40E3D9D01A96 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF51005FBD5E427DE6F92F71B6B49 /* Any.swift */; };
+		878D119CE42CAEF5D075C86FA7AFE811 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37B998DE5483B4D83C0F8840D427BE /* AFError.swift */; };
+		8B6A9491B268BF7A1C981BD8C5B64F10 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8775C315B75275D1AD4E80A2BBF0EE1 /* Group.swift */; };
+		AE5B74BAD7ECE6050EB6D92F3D511C06 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A51735BB06886C2142469016D23420 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF7564AB46EB4E98A98B3D4C432B8B53 /* Pods-TestPayZappStaging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E04D849AD2849DF52BFFA75FE09408 /* Pods-TestPayZappStaging-dummy.m */; };
+		B6C764468C663A970D471C7E7C3019CD /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87006A2E016D9699400AAA8D87ED1E /* MultipartFormData.swift */; };
+		BAED48E7CCE38E48A06F789CBBBFA7B7 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD081A167C1E5AA1C65ACC2F58546FC /* AnyObserver.swift */; };
+		BBDE807DC55E6ECFF2A5E1E718BAA404 /* ProcedureKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B881C717CA0BE36FF0E6A300FCB3EC5 /* ProcedureKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C081EFAA8A723802999D79F4A10A4CC7 /* ProcedureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E19ECD446B1427A727450C1CE98C3A /* ProcedureResult.swift */; };
+		C18CF5FB5BFBA7526CABAD5D35D4E717 /* PendingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2A4C852BD6360631C962F64694E30 /* PendingEvent.swift */; };
+		CDCECF4B50775ADC962A9A155A83E62B /* MutualExclusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACF331F855CF1ECAFC882043402F9C7 /* MutualExclusion.swift */; };
+		D043F996640A9FC158FC0A3056F19B50 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDA1EBAAC367ECB60B893CC74F63CD /* SessionDelegate.swift */; };
+		D23E55B08E70ABBF30E2F66D18CBDA79 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7146222D24D0DFCC8E59F7816AB3D3 /* Timeline.swift */; };
 		D4803FD6F2400B8AC6B3A9F4956CBF1A /* Pods-TestPayZappStagingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FB6245F51828001BC477A770CE5562 /* Pods-TestPayZappStagingTests-dummy.m */; };
-		D981881DCCB7A464B96F11ED1BB1FAF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D6AEC93D4D18C44A9121C1A068E47530 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4E0AEF0FFC5E30DD3E8F893BC534DF /* Validation.swift */; };
+		D764DB34643A89D6F78E0596F36B6729 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292E2224F82F71E13CD3F068C13B288 /* Notifications.swift */; };
+		DC44A3398D515E173E59A2FE0BFC116A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC91F56C275637F29E335FE28B06902 /* Request.swift */; };
+		DCD4194EA4EDB84916973FEEC5B20026 /* ProcedureQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B10D70953B7F2D2B21E4AFB32D3F04 /* ProcedureQueue.swift */; };
+		E2B0C59423B9FA5D9AC142FAAF1E9DF6 /* DispatchQueue+ProcedureKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1592F31E14EC59EA297DF342A53446 /* DispatchQueue+ProcedureKit.swift */; };
+		E37FF7B3AC8A47A265DE4B4838A5ED14 /* Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E778DB8266EFDCE01BD52E5664E82 /* Retry.swift */; };
+		E569F96F5213D71CEE1C7C68E6C0AA3F /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D643142EC880FEFAE20E78CD8FA89DB3 /* DispatchQueue+Alamofire.swift */; };
+		E618F64081BD0DDB35FA3EC3C53BD153 /* Profiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254D5CAC0373A015D579CB6FCF468D8A /* Profiler.swift */; };
+		EB28F91A813006C6A0AEFBEBCC83F4A1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D446167433CDEEA479FC802839AF539A /* Alamofire-dummy.m */; };
+		F04295E769C209E767B2FBB7088D192F /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055073F77CE0F5A01BC52462A2CA1CB2 /* Delay.swift */; };
+		F294E6EB000BA7BF1E40430513ED3ADE /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CB41330E5B858A1242ECCE68580D4 /* Identity.swift */; };
+		F5CC827A3061B3ED006D22132BE32B58 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F77D691FBEC27DAA649D5A1E79C1A /* SessionManager.swift */; };
+		F73F277C5E2AD67866E030A050A4E972 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DA47C2E31F2BA755C0FD208C3B847 /* Support.swift */; };
 		FCD7321B5C588F1616BF083C54B4454F /* Pods-TestPayZappStagingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E94728740E8EE874B20E089E9710FD1 /* Pods-TestPayZappStagingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A31B7A5600A19E74C878E523D9432E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66B239826EF1D39D2D6C594AC2DBFF77;
+			remoteInfo = Alamofire;
+		};
+		A72C67A9972FC6482377FE007038F93A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F8EF34933B8254A7EA850B33A7D177;
+			remoteInfo = ProcedureKit;
+		};
 		E70B3E9F0E8204C46380410523E56474 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CEAF44BC8402AB80621D555693363FB1;
+			remoteGlobalIDString = F4DE382C7F59DBF7AAB96216173B71C3;
 			remoteInfo = "Pods-TestPayZappStaging";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02B31A789E18B5E23CFFF8EA4ABEA1DE /* Pods-TestPayZappStaging-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStaging-resources.sh"; sourceTree = "<group>"; };
-		04511AEAD01D19A43BD4E20F87F9ACA4 /* Pods_TestPayZappStagingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStagingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		055073F77CE0F5A01BC52462A2CA1CB2 /* Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delay.swift; path = Sources/ProcedureKit/Delay.swift; sourceTree = "<group>"; };
+		0A4B1F693D7EEE9D065025F5E8DD3E42 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		0DA0DE0CF3B4FE27D0608FFC810A128C /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/ProcedureKit/Map.swift; sourceTree = "<group>"; };
+		12B10D70953B7F2D2B21E4AFB32D3F04 /* ProcedureQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureQueue.swift; path = Sources/ProcedureKit/ProcedureQueue.swift; sourceTree = "<group>"; };
 		1E6C7E6EA87CE4C0043FB55A9E5F5D57 /* Pods-TestPayZappStaging.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStaging.distribution.xcconfig"; sourceTree = "<group>"; };
+		20A5C58C1C42BFFB964FF1485D9173FB /* Block.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Block.swift; path = Sources/ProcedureKit/Block.swift; sourceTree = "<group>"; };
 		21DF06D9DDCD60FBD78328A62C393780 /* Pods-TestPayZappStaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStaging.debug.xcconfig"; sourceTree = "<group>"; };
+		254D5CAC0373A015D579CB6FCF468D8A /* Profiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profiler.swift; path = Sources/ProcedureKit/Profiler.swift; sourceTree = "<group>"; };
+		26158C8A5232687A65A1326570985B21 /* ProcedureKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProcedureKit.xcconfig; sourceTree = "<group>"; };
+		2AD081A167C1E5AA1C65ACC2F58546FC /* AnyObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyObserver.swift; path = Sources/ProcedureKit/AnyObserver.swift; sourceTree = "<group>"; };
+		2DA7F0C4F750FB2D229B635A47B9FF74 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/ProcedureKit/Reachability.swift; sourceTree = "<group>"; };
+		2F7E70994F27B6FDDA75265942131BFF /* ProcedureFuture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureFuture.swift; path = Sources/ProcedureKit/ProcedureFuture.swift; sourceTree = "<group>"; };
+		313BF51005FBD5E427DE6F92F71B6B49 /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/ProcedureKit/Any.swift; sourceTree = "<group>"; };
 		33D9478341B130EBFF3F98B9C099B11A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		356EAC01F8E5BDD75B666D225BD2CC4E /* Pods_TestPayZappStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A945A531549478C3DE515C6EE33583E /* Pods-TestPayZappStagingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStagingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C012735360A5580AE11B15B279957BA /* Pods-TestPayZappStaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStaging.release.xcconfig"; sourceTree = "<group>"; };
 		3F89BF979C3C7041892A2C4306249619 /* Pods-TestPayZappStagingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TestPayZappStagingTests.modulemap"; sourceTree = "<group>"; };
+		426C59BBDC419BD75F977CCC810F21C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A26259B905B60F5930B3E8131C684BF /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		4B881C717CA0BE36FF0E6A300FCB3EC5 /* ProcedureKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcedureKit-umbrella.h"; sourceTree = "<group>"; };
+		4BC91F56C275637F29E335FE28B06902 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		4F37D58B8D58E32CC8A72A7AEDAD73DB /* Operation+ProcedureKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Operation+ProcedureKit.swift"; path = "Sources/ProcedureKit/Operation+ProcedureKit.swift"; sourceTree = "<group>"; };
+		5107DA8A6EF868FB2E554F41590ACEE2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BF0D9C0B6D85F2BFDF0A4C1E34C94C /* Procedure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Procedure.swift; path = Sources/ProcedureKit/Procedure.swift; sourceTree = "<group>"; };
 		568D7A5CF54B97E1C8A35E5B4B276CD7 /* Pods-TestPayZappStagingTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStagingTests-resources.sh"; sourceTree = "<group>"; };
+		57F8512C88A3E3839265B2EF550D86C2 /* ProcedureProcotol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureProcotol.swift; path = Sources/ProcedureKit/ProcedureProcotol.swift; sourceTree = "<group>"; };
+		5B5DA47C2E31F2BA755C0FD208C3B847 /* Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Support.swift; path = Sources/ProcedureKit/Support.swift; sourceTree = "<group>"; };
+		61DF8C40B8ADB6AEA8DF63BEABF3347C /* NoFailedDependenciesCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoFailedDependenciesCondition.swift; path = Sources/ProcedureKit/NoFailedDependenciesCondition.swift; sourceTree = "<group>"; };
+		62FBD0BC6CD0EF9A99B2FD7C42FD9C2C /* Repeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeat.swift; path = Sources/ProcedureKit/Repeat.swift; sourceTree = "<group>"; };
 		64EBDA5F533BB5B9B19AD1CDD2AEE0AC /* Pods-TestPayZappStagingTests.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStagingTests.distribution.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A1CB41330E5B858A1242ECCE68580D4 /* Identity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identity.swift; path = Sources/ProcedureKit/Identity.swift; sourceTree = "<group>"; };
+		6A7F77D691FBEC27DAA649D5A1E79C1A /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		6BF9C3A5E1E7BF029EE5FA581E0DC566 /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = Sources/ProcedureKit/Transform.swift; sourceTree = "<group>"; };
+		6F7E072C50C3AE3C46AFA8CDF0B05E96 /* ProcedureObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureObserver.swift; path = Sources/ProcedureKit/ProcedureObserver.swift; sourceTree = "<group>"; };
+		74E6F041FDD5DAE0BD357FADF693F514 /* ProcedureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProcedureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E94728740E8EE874B20E089E9710FD1 /* Pods-TestPayZappStagingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TestPayZappStagingTests-umbrella.h"; sourceTree = "<group>"; };
+		8292E2224F82F71E13CD3F068C13B288 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		82FB6245F51828001BC477A770CE5562 /* Pods-TestPayZappStagingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestPayZappStagingTests-dummy.m"; sourceTree = "<group>"; };
+		8452EE1177BBA926C3F99EE74BA31E22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85E04D849AD2849DF52BFFA75FE09408 /* Pods-TestPayZappStaging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestPayZappStaging-dummy.m"; sourceTree = "<group>"; };
-		878303A163AEBDA0CD41775EE20282D1 /* Pods_TestPayZappStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8689626F0973F554181361F5A2434F8C /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		8D87006A2E016D9699400AAA8D87ED1E /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		8E328F6553E183BDDB83D8D0C16D6CA4 /* Pods-TestPayZappStagingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestPayZappStagingTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		916E7381849E747F40218F0F275FAAD8 /* NetworkObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkObserver.swift; path = Sources/ProcedureKit/NetworkObserver.swift; sourceTree = "<group>"; };
+		921AF07EF233C21471741F845605C199 /* NegatedCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NegatedCondition.swift; path = Sources/ProcedureKit/NegatedCondition.swift; sourceTree = "<group>"; };
 		92384EAA5F8710863F0DB22FDB2F357F /* Pods-TestPayZappStagingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStagingTests-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9462AB504C1A4618F7D246088C35B2E4 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		99F545EF33CE9B0C3F1E6C808F36E987 /* ProcedureKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcedureKit-prefix.pch"; sourceTree = "<group>"; };
+		9BA2A4C852BD6360631C962F64694E30 /* PendingEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PendingEvent.swift; path = Sources/ProcedureKit/PendingEvent.swift; sourceTree = "<group>"; };
+		9D346CE0DAFF5E116E4D19D0A009B86C /* Composed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Composed.swift; path = Sources/ProcedureKit/Composed.swift; sourceTree = "<group>"; };
+		A34E778DB8266EFDCE01BD52E5664E82 /* Retry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Retry.swift; path = Sources/ProcedureKit/Retry.swift; sourceTree = "<group>"; };
+		A6A51735BB06886C2142469016D23420 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		A6FFE189144C910DFB7CDD1FB03EA47F /* Pods-TestPayZappStagingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStagingTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF508DA7B32F80E838930E4C9CF283FA /* ProcedureKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ProcedureKit.modulemap; sourceTree = "<group>"; };
+		B258617592374F6FCAB16A8612F077A0 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		B34016B3739F71DD99681803BA793EEC /* BlockCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCondition.swift; path = Sources/ProcedureKit/BlockCondition.swift; sourceTree = "<group>"; };
+		B39C758AD9A64B17D81A72F2F3D57BD2 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		B7E19ECD446B1427A727450C1CE98C3A /* ProcedureResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureResult.swift; path = Sources/ProcedureKit/ProcedureResult.swift; sourceTree = "<group>"; };
+		B8775C315B75275D1AD4E80A2BBF0EE1 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Sources/ProcedureKit/Group.swift; sourceTree = "<group>"; };
 		B95ABA33C3535D86EFFC760A30D89044 /* Pods-TestPayZappStaging-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TestPayZappStaging-umbrella.h"; sourceTree = "<group>"; };
+		BA7146222D24D0DFCC8E59F7816AB3D3 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		BACF331F855CF1ECAFC882043402F9C7 /* MutualExclusion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutualExclusion.swift; path = Sources/ProcedureKit/MutualExclusion.swift; sourceTree = "<group>"; };
+		BC16081D7CB7CC25FE687B71A869DEBD /* Capability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Capability.swift; path = Sources/ProcedureKit/Capability.swift; sourceTree = "<group>"; };
+		BD6C6569795D7DA1EFBB4162F8FBCEF1 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/ProcedureKit/Filter.swift; sourceTree = "<group>"; };
+		C22494071E91D9957055EB061082FF0E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		C312E5633C3F6245F404B6B3A7443096 /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Sources/ProcedureKit/Logging.swift; sourceTree = "<group>"; };
+		C56B93F37813FA2A365A012B1ADD6B94 /* ProcedureKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProcedureKit-dummy.m"; sourceTree = "<group>"; };
 		C80516367B3CF5FC66CD860B139EAD71 /* Pods-TestPayZappStagingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestPayZappStagingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA37B998DE5483B4D83C0F8840D427BE /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		CAF66B3DF5A7A84586446B188F84A2C9 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		CBD4C9DFDDE8C350ECC5C8F8103720AC /* Pods-TestPayZappStaging-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestPayZappStaging-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCDFAE82A443DA26524994B8E71766B2 /* TimeoutObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeoutObserver.swift; path = Sources/ProcedureKit/TimeoutObserver.swift; sourceTree = "<group>"; };
+		D19B3024004F045B8E1F7D29832D2394 /* ProcedureEventQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureEventQueue.swift; path = Sources/ProcedureKit/ProcedureEventQueue.swift; sourceTree = "<group>"; };
+		D446167433CDEEA479FC802839AF539A /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		D643142EC880FEFAE20E78CD8FA89DB3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		D9D58307B15AB4FC1381DE8958DA4C67 /* Pods_TestPayZappStagingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStagingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB205D4D9EC355036B8F20C6DCDBE65B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		DF1592F31E14EC59EA297DF342A53446 /* DispatchQueue+ProcedureKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+ProcedureKit.swift"; path = "Sources/ProcedureKit/DispatchQueue+ProcedureKit.swift"; sourceTree = "<group>"; };
+		E1CF90482B58B0AEB7EAA98DAF8B230D /* Condition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = Sources/ProcedureKit/Condition.swift; sourceTree = "<group>"; };
+		E4EE0D6FFDE217D1F9A543DED38F15E5 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/ProcedureKit/Errors.swift; sourceTree = "<group>"; };
 		E58E4622332B2B938E76A60C328AB626 /* Pods-TestPayZappStaging-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestPayZappStaging-acknowledgements.plist"; sourceTree = "<group>"; };
 		E9D8BEE1F686EC7C4FC2C658A0ACB42F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED00E9359FCC77218108C8E0EA7870B1 /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = Sources/ProcedureKit/Reduce.swift; sourceTree = "<group>"; };
+		EE4E0AEF0FFC5E30DD3E8F893BC534DF /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		F335DD0D84B63B48B4C29B2C6E38E20F /* BlockObservers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockObservers.swift; path = Sources/ProcedureKit/BlockObservers.swift; sourceTree = "<group>"; };
+		F3A4D5035DFB4A509C6D488BFBA17A6B /* Collection+ProcedureKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+ProcedureKit.swift"; path = "Sources/ProcedureKit/Collection+ProcedureKit.swift"; sourceTree = "<group>"; };
+		F4FDA1EBAAC367ECB60B893CC74F63CD /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		F7F57CFC3817104086D64E35976F9FE1 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		FA22E686654D974D4E142302F4A25067 /* Pods-TestPayZappStaging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TestPayZappStaging.modulemap"; sourceTree = "<group>"; };
+		FD25DA9F84224D426BDEA655A598AD0D /* SilentCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentCondition.swift; path = Sources/ProcedureKit/SilentCondition.swift; sourceTree = "<group>"; };
 		FE6D8E3C5D6A598CB9DF45F293E2C3F6 /* Pods-TestPayZappStaging-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStaging-frameworks.sh"; sourceTree = "<group>"; };
+		FEB5C7C5655126B31B20555A1B0A663A /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		FF339CE577F149390952263204436510 /* WibmoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WibmoSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +210,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD17D81E8900E0315449C1720BF70DB8 /* Frameworks */ = {
+		9102C5872D86A8164CC90FC57A43A1BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D981881DCCB7A464B96F11ED1BB1FAF4 /* Foundation.framework in Frameworks */,
+				7142C1741A4B43ABB599DA4B9CF1A478 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA903FCFB4170C78CA28384900F3DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A00BA7EA2B403B3B8470E8E91421E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB903819F6B090C19CF3305B7B15F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBDB9BD131605C3936E6537CD5CC954 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D434E3F5FADDA5958A6554DBFB87C79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29A129DD76C476F29D35176A3CC46D27 /* Alamofire */,
+				EFC723FCA21FF350CCF7536062238F8B /* ProcedureKit */,
+				C8672AF9BA88EFA3D2DBF094BCF0F3E2 /* wibmo-sdk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		29A129DD76C476F29D35176A3CC46D27 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				CA37B998DE5483B4D83C0F8840D427BE /* AFError.swift */,
+				FEB5C7C5655126B31B20555A1B0A663A /* Alamofire.swift */,
+				D643142EC880FEFAE20E78CD8FA89DB3 /* DispatchQueue+Alamofire.swift */,
+				8D87006A2E016D9699400AAA8D87ED1E /* MultipartFormData.swift */,
+				CAF66B3DF5A7A84586446B188F84A2C9 /* NetworkReachabilityManager.swift */,
+				8292E2224F82F71E13CD3F068C13B288 /* Notifications.swift */,
+				8689626F0973F554181361F5A2434F8C /* ParameterEncoding.swift */,
+				4BC91F56C275637F29E335FE28B06902 /* Request.swift */,
+				9462AB504C1A4618F7D246088C35B2E4 /* Response.swift */,
+				B258617592374F6FCAB16A8612F077A0 /* ResponseSerialization.swift */,
+				DB205D4D9EC355036B8F20C6DCDBE65B /* Result.swift */,
+				4A26259B905B60F5930B3E8131C684BF /* ServerTrustPolicy.swift */,
+				F4FDA1EBAAC367ECB60B893CC74F63CD /* SessionDelegate.swift */,
+				6A7F77D691FBEC27DAA649D5A1E79C1A /* SessionManager.swift */,
+				0A4B1F693D7EEE9D065025F5E8DD3E42 /* TaskDelegate.swift */,
+				BA7146222D24D0DFCC8E59F7816AB3D3 /* Timeline.swift */,
+				EE4E0AEF0FFC5E30DD3E8F893BC534DF /* Validation.swift */,
+				57C3C73B2B5FD9B6E6789920ECB5AF7C /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
 		4E16AFCF641B93F945F60D433522DB81 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,47 +281,108 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		57C3C73B2B5FD9B6E6789920ECB5AF7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B39C758AD9A64B17D81A72F2F3D57BD2 /* Alamofire.modulemap */,
+				F7F57CFC3817104086D64E35976F9FE1 /* Alamofire.xcconfig */,
+				D446167433CDEEA479FC802839AF539A /* Alamofire-dummy.m */,
+				C22494071E91D9957055EB061082FF0E /* Alamofire-prefix.pch */,
+				A6A51735BB06886C2142469016D23420 /* Alamofire-umbrella.h */,
+				426C59BBDC419BD75F977CCC810F21C5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		5E441A3B4250E83C027B7200A5FB1148 /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				313BF51005FBD5E427DE6F92F71B6B49 /* Any.swift */,
+				2AD081A167C1E5AA1C65ACC2F58546FC /* AnyObserver.swift */,
+				20A5C58C1C42BFFB964FF1485D9173FB /* Block.swift */,
+				B34016B3739F71DD99681803BA793EEC /* BlockCondition.swift */,
+				F335DD0D84B63B48B4C29B2C6E38E20F /* BlockObservers.swift */,
+				BC16081D7CB7CC25FE687B71A869DEBD /* Capability.swift */,
+				F3A4D5035DFB4A509C6D488BFBA17A6B /* Collection+ProcedureKit.swift */,
+				9D346CE0DAFF5E116E4D19D0A009B86C /* Composed.swift */,
+				E1CF90482B58B0AEB7EAA98DAF8B230D /* Condition.swift */,
+				055073F77CE0F5A01BC52462A2CA1CB2 /* Delay.swift */,
+				DF1592F31E14EC59EA297DF342A53446 /* DispatchQueue+ProcedureKit.swift */,
+				E4EE0D6FFDE217D1F9A543DED38F15E5 /* Errors.swift */,
+				BD6C6569795D7DA1EFBB4162F8FBCEF1 /* Filter.swift */,
+				B8775C315B75275D1AD4E80A2BBF0EE1 /* Group.swift */,
+				6A1CB41330E5B858A1242ECCE68580D4 /* Identity.swift */,
+				C312E5633C3F6245F404B6B3A7443096 /* Logging.swift */,
+				0DA0DE0CF3B4FE27D0608FFC810A128C /* Map.swift */,
+				BACF331F855CF1ECAFC882043402F9C7 /* MutualExclusion.swift */,
+				921AF07EF233C21471741F845605C199 /* NegatedCondition.swift */,
+				916E7381849E747F40218F0F275FAAD8 /* NetworkObserver.swift */,
+				61DF8C40B8ADB6AEA8DF63BEABF3347C /* NoFailedDependenciesCondition.swift */,
+				4F37D58B8D58E32CC8A72A7AEDAD73DB /* Operation+ProcedureKit.swift */,
+				9BA2A4C852BD6360631C962F64694E30 /* PendingEvent.swift */,
+				51BF0D9C0B6D85F2BFDF0A4C1E34C94C /* Procedure.swift */,
+				D19B3024004F045B8E1F7D29832D2394 /* ProcedureEventQueue.swift */,
+				2F7E70994F27B6FDDA75265942131BFF /* ProcedureFuture.swift */,
+				6F7E072C50C3AE3C46AFA8CDF0B05E96 /* ProcedureObserver.swift */,
+				57F8512C88A3E3839265B2EF550D86C2 /* ProcedureProcotol.swift */,
+				12B10D70953B7F2D2B21E4AFB32D3F04 /* ProcedureQueue.swift */,
+				B7E19ECD446B1427A727450C1CE98C3A /* ProcedureResult.swift */,
+				254D5CAC0373A015D579CB6FCF468D8A /* Profiler.swift */,
+				2DA7F0C4F750FB2D229B635A47B9FF74 /* Reachability.swift */,
+				ED00E9359FCC77218108C8E0EA7870B1 /* Reduce.swift */,
+				62FBD0BC6CD0EF9A99B2FD7C42FD9C2C /* Repeat.swift */,
+				A34E778DB8266EFDCE01BD52E5664E82 /* Retry.swift */,
+				FD25DA9F84224D426BDEA655A598AD0D /* SilentCondition.swift */,
+				5B5DA47C2E31F2BA755C0FD208C3B847 /* Support.swift */,
+				CCDFAE82A443DA26524994B8E71766B2 /* TimeoutObserver.swift */,
+				6BF9C3A5E1E7BF029EE5FA581E0DC566 /* Transform.swift */,
+			);
+			name = Standard;
+			sourceTree = "<group>";
+		};
+		7007A2AA62E66EAEF39AF39E46DA2CE4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8452EE1177BBA926C3F99EE74BA31E22 /* Info.plist */,
+				AF508DA7B32F80E838930E4C9CF283FA /* ProcedureKit.modulemap */,
+				26158C8A5232687A65A1326570985B21 /* ProcedureKit.xcconfig */,
+				C56B93F37813FA2A365A012B1ADD6B94 /* ProcedureKit-dummy.m */,
+				99F545EF33CE9B0C3F1E6C808F36E987 /* ProcedureKit-prefix.pch */,
+				4B881C717CA0BE36FF0E6A300FCB3EC5 /* ProcedureKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProcedureKit";
+			sourceTree = "<group>";
+		};
+		726967F9670B02AA30C84352D2589E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5107DA8A6EF868FB2E554F41590ACEE2 /* Alamofire.framework */,
+				356EAC01F8E5BDD75B666D225BD2CC4E /* Pods_TestPayZappStaging.framework */,
+				D9D58307B15AB4FC1381DE8958DA4C67 /* Pods_TestPayZappStagingTests.framework */,
+				74E6F041FDD5DAE0BD357FADF693F514 /* ProcedureKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77AFB721A4D21635DE7CE14DF453E96D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF339CE577F149390952263204436510 /* WibmoSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				956157AA30A716E340A965F9A844BBBC /* Pods */,
-				A29FF710F2E711124187FA022AD02F93 /* Products */,
+				0D434E3F5FADDA5958A6554DBFB87C79 /* Pods */,
+				726967F9670B02AA30C84352D2589E2D /* Products */,
 				4E16AFCF641B93F945F60D433522DB81 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		956157AA30A716E340A965F9A844BBBC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A2B7AA1EF96BE6BFD2A03819322D4E59 /* wibmo-sdk */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9AA1FC332932766DA2ED082AE487B88B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A29FF710F2E711124187FA022AD02F93 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				878303A163AEBDA0CD41775EE20282D1 /* Pods_TestPayZappStaging.framework */,
-				04511AEAD01D19A43BD4E20F87F9ACA4 /* Pods_TestPayZappStagingTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A2B7AA1EF96BE6BFD2A03819322D4E59 /* wibmo-sdk */ = {
-			isa = PBXGroup;
-			children = (
-				9AA1FC332932766DA2ED082AE487B88B /* Frameworks */,
-			);
-			path = "wibmo-sdk";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -132,6 +391,14 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8672AF9BA88EFA3D2DBF094BCF0F3E2 /* wibmo-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				77AFB721A4D21635DE7CE14DF453E96D /* Frameworks */,
+			);
+			path = "wibmo-sdk";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -180,14 +447,31 @@
 			path = "Target Support Files/Pods-TestPayZappStaging";
 			sourceTree = "<group>";
 		};
+		EFC723FCA21FF350CCF7536062238F8B /* ProcedureKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E441A3B4250E83C027B7200A5FB1148 /* Standard */,
+				7007A2AA62E66EAEF39AF39E46DA2CE4 /* Support Files */,
+			);
+			path = ProcedureKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3AD870CE942FF5B33902999D12CCF33B /* Headers */ = {
+		022D7BE2F1E7FC0FCC3266A066BE1BF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16DA816AD25483E5674DFF8D19E4784C /* Pods-TestPayZappStaging-umbrella.h in Headers */,
+				58DBFBC7A6DC5B0F2EB55F1E2BFAECFD /* Pods-TestPayZappStaging-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB1941945CE373B04A6A53850587F86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5B74BAD7ECE6050EB6D92F3D511C06 /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +483,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF88D24FF3E5523082B214173C1413AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDE807DC55E6ECFF2A5E1E718BAA404 /* ProcedureKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		03F8EF34933B8254A7EA850B33A7D177 /* ProcedureKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C398AA60026072C4D84FFD51B286F1A /* Build configuration list for PBXNativeTarget "ProcedureKit" */;
+			buildPhases = (
+				C5A1E6C378111991D650EF1F7A1BE819 /* Sources */,
+				EBB903819F6B090C19CF3305B7B15F52 /* Frameworks */,
+				FF88D24FF3E5523082B214173C1413AA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProcedureKit;
+			productName = ProcedureKit;
+			productReference = 74E6F041FDD5DAE0BD357FADF693F514 /* ProcedureKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3973CD31FDA65994F2ED98AD3C2F3F35 /* Pods-TestPayZappStagingTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9634F37A7B65CA05C88C4078339F2C75 /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStagingTests" */;
@@ -217,24 +526,43 @@
 			);
 			name = "Pods-TestPayZappStagingTests";
 			productName = "Pods-TestPayZappStagingTests";
-			productReference = 04511AEAD01D19A43BD4E20F87F9ACA4 /* Pods_TestPayZappStagingTests.framework */;
+			productReference = D9D58307B15AB4FC1381DE8958DA4C67 /* Pods_TestPayZappStagingTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CEAF44BC8402AB80621D555693363FB1 /* Pods-TestPayZappStaging */ = {
+		66B239826EF1D39D2D6C594AC2DBFF77 /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 078CF21DE2A89EA0B91F08DAE5208094 /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStaging" */;
+			buildConfigurationList = 5AB2EC8B8D30C8AD7D31B6D1A3FD9887 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				316F6909B303487928E13A5F97F38F49 /* Sources */,
-				AD17D81E8900E0315449C1720BF70DB8 /* Frameworks */,
-				3AD870CE942FF5B33902999D12CCF33B /* Headers */,
+				9605FF6EE12EC8D3E56FA7E5BCCFC629 /* Sources */,
+				9102C5872D86A8164CC90FC57A43A1BF /* Frameworks */,
+				ADB1941945CE373B04A6A53850587F86 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5107DA8A6EF868FB2E554F41590ACEE2 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4DE382C7F59DBF7AAB96216173B71C3 /* Pods-TestPayZappStaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EADEC188B44816A456456270C89BE0E /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStaging" */;
+			buildPhases = (
+				9199256FBC1F721E0F7A388430A4EE0A /* Sources */,
+				BDA903FCFB4170C78CA28384900F3DE5 /* Frameworks */,
+				022D7BE2F1E7FC0FCC3266A066BE1BF7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70082AE6B160E9959D0FAD476C3DDAC6 /* PBXTargetDependency */,
+				D7370208D1332C24FD073B01D3FB9E5C /* PBXTargetDependency */,
+			);
 			name = "Pods-TestPayZappStaging";
 			productName = "Pods-TestPayZappStaging";
-			productReference = 878303A163AEBDA0CD41775EE20282D1 /* Pods_TestPayZappStaging.framework */;
+			productReference = 356EAC01F8E5BDD75B666D225BD2CC4E /* Pods_TestPayZappStaging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -254,25 +582,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A29FF710F2E711124187FA022AD02F93 /* Products */;
+			productRefGroup = 726967F9670B02AA30C84352D2589E2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEAF44BC8402AB80621D555693363FB1 /* Pods-TestPayZappStaging */,
+				66B239826EF1D39D2D6C594AC2DBFF77 /* Alamofire */,
+				F4DE382C7F59DBF7AAB96216173B71C3 /* Pods-TestPayZappStaging */,
 				3973CD31FDA65994F2ED98AD3C2F3F35 /* Pods-TestPayZappStagingTests */,
+				03F8EF34933B8254A7EA850B33A7D177 /* ProcedureKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		316F6909B303487928E13A5F97F38F49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				475351325887FF908E2FCC2777681234 /* Pods-TestPayZappStaging-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		85A373539FA0BB686AE326A195ED4881 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,52 +603,110 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9199256FBC1F721E0F7A388430A4EE0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7564AB46EB4E98A98B3D4C432B8B53 /* Pods-TestPayZappStaging-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9605FF6EE12EC8D3E56FA7E5BCCFC629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878D119CE42CAEF5D075C86FA7AFE811 /* AFError.swift in Sources */,
+				EB28F91A813006C6A0AEFBEBCC83F4A1 /* Alamofire-dummy.m in Sources */,
+				80780192D7C0B494FFC2535D1FA0D125 /* Alamofire.swift in Sources */,
+				E569F96F5213D71CEE1C7C68E6C0AA3F /* DispatchQueue+Alamofire.swift in Sources */,
+				B6C764468C663A970D471C7E7C3019CD /* MultipartFormData.swift in Sources */,
+				7E681C4AC299D0384CB13F6C4A76229D /* NetworkReachabilityManager.swift in Sources */,
+				D764DB34643A89D6F78E0596F36B6729 /* Notifications.swift in Sources */,
+				41FF55C561EDCF2AE2ECA9D4DEA1079E /* ParameterEncoding.swift in Sources */,
+				DC44A3398D515E173E59A2FE0BFC116A /* Request.swift in Sources */,
+				4D3E94F63DF0BFFD8BEA5EC64E16AA84 /* Response.swift in Sources */,
+				0A43F620B46AAA2E412429E125F6846C /* ResponseSerialization.swift in Sources */,
+				704D1BE2EBB28589DC235A5AA89A4138 /* Result.swift in Sources */,
+				66181556F53CAC472A6B2DC5D08D1338 /* ServerTrustPolicy.swift in Sources */,
+				D043F996640A9FC158FC0A3056F19B50 /* SessionDelegate.swift in Sources */,
+				F5CC827A3061B3ED006D22132BE32B58 /* SessionManager.swift in Sources */,
+				67CAC6E318FE93D35EC94E458A924815 /* TaskDelegate.swift in Sources */,
+				D23E55B08E70ABBF30E2F66D18CBDA79 /* Timeline.swift in Sources */,
+				D6AEC93D4D18C44A9121C1A068E47530 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A1E6C378111991D650EF1F7A1BE819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8727832D7613C3593E5B40E3D9D01A96 /* Any.swift in Sources */,
+				BAED48E7CCE38E48A06F789CBBBFA7B7 /* AnyObserver.swift in Sources */,
+				3E59780BD4967C3129A08ECDBEFC0CE5 /* Block.swift in Sources */,
+				53F89189EE19A27622E5DA210EBF5FB7 /* BlockCondition.swift in Sources */,
+				0B2499B107C2BEE476054649DA997723 /* BlockObservers.swift in Sources */,
+				143EBE055EE71A84DAC577ABE752108E /* Capability.swift in Sources */,
+				2314036426FA8AC0B5BB6B7604723B33 /* Collection+ProcedureKit.swift in Sources */,
+				5AD69A0F963CB85808F27C30586EA52A /* Composed.swift in Sources */,
+				1AE0473357E73296021E985117082D30 /* Condition.swift in Sources */,
+				F04295E769C209E767B2FBB7088D192F /* Delay.swift in Sources */,
+				E2B0C59423B9FA5D9AC142FAAF1E9DF6 /* DispatchQueue+ProcedureKit.swift in Sources */,
+				54900E5ED81580F7CC8C5B0B4C76486D /* Errors.swift in Sources */,
+				6C4E93A6CEF6DC84247288D0EBBBB5B8 /* Filter.swift in Sources */,
+				8B6A9491B268BF7A1C981BD8C5B64F10 /* Group.swift in Sources */,
+				F294E6EB000BA7BF1E40430513ED3ADE /* Identity.swift in Sources */,
+				3279DB64A8E996C0CCDF186651FD9120 /* Logging.swift in Sources */,
+				37EFAAB2B856D21C98AF04877FC33FB2 /* Map.swift in Sources */,
+				CDCECF4B50775ADC962A9A155A83E62B /* MutualExclusion.swift in Sources */,
+				0861368058D13766FCA6B19F74264EC8 /* NegatedCondition.swift in Sources */,
+				1BC06B51CEBC12CB7B3192BEDE74C88A /* NetworkObserver.swift in Sources */,
+				08CA45AB4F0E3EC9CB8BF7B42081E48C /* NoFailedDependenciesCondition.swift in Sources */,
+				3A4246D77DAC8E07393FB65DE584A004 /* Operation+ProcedureKit.swift in Sources */,
+				C18CF5FB5BFBA7526CABAD5D35D4E717 /* PendingEvent.swift in Sources */,
+				5F3E6864A780E6CDC8BA3AB409DD63BE /* Procedure.swift in Sources */,
+				67813E1A5C0174DFE28F83C650FD25F2 /* ProcedureEventQueue.swift in Sources */,
+				7FF7BBAC2AF0FFCE2B902888FA628BD9 /* ProcedureFuture.swift in Sources */,
+				4FAB030E3BAFE7CC8D8FB4B93B6E8A88 /* ProcedureKit-dummy.m in Sources */,
+				5739C007BCCF5CCA3551F7C5CCB73509 /* ProcedureObserver.swift in Sources */,
+				66F00FD68C0ED466AE980402A405A925 /* ProcedureProcotol.swift in Sources */,
+				DCD4194EA4EDB84916973FEEC5B20026 /* ProcedureQueue.swift in Sources */,
+				C081EFAA8A723802999D79F4A10A4CC7 /* ProcedureResult.swift in Sources */,
+				E618F64081BD0DDB35FA3EC3C53BD153 /* Profiler.swift in Sources */,
+				33D66B10A4618FA18B935B9D2F801678 /* Reachability.swift in Sources */,
+				1336548AB5D8A9FFCCBBE646FCC08E64 /* Reduce.swift in Sources */,
+				4C4352FD602883F25311922A96C48196 /* Repeat.swift in Sources */,
+				E37FF7B3AC8A47A265DE4B4838A5ED14 /* Retry.swift in Sources */,
+				4F62DD94A1554CB71EC36BACA74B8B41 /* SilentCondition.swift in Sources */,
+				F73F277C5E2AD67866E030A050A4E972 /* Support.swift in Sources */,
+				4C25C16BFDB9070D5FAED6251FAED1B7 /* TimeoutObserver.swift in Sources */,
+				0509FAA0DD9723AE7A6EA0AEA198A344 /* Transform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		70082AE6B160E9959D0FAD476C3DDAC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 66B239826EF1D39D2D6C594AC2DBFF77 /* Alamofire */;
+			targetProxy = 2A31B7A5600A19E74C878E523D9432E6 /* PBXContainerItemProxy */;
+		};
+		D7370208D1332C24FD073B01D3FB9E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProcedureKit;
+			target = 03F8EF34933B8254A7EA850B33A7D177 /* ProcedureKit */;
+			targetProxy = A72C67A9972FC6482377FE007038F93A /* PBXContainerItemProxy */;
+		};
 		D9B5B0A6A1ADB1654660B9BE1212B315 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TestPayZappStaging";
-			target = CEAF44BC8402AB80621D555693363FB1 /* Pods-TestPayZappStaging */;
+			target = F4DE382C7F59DBF7AAB96216173B71C3 /* Pods-TestPayZappStaging */;
 			targetProxy = E70B3E9F0E8204C46380410523E56474 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12BA589B005636ED2C436F791ACBA39E /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E6C7E6EA87CE4C0043FB55A9E5F5D57 /* Pods-TestPayZappStaging.distribution.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TestPayZappStaging/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Distribution;
-		};
 		196DEBEBB5D4F0C1DFAD01109A17FDF9 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 64EBDA5F533BB5B9B19AD1CDD2AEE0AC /* Pods-TestPayZappStagingTests.distribution.xcconfig */;
@@ -360,6 +740,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Distribution;
+		};
+		1EBD7C1780DB5AE13145D3B5AABC2947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F57CFC3817104086D64E35976F9FE1 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -420,15 +831,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		2086DE45FDEE0A1388C2F45E2E7B6C78 /* Debug */ = {
+		25D5B06FFB5758F02787F506F33DC993 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21DF06D9DDCD60FBD78328A62C393780 /* Pods-TestPayZappStaging.debug.xcconfig */;
+			baseConfigurationReference = F7F57CFC3817104086D64E35976F9FE1 /* Alamofire.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -438,24 +849,56 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TestPayZappStaging/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		26CBD7017177A44D75FC059184E6840C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26158C8A5232687A65A1326570985B21 /* ProcedureKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProcedureKit/ProcedureKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcedureKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProcedureKit/ProcedureKit.modulemap";
+				PRODUCT_MODULE_NAME = ProcedureKit;
+				PRODUCT_NAME = ProcedureKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Distribution;
 		};
 		394B7EF43E27E54E8E85207A059CF3D1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -477,40 +920,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TestPayZappStagingTests/Pods-TestPayZappStagingTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3D084410A6D29A896C8D1EA412D87B6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C012735360A5580AE11B15B279957BA /* Pods-TestPayZappStaging.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TestPayZappStaging/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -552,6 +961,136 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56CD4B7E9A2E6B5293853EBF438E54FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DF06D9DDCD60FBD78328A62C393780 /* Pods-TestPayZappStaging.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestPayZappStaging/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A7BA591646E70C7D7BC7D8BE1ED09DA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F57CFC3817104086D64E35976F9FE1 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Distribution;
+		};
+		9884F86C0777961D72938DEDA6C4F626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26158C8A5232687A65A1326570985B21 /* ProcedureKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProcedureKit/ProcedureKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcedureKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProcedureKit/ProcedureKit.modulemap";
+				PRODUCT_MODULE_NAME = ProcedureKit;
+				PRODUCT_NAME = ProcedureKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3E624E1A33CC620F5110C59031C50F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26158C8A5232687A65A1326570985B21 /* ProcedureKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProcedureKit/ProcedureKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcedureKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProcedureKit/ProcedureKit.modulemap";
+				PRODUCT_MODULE_NAME = ProcedureKit;
+				PRODUCT_NAME = ProcedureKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -612,9 +1151,80 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Distribution;
+		};
+		CA00007ECC7D67320C4E5467EC23E17B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6C7E6EA87CE4C0043FB55A9E5F5D57 /* Pods-TestPayZappStaging.distribution.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestPayZappStaging/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Distribution;
+		};
+		CE2AA583408A69ECB4782235CB7EEB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C012735360A5580AE11B15B279957BA /* Pods-TestPayZappStaging.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestPayZappStaging/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -670,6 +1280,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -677,12 +1288,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		078CF21DE2A89EA0B91F08DAE5208094 /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStaging" */ = {
+		1C398AA60026072C4D84FFD51B286F1A /* Build configuration list for PBXNativeTarget "ProcedureKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2086DE45FDEE0A1388C2F45E2E7B6C78 /* Debug */,
-				12BA589B005636ED2C436F791ACBA39E /* Distribution */,
-				3D084410A6D29A896C8D1EA412D87B6D /* Release */,
+				B3E624E1A33CC620F5110C59031C50F3 /* Debug */,
+				26CBD7017177A44D75FC059184E6840C /* Distribution */,
+				9884F86C0777961D72938DEDA6C4F626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EADEC188B44816A456456270C89BE0E /* Build configuration list for PBXNativeTarget "Pods-TestPayZappStaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CD4B7E9A2E6B5293853EBF438E54FD /* Debug */,
+				CA00007ECC7D67320C4E5467EC23E17B /* Distribution */,
+				CE2AA583408A69ECB4782235CB7EEB3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -693,6 +1314,16 @@
 				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
 				C816922BA164345CF763AB710DDEFF01 /* Distribution */,
 				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB2EC8B8D30C8AD7D31B6D1A3FD9887 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EBD7C1780DB5AE13145D3B5AABC2947 /* Debug */,
+				6A7BA591646E70C7D7BC7D8BE1ED09DA /* Distribution */,
+				25D5B06FFB5758F02787F506F33DC993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

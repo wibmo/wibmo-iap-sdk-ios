@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A pod for merchants to make iap transactions at there end.'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 This pod is especially created for merchatns to do the iap transactions.
-Merchant can use various iap configurations for allowing only wallet, only cards etc for iap transactions. 
+Merchant can use various iap configurations for allowing only wallet, only cards etc for iap transactions.
 An Example app is available for viewing the usage for the pod.
                        DESC
 
@@ -33,6 +33,6 @@ An Example app is available for viewing the usage for the pod.
 
   s.ios.deployment_target = '8.0'
   s.vendored_frameworks = 'WibmoSDK.framework'
-  s.dependency 'Alamofire'  
-  s.dependency 'ProcedureKit'
+  s.dependency 'Alamofire', '~> 4.7.2'
+  s.dependency 'ProcedureKit/All', '~> 4.5.0'
 end
