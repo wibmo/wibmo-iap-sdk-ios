@@ -16,6 +16,8 @@
 #import "WSMerchantInfo.h"
 #import "WSTransactionInfo.h"
 #import "WSUrlInfo.h"
+#import "WSCardInfo.h"
+
 
 FOUNDATION_EXPORT double WibmoSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char WibmoSDKVersionString[];

@@ -15,6 +15,7 @@
 #import "WSMerchantInfo.h"
 #import "WSUrlInfo.h"
 #import "WSConstant.h"
+#import "WSCardInfo.h"
 
 #define PROCESS_INAPP_PAYMENT   @"PROCESS_INAPP_PAYMENT"
 #define CALL_INAPP_PAYMENT      @"CALL_INAPP_PAYMENT"
@@ -27,9 +28,13 @@
 @property (nonatomic, retain) WSTransactionInfo *transactionInfo;
 @property (nonatomic, retain) WSCustomerInfo *customerInfo;
 @property (nonatomic, retain) WSMerchantInfo *merchantInfo;
+@property (nonatomic, retain) WSCardInfo *cardInfo;
 @property (nonatomic, retain) WSUrlInfo *urlInfo;
 @property (nonatomic, retain) NSDictionary *deviceinfoDictionary;
 @property (nonatomic, retain) NSDictionary *urlInfoDictionary;
+@property (nonatomic, assign) BOOL isBillingAddress;
+@property (nonatomic, assign) BOOL isShippingAddress;
+@property (nonatomic, assign) BOOL isCollectEmail;
 
 @property (nonatomic, retain) id<WibmoSDKDelegate> delegate;
 

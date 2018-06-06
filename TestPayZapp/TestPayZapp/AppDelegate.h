@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  TestPayZapp
 //
-//  Created by WIBMO on 20/08/15.
-//  Copyright (c) 2015 WIBMO. All rights reserved.
+//  Created by Roshit Omanakuttan on 20/08/15.
+//  Copyright (c) 2015 Wow Labz. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

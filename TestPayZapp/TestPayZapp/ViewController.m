@@ -11,7 +11,7 @@
 #import <WibmoSDK/WibmoSDK.h>
 #import <WibmoSDK/WSConstant.h>
 #import <WibmoSDK/WSUrlInfo.h>
-#import <SBJson/SBJson5.h>
+//#import "NSObject+SBJson.h"
 
 #define SCREEN_WIDTH            [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT           [UIScreen mainScreen].bounds.size.height
@@ -54,7 +54,6 @@
 @property (nonatomic, retain) NSString *aPaymentTypeNone;
 @property (nonatomic, retain) NSDictionary *aPaymentDetails;
 @property (nonatomic, retain) NSString *anAmountValue;
-@property (nonatomic, retain) NSString *aSupportedPayment;
 
 @end
 
@@ -82,15 +81,13 @@
     [aTitleLabel setText:aTitle];
     
     
-    self.aMobileNumber.text = @"1122334567";
+    self.aMobileNumber.text = @"1122334466";
     self.anAmount.text = @"100";
     self.anAmountValue = @"100";
     [self.anAmountKnown setTitle:@"true" forState:UIControlStateNormal];
     [self.aChargeLater setTitle:@"true" forState:UIControlStateNormal];
     [self.aStatusCheck setTitle:@"false" forState:UIControlStateNormal];
-    self.aSupportedPayment = PAYMENT_TYPE_ALL;
-    [self.aPaymentType setTitle:@"ALL" forState:UIControlStateNormal];
-};
+}
 
 
 - (void)viewDidAppear:(BOOL)iAnimated {
@@ -111,8 +108,7 @@
     NSDictionary* aJSONValue = [NSJSONSerialization JSONObjectWithData:self.responseData options:kNilOptions error:&anError];
     if (aJSONValue) {
         if (self.aCheckStatus.tag == 444) {
-            SBJson5Writer *writer = [SBJson5Writer new];
-            NSString *aMessage = [writer stringWithObject:aJSONValue];
+            NSString *aMessage = nil;//[aJSONValue JSONRepresentation];
             [[[UIAlertView alloc] initWithTitle:@"Response" message:aMessage delegate:nil
                               cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         } else {
@@ -160,7 +156,7 @@
                 self.anAmountValue = aValue;
                 [self callCheckStatus];
                 //} else {
-                    
+                
                 //}
             }
         }
@@ -186,7 +182,7 @@
 - (IBAction)amountKnown:(UIButton *)iSender {
     self.anAmountKnown.tag = 111;
     self.aChargeLater.tag = 2222;
-    self.aStatusCheck.tag = 3333;self.aPaymentType.tag = 4444;
+    self.aStatusCheck.tag = 3333;
     NSLog(@"%@",iSender.currentTitle);
     UIActionSheet *anActionSheet = [[UIActionSheet alloc] initWithTitle:@"AmountKnown" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil];
     [anActionSheet addButtonWithTitle:@"true"];
@@ -199,7 +195,6 @@
     self.anAmountKnown.tag = 1111;
     self.aChargeLater.tag = 222;
     self.aStatusCheck.tag = 3333;
-    self.aPaymentType.tag = 4444;
     NSLog(@"%@",iSender.currentTitle);
     UIActionSheet *anActionSheet = [[UIActionSheet alloc] initWithTitle:@"ChargeLater" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil];
     [anActionSheet addButtonWithTitle:@"true"];
@@ -211,7 +206,6 @@
     self.anAmountKnown.tag = 1111;
     self.aChargeLater.tag = 2222;
     self.aStatusCheck.tag = 333;
-    self.aPaymentType.tag = 4444;
     NSLog(@"%@",iSender.currentTitle);
     UIActionSheet *anActionSheet = [[UIActionSheet alloc] initWithTitle:@"StatusCheck" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil];
     [anActionSheet addButtonWithTitle:@"true"];
@@ -245,20 +239,6 @@
         [[[UIAlertView alloc] initWithTitle:@"Alert" message:aMessage delegate:nil
                           cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
     }
-}
-
-- (IBAction)paymentType:(UIButton *)iSender {
-    self.anAmountKnown.tag = 1111;
-    self.aChargeLater.tag = 2222;
-    self.aStatusCheck.tag = 3333;
-    self.aPaymentType.tag = 444;
-    NSLog(@"%@",iSender.currentTitle);
-    UIActionSheet *anActionSheet = [[UIActionSheet alloc] initWithTitle:@"Payment" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil];
-    [anActionSheet addButtonWithTitle:@"ALL"];
-    [anActionSheet addButtonWithTitle:@"Visa"];
-    [anActionSheet addButtonWithTitle:@"Master"];
-    [anActionSheet addButtonWithTitle:@"Both"];
-    [anActionSheet showInView:self.view];
 }
 
 
@@ -343,11 +323,12 @@
     aTransactionInfo.messageHash = self.messageHash;
     aTransactionInfo.merchantTransactionId = self.merchantTransactionID;
     aTransactionInfo.transactionDate = self.merchantTxndate;
+    aTransactionInfo.merchantData = @"merData";
     
     WSCustomerInfo *aCustomerInfo = [[WSCustomerInfo alloc] init];
     aCustomerInfo.customerEmail = @"someone@enstage.com";
     aCustomerInfo.customerMobile = self.aMobileNumber.text;
-    aCustomerInfo.customerName = @"Wibmo";
+    aCustomerInfo.customerName = @"Preetham Hegde";
     aCustomerInfo.customerDateOfBirth = @"20010101";
     
     WSUrlInfo *aUralInfo = [[WSUrlInfo alloc] init];
@@ -365,12 +346,12 @@
         [aWibmoSDK setDelegate:self];
         
         if (self.isWPayEnabled) {
-            aTransactionInfo.supportedPaymentType = @[self.aSupportedPayment];
-            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_NONE];
+            aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
+            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_ALL];
             [aWibmoSDK initializePayment];
         } else {
-            aTransactionInfo.supportedPaymentType = @[self.aSupportedPayment];
-            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_NONE];
+            aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
+            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_ALL];
             [aWibmoSDK initializeW2FAPayment];
         }
     }];
@@ -388,21 +369,6 @@
             [self.aChargeLater setTitle:anActionSheetValue forState:UIControlStateNormal];
         } else if (self.aStatusCheck.tag == 333) {
             [self.aStatusCheck setTitle:anActionSheetValue forState:UIControlStateNormal];
-        } else if (self.aPaymentType.tag == 444) {
-            if ([anActionSheetValue isEqualToString:@"ALL"]) {
-                self.aSupportedPayment = PAYMENT_TYPE_ALL;
-                [self.aPaymentType setTitle:@"ALL" forState:UIControlStateNormal];
-            } else if ([anActionSheetValue isEqualToString:@"Visa"]) {
-                self.aSupportedPayment = PAYMENT_TYPE_VISA;
-                [self.aPaymentType setTitle:@"Visa" forState:UIControlStateNormal];
-            } else if ([anActionSheetValue isEqualToString:@"Master"]) {
-                self.aSupportedPayment = PAYMENT_TYPE_MASTERCARD;
-                [self.aPaymentType setTitle:@"Master" forState:UIControlStateNormal];
-            } else if ([anActionSheetValue isEqualToString:@"Both"]) {
-                self.aSupportedPayment = [NSString stringWithFormat:@"%@,%@",PAYMENT_TYPE_VISA,PAYMENT_TYPE_MASTERCARD];
-                [self.aPaymentType setTitle:anActionSheetValue forState:UIControlStateNormal];
-            }
-            
         }
     }
 }
@@ -414,6 +380,9 @@
     self.aPaymentDetails = iTransaction;
     [self.navigationController dismissViewControllerAnimated:YES completion:^{
         NSString *aMessage = [NSString stringWithFormat:@"Your payment was made successfully.\n\nTransaction ID: %@", aTransactionID];
+        if ([aTransactionID isKindOfClass:[NSNull class]]) {
+            aMessage = [NSString stringWithFormat:@"Your payment was made successfully."];
+        }
         if ([iTransaction valueForKey:@"dataPickUpCode"]) {
             aMessage = [aMessage stringByAppendingFormat:@"\n\nPickUp Code: %@", [iTransaction valueForKey:@"dataPickUpCode"]];
         }

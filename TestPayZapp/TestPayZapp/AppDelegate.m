@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  TestPayZapp
 //
-//  Created by WIBMO on 20/08/15.
-//  Copyright (c) 2015 WIBMO. All rights reserved.
+//  Created by Roshit Omanakuttan on 20/08/15.
+//  Copyright (c) 2015 Wow Labz. All rights reserved.
 //
 
 
@@ -54,10 +54,16 @@
     if (iURL && [[iURL scheme] isEqualToString:@"pz81516121"]) {
         [[NSNotificationCenter defaultCenter] postNotificationName:PROCESS_INAPP_PAYMENT object:[iURL absoluteString]];
     }
-    
     return YES;
 }
 
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)iURL {
+    if (iURL && [[iURL scheme] isEqualToString:@"pz81516121"]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:PROCESS_INAPP_PAYMENT object:[iURL absoluteString]];
+    }
+    return YES;
+}
 
 #pragma mark - Core Data stack
 
