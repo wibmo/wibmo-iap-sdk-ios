@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'A pod for merchants to make iap transactions at there end.'
 
 # This description is used to generate tags and improve search results.
@@ -33,6 +33,5 @@ An Example app is available for viewing the usage for the pod.
 
   s.ios.deployment_target = '8.0'
   s.vendored_frameworks = 'WibmoSDK.framework'
-  s.dependency 'Alamofire', '~> 4.7.2'
-  s.dependency 'ProcedureKit/All', '~> 4.5.0'
+  s.dependency 'wibmo-analytics', '~> 0.2.8'
 end
