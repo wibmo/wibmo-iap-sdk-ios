@@ -11,6 +11,7 @@
 #endif
 
 #import "WibmoSDK.h"
+#import "WSCardInfo.h"
 #import "WSConstant.h"
 #import "WSCustomerInfo.h"
 #import "WSMerchantInfo.h"
