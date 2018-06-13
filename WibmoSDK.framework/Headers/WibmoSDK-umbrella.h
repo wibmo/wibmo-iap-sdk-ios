@@ -12,11 +12,11 @@
 
 #import "WibmoSDK.h"
 #import "WSCardInfo.h"
-#import "WSConstant.h"
 #import "WSCustomerInfo.h"
 #import "WSMerchantInfo.h"
 #import "WSTransactionInfo.h"
 #import "WSUrlInfo.h"
+#import "WSConstant.h"
 
 FOUNDATION_EXPORT double WibmoSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char WibmoSDKVersionString[];

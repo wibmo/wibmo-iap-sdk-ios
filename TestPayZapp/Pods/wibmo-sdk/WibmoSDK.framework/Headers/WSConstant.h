@@ -16,7 +16,7 @@
 #define  TXN_AMOUNT_KNOWN               @"true";
 #define  CHARGE_LATER                   @"false";
 
-#define  RESTAPI_BASE_URL               @"https://api.pc.enstage-sas.com"     //Rest Staging
+#define  RESTAPI_BASE_URL               @"https://api2.pc.enstage-sas.com"     //Rest Staging
 //#define RESTAPI_BASE_URL                @"https://api.pcdev.enstage-sas.com"     //Rest Dev
 #define  PRODUCTION_URL                 @"https://api.wibmo.com"               // Production
 
