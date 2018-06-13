@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '1.0.6'
+  s.version          = '1.0.8'
   s.summary          = 'A pod for merchants to make iap transactions at there end.'
 
 # This description is used to generate tags and improve search results.
