@@ -11,11 +11,11 @@ PODS:
   - ProcedureKit/Network (4.5.0):
     - ProcedureKit/Standard
   - ProcedureKit/Standard (4.5.0)
-  - wibmo-analytics (0.2.8):
+  - wibmo-analytics (1.0.3):
     - Alamofire (~> 4.7.2)
     - ProcedureKit/All (~> 4.5.0)
-  - wibmo-sdk (1.0.6):
-    - wibmo-analytics (~> 0.2.8)
+  - wibmo-sdk (1.0.9):
+    - wibmo-analytics (~> 1.0.3)
 
 DEPENDENCIES:
   - wibmo-sdk (~> 1.0.5)
@@ -30,8 +30,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   ProcedureKit: 023e4600e921fe0b8d94f2d19ed680df83aa28ba
-  wibmo-analytics: 1dadef1fb61c545b159a882cb38ae2e04d044c3b
-  wibmo-sdk: b22f2acff3477227359138f354fa42023788ec76
+  wibmo-analytics: c1058fd7cb553a43a11009326c07ec0c1f349878
+  wibmo-sdk: 7e4f5924e60dab3f91576aa3a1cf6e914b22a3ce
 
 PODFILE CHECKSUM: cb2de9ae61eb1671dea555bee24bbad635084a27
 

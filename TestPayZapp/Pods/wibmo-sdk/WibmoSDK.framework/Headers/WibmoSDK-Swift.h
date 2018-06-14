@@ -172,8 +172,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
-@import ObjectiveC;
 @import CoreData;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -184,149 +184,32 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wunknown-pragmas"
 #pragma clang diagnostic ignored "-Wnullability"
 
-SWIFT_MODULE_NAMESPACE_PUSH("WibmoAnalytics")
-@class NSNumber;
-@class MerchantInfo;
-@class CustomerInfo;
-
-/// Analytics-Event struct to be used send data to analytics server, product-name and event-name are mandatory, event-transaction-id and date-time is auto generated, status and intermediate are false initially, all other attributes are optional
-/// Attributes user can set are:
-/// eventName
-/// amount
-/// currency
-/// status
-/// intermediate
-/// extraKey1
-/// extraKey2
-/// extraKey3
-/// extraKey4
-/// extraKey5
-/// extraKv
-/// comments
-/// merchantInfo
-/// customerInfo
-/// funnelId
-/// funnelStepId
-SWIFT_CLASS("_TtC14WibmoAnalytics14AnalyticsEvent")
-@interface AnalyticsEvent : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull eventName;
-@property (nonatomic, copy) NSString * _Nullable panBin;
-@property (nonatomic, copy) NSString * _Nullable panSha256;
-@property (nonatomic, strong) NSNumber * _Nullable amount;
-@property (nonatomic, copy) NSString * _Null_unspecified currency;
-@property (nonatomic) BOOL status;
-@property (nonatomic) BOOL intermediate;
-@property (nonatomic, copy) NSString * _Null_unspecified extraKey1;
-@property (nonatomic, copy) NSString * _Null_unspecified extraKey2;
-@property (nonatomic, copy) NSString * _Null_unspecified extraKey3;
-@property (nonatomic, copy) NSString * _Null_unspecified extraKey4;
-@property (nonatomic, copy) NSString * _Null_unspecified extraKey5;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Null_unspecified extraKv;
-@property (nonatomic, copy) NSString * _Null_unspecified comments;
-@property (nonatomic, strong) MerchantInfo * _Nullable merchantInfo;
-@property (nonatomic, strong) CustomerInfo * _Nullable customerInfo;
-@property (nonatomic, copy) NSString * _Null_unspecified funnelId;
-@property (nonatomic, strong) NSNumber * _Nullable funnelStepId;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-@end
-
-
-/// CustomerInfo struct to capture customer information, Attributes avaialable are
-/// customerId
-/// customerName
-/// customerEmail
-/// customerMobile
-SWIFT_CLASS("_TtC14WibmoAnalytics12CustomerInfo")
-@interface CustomerInfo : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified customerId;
-@property (nonatomic, copy) NSString * _Null_unspecified customerName;
-@property (nonatomic, copy) NSString * _Null_unspecified customerEmail;
-@property (nonatomic, copy) NSString * _Null_unspecified customerMobile;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-/// MerchanIfo struct to capture Merchant Info, Attributes availablea are,
-/// merchantName
-/// merchantId
-/// merchantBankId
-/// terminalId
-/// mcc
-/// merchantCity
-/// merchantZipCode
-/// merchantState
-/// merchantCountry
-SWIFT_CLASS("_TtC14WibmoAnalytics12MerchantInfo")
-@interface MerchantInfo : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified merchantName;
-@property (nonatomic, copy) NSString * _Null_unspecified merchantId;
-@property (nonatomic, copy) NSString * _Null_unspecified merchantBankId;
-@property (nonatomic, copy) NSString * _Null_unspecified terminalId;
-@property (nonatomic, copy) NSString * _Null_unspecified mcc;
-@property (nonatomic, copy) NSString * _Null_unspecified merchantCity;
-@property (nonatomic, copy) NSString * _Null_unspecified merchantZipCode;
-@property (nonatomic, copy) NSString * _Null_unspecified merchantState;
-@property (nonatomic, copy) NSString * _Null_unspecified merchantCountry;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
+SWIFT_MODULE_NAMESPACE_PUSH("WibmoSDK")
 
 
 @class NSEntityDescription;
 
-SWIFT_CLASS_NAMED("WAEvent")
-@interface WAEvent : NSManagedObject
+SWIFT_CLASS_NAMED("SdkConfiguration")
+@interface SdkConfiguration : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSData;
-@class NSDate;
 
-@interface WAEvent (SWIFT_EXTENSION(WibmoAnalytics))
-@property (nonatomic, strong) NSData * _Nullable eventData;
-@property (nonatomic, copy) NSString * _Nullable eventId;
-@property (nonatomic, strong) NSDate * _Nullable timeStamp;
+@interface SdkConfiguration (SWIFT_EXTENSION(WibmoSDK))
+@property (nonatomic, copy) NSString * _Nullable apiKey;
+@property (nonatomic, copy) NSString * _Nullable apiUser;
+@property (nonatomic, copy) NSString * _Nullable productName;
 @end
 
 
-/// Public Interface class for WibmoAnalytics sdk, every project integrating with <code>WibmoAnalytics</code> sdk should first initialise this class by invoking
-/// <code>WibmoAnalytics.setupAnalytics(productName:"",apiKey:"",apiUser:"", appVersion: 1)</code>
-/// This class provides two public methods for creating and pushing events which should be accessed through
-/// WibmoAnalytics.manager property.
-/// New events can be created using
-/// createNewEvent:
-/// Events can be pushed by invoking
-/// pushEvent:
-SWIFT_CLASS("_TtC14WibmoAnalytics14WibmoAnalytics")
-@interface WibmoAnalytics : NSObject
-/// Property to access public methods of sdk
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WibmoAnalytics * _Nullable manager;)
-+ (WibmoAnalytics * _Nullable)manager SWIFT_WARN_UNUSED_RESULT;
-/// Invoke this method to initialise Analytics sdk before creating/pushing events
-/// <em>Warning</em>
-/// This method should be invoked only once with same product name else it will result in crash
-/// Directly accessing public methods without first invoking this method will lead to inappropriate behaviour
-/// \param productName productName against which the events should be logged on analytics server
-///
-/// \param apiKey apiKey
-///
-/// \param apiUser apiUser
-///
-/// \param appVersion appVersion
-///
-+ (void)setupAnalyticsWithProductName:(NSString * _Nullable)productName programName:(NSString * _Nullable)programName bankId:(NSString * _Nullable)bankId apiKey:(NSString * _Nullable)apiKey apiUser:(NSString * _Nullable)apiUser;
-/// Creates a new instance of AnalyticsEvent struct with productName, eventName and appInfo prepopulated
-/// \param eventName Unique name identifiying the event
-///
-///
-/// returns:
-/// instance of AnalyticsEvent struct
-- (AnalyticsEvent * _Nullable)createNewEventWithEventName:(NSString * _Nonnull)eventName SWIFT_WARN_UNUSED_RESULT;
-/// Stores the event into local-store, later pushes to analytics server
-/// \param event event struct obtained from createNewEvent method, which has additional fields populated as required
-///
-- (void)pushEventWithEvent:(AnalyticsEvent * _Nullable)event;
+/// This class is responsible for managing saving/deleting events in coredata backed with sqlite store and push events to server
+SWIFT_CLASS("_TtC8WibmoSDK19WibmoSDKDataManager")
+@interface WibmoSDKDataManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WibmoSDKDataManager * _Nonnull manager;)
++ (WibmoSDKDataManager * _Nonnull)manager SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
+- (void)updateWithApiKey:(NSString * _Nullable)apiKey apiUser:(NSString * _Nullable)apiUser productName:(NSString * _Nullable)productName;
+- (SdkConfiguration * _Nullable)getData SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_MODULE_NAMESPACE_POP

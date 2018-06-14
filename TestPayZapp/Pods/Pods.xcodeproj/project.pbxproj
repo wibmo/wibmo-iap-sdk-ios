@@ -170,7 +170,7 @@
 		2D69E8B32109D803D86317BDAB44E71B /* Condition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Condition.swift; path = Sources/ProcedureKit/Condition.swift; sourceTree = "<group>"; };
 		33D9478341B130EBFF3F98B9C099B11A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3478A2E36CAC02A68D3C3871E162783D /* Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delay.swift; path = Sources/ProcedureKit/Delay.swift; sourceTree = "<group>"; };
-		356EAC01F8E5BDD75B666D225BD2CC4E /* Pods_TestPayZappStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TestPayZappStaging.framework; path = "Pods-TestPayZappStaging.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		356EAC01F8E5BDD75B666D225BD2CC4E /* Pods_TestPayZappStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3862946796816BC6AB615A91053DB878 /* CKModifyRecordZonesOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CKModifyRecordZonesOperation.swift; path = Sources/ProcedureKitCloud/CKModifyRecordZonesOperation.swift; sourceTree = "<group>"; };
 		39A88428C04EAD16E5F7533A370B8D6B /* CKAcceptSharesOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CKAcceptSharesOperation.swift; path = Sources/ProcedureKitCloud/CKAcceptSharesOperation.swift; sourceTree = "<group>"; };
 		3A945A531549478C3DE515C6EE33583E /* Pods-TestPayZappStagingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPayZappStagingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		4874EAE57CEF4382CFD83424B4A6B23F /* ProcedureKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcedureKit-prefix.pch"; sourceTree = "<group>"; };
 		4E8D46B6DF4577E229BDBB014EA5F0E0 /* NetworkData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkData.swift; path = Sources/ProcedureKitNetwork/NetworkData.swift; sourceTree = "<group>"; };
 		50AF8D58927AEC0AE48DF3503B690A22 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		5107DA8A6EF868FB2E554F41590ACEE2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5107DA8A6EF868FB2E554F41590ACEE2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		517A2B909CAEEA2FADBBEB7EA557A89C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		51C2B11A932AF9428D0D6678CF2709C5 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		51C4067FE906DE9EFFE13E44A265CC88 /* ProcedureResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureResult.swift; path = Sources/ProcedureKit/ProcedureResult.swift; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 		6C42032FC7F15140DE96CB1CD698B67C /* WibmoAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WibmoAnalytics.framework; sourceTree = "<group>"; };
 		6D143C4F84703F6ABFC3A0F964FA8167 /* CKDiscoverUserIdentitiesOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CKDiscoverUserIdentitiesOperation.swift; path = Sources/ProcedureKitCloud/CKDiscoverUserIdentitiesOperation.swift; sourceTree = "<group>"; };
 		7147FD5FA1F1F0048D2EB5C25B5B468C /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/ProcedureKit/Any.swift; sourceTree = "<group>"; };
-		74E6F041FDD5DAE0BD357FADF693F514 /* ProcedureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProcedureKit.framework; path = ProcedureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E6F041FDD5DAE0BD357FADF693F514 /* ProcedureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProcedureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		771B24CD0626A4D2C569E9CF58F5B728 /* LocationSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationSupport.swift; path = Sources/ProcedureKitLocation/LocationSupport.swift; sourceTree = "<group>"; };
 		7728C0B3E3E73FD055220AB74E296BAE /* AnyObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyObserver.swift; path = Sources/ProcedureKit/AnyObserver.swift; sourceTree = "<group>"; };
 		774955FAA532986EBB8B376A32E06C67 /* Profiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profiler.swift; path = Sources/ProcedureKit/Profiler.swift; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 		8EA90B2778845A5B9A97AF77F2C7266C /* CKModifyRecordsOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CKModifyRecordsOperation.swift; path = Sources/ProcedureKitCloud/CKModifyRecordsOperation.swift; sourceTree = "<group>"; };
 		91503FB8971FADBBFD6CB43924BBCE52 /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = Sources/ProcedureKit/Reduce.swift; sourceTree = "<group>"; };
 		92384EAA5F8710863F0DB22FDB2F357F /* Pods-TestPayZappStagingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPayZappStagingTests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94CDE9ED48C48FDF7E5F61FA2232787D /* CKModifySubscriptionsOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CKModifySubscriptionsOperation.swift; path = Sources/ProcedureKitCloud/CKModifySubscriptionsOperation.swift; sourceTree = "<group>"; };
 		98E24823BFA5AA709606FCC0260E27E9 /* LocationCapability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationCapability.swift; path = Sources/ProcedureKitLocation/LocationCapability.swift; sourceTree = "<group>"; };
 		9C8FAADA05966C03D4DE5AC0CF4FA70C /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/ProcedureKit/Filter.swift; sourceTree = "<group>"; };
@@ -254,7 +254,7 @@
 		D4B19698D23C2DEFA6DB3ED304A02173 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		D846A7AAB36439E096250970E3AB6631 /* Composed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Composed.swift; path = Sources/ProcedureKit/Composed.swift; sourceTree = "<group>"; };
 		D8603F05140F903DCE8779DC16F43C80 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/ProcedureKit/Reachability.swift; sourceTree = "<group>"; };
-		D9D58307B15AB4FC1381DE8958DA4C67 /* Pods_TestPayZappStagingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TestPayZappStagingTests.framework; path = "Pods-TestPayZappStagingTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D58307B15AB4FC1381DE8958DA4C67 /* Pods_TestPayZappStagingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStagingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC09A5B13D79FD3FDB4B1729A32C90F3 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		DD68C0814D01C7FA3F46A94297CADA3A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		DEA57C7796CF5A6D8C88DB0AF98B3E93 /* ReverseGeocode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReverseGeocode.swift; path = Sources/ProcedureKitLocation/ReverseGeocode.swift; sourceTree = "<group>"; };
@@ -403,7 +403,6 @@
 			children = (
 				C19DA19D2B146C13FFD3687B09F038FA /* Frameworks */,
 			);
-			name = "wibmo-analytics";
 			path = "wibmo-analytics";
 			sourceTree = "<group>";
 		};
@@ -438,7 +437,6 @@
 				0701BA5CB73674CD090061712A45F73B /* Standard */,
 				3AAB4DC6D07A3437BE2D9CB0D8C84EE8 /* Support Files */,
 			);
-			name = ProcedureKit;
 			path = ProcedureKit;
 			sourceTree = "<group>";
 		};
@@ -487,7 +485,6 @@
 				D4B19698D23C2DEFA6DB3ED304A02173 /* Validation.swift */,
 				98B07E63166C00256CB4C18AEC699F32 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -551,7 +548,6 @@
 			children = (
 				8E0E4401404EAE0B28C6C49C1EB7F7C1 /* Frameworks */,
 			);
-			name = "wibmo-sdk";
 			path = "wibmo-sdk";
 			sourceTree = "<group>";
 		};
@@ -1037,6 +1033,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -1356,6 +1353,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Distribution;
@@ -1484,6 +1482,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
