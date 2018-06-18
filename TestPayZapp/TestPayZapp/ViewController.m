@@ -27,8 +27,9 @@
 //#define BASE_URL                      @"https://www.wibmo.com/"               // Production
 //#define BASE_URL                       @"https://wallet.pcdev.enstage-sas.com/"   // Dev
 
-#define GET_MSG_HASH                    @"sampleMerchant/iap/generateInitReqMessageHash.jsp?txnAmount=%@&merAppData=%@&merDyn=false&txnAmountKnown=%@&chargeLater=%@&txnType=WPay&version=2"
-#define GET_MSG_HASH_W2FA               @"sampleMerchant/iap/generateInitReqMessageHash.jsp?txnAmount=%@&merAppData=%@&merDyn=false&txnAmountKnown=%@&chargeLater=%@&txnType=W2fa&version=2"
+
+#define GET_MSG_HASH                    @"sampleMerchant/iap/generateInitReqMessageHash.jsp?txnAmount=%@&merAppData=%@&merDyn=false&txnAmountKnown=%@&chargeLater=%@&txnType=WPay&version=%ld"
+#define GET_MSG_HASH_W2FA               @"sampleMerchant/iap/generateInitReqMessageHash.jsp?txnAmount=%@&merAppData=%@&merDyn=false&txnAmountKnown=%@&chargeLater=%@&txnType=W2fa&version=%ld"
 
 #define STATUS_CHECK_WPAY               @"sampleMerchant/iap/statusCheckv2.jsp?merTxnId=%@&txnAmount=%@&txnDate=%@&chargeUser=%@&txnType=WPay&wibmoTxnId=%@"
 #define STATUS_CHECK_W2FA               @"sampleMerchant/iap/statusCheckv2.jsp?merTxnId=%@&txnAmount=%@&txnDate=%@&chargeUser=%@&txnType=W2fa&wibmoTxnId=%@"
@@ -85,10 +86,10 @@
     self.anAmount.text = @"100";
     self.anAmountValue = @"100";
     [self.anAmountKnown setTitle:@"true" forState:UIControlStateNormal];
-    [self.aChargeLater setTitle:@"true" forState:UIControlStateNormal];
+    [self.aChargeLater setTitle:@"false" forState:UIControlStateNormal];
+    self.aChargeLater.enabled = NO;
     [self.aStatusCheck setTitle:@"false" forState:UIControlStateNormal];
 }
-
 
 - (void)viewDidAppear:(BOOL)iAnimated {
     [super viewDidAppear:iAnimated];
@@ -166,6 +167,15 @@
 
 
 #pragma mark - Private
+- (IBAction)changeApiVersion:(UIButton *)sender {
+    if (self.apiVersion.selectedSegmentIndex == 0) {
+        [self.aChargeLater setTitle:@"false" forState:UIControlStateNormal];
+        [self.aChargeLater setEnabled:NO];
+    } else {
+        [self.aChargeLater setTitle:@"false" forState:UIControlStateNormal];
+        [self.aChargeLater setEnabled:YES];
+    }
+}
 
 - (IBAction)payWithPayZapp:(id)iSender {
     //[self generateMessageHash];
@@ -282,9 +292,9 @@
     NSString *aChargeLater = self.aChargeLater.titleLabel.text;
     NSString *anEndPoint;
     if (self.isWPayEnabled){
-        anEndPoint = [NSString stringWithFormat:GET_MSG_HASH, anAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater];
+        anEndPoint = [NSString stringWithFormat:GET_MSG_HASH, anAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater, self.apiVersion.selectedSegmentIndex+1];
     } else {
-        anEndPoint = [NSString stringWithFormat:GET_MSG_HASH_W2FA, anAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater];
+        anEndPoint = [NSString stringWithFormat:GET_MSG_HASH_W2FA, anAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater, self.apiVersion.selectedSegmentIndex+1];
         
     }
     NSString *aHashAPI = [NSString stringWithFormat:@"%@%@", BASE_URL, anEndPoint];

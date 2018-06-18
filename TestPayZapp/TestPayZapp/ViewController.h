@@ -16,11 +16,10 @@
 @property (retain, nonatomic) IBOutlet UITextField *aMobileNumber;
 @property (retain, nonatomic) IBOutlet UITextField *anAmount;
 @property (retain, nonatomic) IBOutlet UIButton *anAmountKnown;
+@property (retain, nonatomic) IBOutlet UISegmentedControl *apiVersion;
 @property (retain, nonatomic) IBOutlet UIButton *aChargeLater;
 @property (retain, nonatomic) IBOutlet UIButton *aStatusCheck;
 @property (retain, nonatomic) IBOutlet UIButton *aCheckStatus;
-
-
 
 - (IBAction)payWithPayZapp:(id)iSender;
 - (IBAction)amountKnown:(UIButton *)iSender;

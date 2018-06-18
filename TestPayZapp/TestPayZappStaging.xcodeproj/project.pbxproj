@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B32F39149933C7E930E4ABA /* Pods_TestPayZappStaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD16D54B4D9C1D86EA3BBC4D /* Pods_TestPayZappStaging.framework */; };
 		7895C822DED9DCBB73B23888 /* Pods_TestPayZappStagingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB04BFC95C5BFAB9BA41E8A3 /* Pods_TestPayZappStagingTests.framework */; };
-		8141FE621D6C36180077693F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8141FE611D6C36180077693F /* Main.storyboard */; };
+		78D1EDA820D7CCE000E134AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D1EDA720D7CCE000E134AE /* Main.storyboard */; };
 		BDB3E3DA1B8575D9009CEA50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB3E3D91B8575D9009CEA50 /* main.m */; };
 		BDB3E3DD1B8575D9009CEA50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB3E3DC1B8575D9009CEA50 /* AppDelegate.m */; };
 		BDB3E3E01B8575D9009CEA50 /* TestPayZapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDB3E3DE1B8575D9009CEA50 /* TestPayZapp.xcdatamodeld */; };
@@ -47,8 +47,8 @@
 		3BBA636701AE9FAB82CA100E /* Pods-TestPayZappStagingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStagingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStagingTests/Pods-TestPayZappStagingTests.release.xcconfig"; sourceTree = "<group>"; };
 		43FD772844A918070797D5FC /* Pods-TestPayZappStaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStaging.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.release.xcconfig"; sourceTree = "<group>"; };
 		6D6544EE9EB8BE503EF04625 /* Pods-TestPayZappStagingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStagingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStagingTests/Pods-TestPayZappStagingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78D1EDA720D7CCE000E134AE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7EA65795882059816920AF34 /* Pods-TestPayZappStagingTests.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStagingTests.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStagingTests/Pods-TestPayZappStagingTests.distribution.xcconfig"; sourceTree = "<group>"; };
-		8141FE611D6C36180077693F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		81F6CD311BB3D63700073360 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD16D54B4D9C1D86EA3BBC4D /* Pods_TestPayZappStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPayZappStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF5C3B699EBCFBF9D6E8130 /* Pods-TestPayZappStaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPayZappStaging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPayZappStaging/Pods-TestPayZappStaging.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,9 +136,9 @@
 				BDB3E3DC1B8575D9009CEA50 /* AppDelegate.m */,
 				BDB3E3E11B8575D9009CEA50 /* ViewController.h */,
 				BDB3E3E21B8575D9009CEA50 /* ViewController.m */,
-				8141FE611D6C36180077693F /* Main.storyboard */,
 				BDB3E3E71B8575D9009CEA50 /* Images.xcassets */,
 				BDB3E3E91B8575D9009CEA50 /* LaunchScreen.xib */,
+				78D1EDA720D7CCE000E134AE /* Main.storyboard */,
 				BDB3E3DE1B8575D9009CEA50 /* TestPayZapp.xcdatamodeld */,
 				BDB3E3D71B8575D9009CEA50 /* Supporting Files */,
 			);
@@ -258,7 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8141FE621D6C36180077693F /* Main.storyboard in Resources */,
+				78D1EDA820D7CCE000E134AE /* Main.storyboard in Resources */,
 				BDB3E3EB1B8575D9009CEA50 /* LaunchScreen.xib in Resources */,
 				BDB3E3E81B8575D9009CEA50 /* Images.xcassets in Resources */,
 			);
