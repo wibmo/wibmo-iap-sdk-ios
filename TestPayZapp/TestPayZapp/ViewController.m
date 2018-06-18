@@ -55,6 +55,8 @@
 @property (nonatomic, retain) NSString *aPaymentTypeNone;
 @property (nonatomic, retain) NSDictionary *aPaymentDetails;
 @property (nonatomic, retain) NSString *anAmountValue;
+@property (nonatomic, retain) UIToolbar *toolbar;
+@property (nonatomic, assign) UITextField *activeTextField;
 
 @end
 
@@ -63,6 +65,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.activeTextField = nil;
     NSString *aVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     
     NSString *aTitle = [NSString stringWithFormat:@"TestPayZapp %@", aVersion];
@@ -89,6 +92,22 @@
     [self.aChargeLater setTitle:@"false" forState:UIControlStateNormal];
     self.aChargeLater.enabled = NO;
     [self.aStatusCheck setTitle:@"false" forState:UIControlStateNormal];
+    
+    self.toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
+    [self.toolbar setBarTintColor:[UIColor whiteColor]];
+    
+    UIBarButtonItem *aDoneBar = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissInput)];
+    UIBarButtonItem *aPaddingBar = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                                                                 target:nil action:nil];
+    UIBarButtonItem *aSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                            target:nil action:NULL];
+    
+    aPaddingBar.width = 10;
+    
+    [self.toolbar setItems:@[aPaddingBar, aSpace, aDoneBar, aPaddingBar]];
+    [self.aMobileNumber setInputAccessoryView:self.toolbar];
+    [self.anAmount setInputAccessoryView:self.toolbar];
+    [self.anMessageHashAmount setInputAccessoryView:self.toolbar];
 }
 
 - (void)viewDidAppear:(BOOL)iAnimated {
@@ -288,13 +307,14 @@
     self.anAmountValue = self.anAmount.text;
     NSString *anAppData = @"AppDATA";
     NSString *anAmount = self.anAmountValue;
+    NSString *messageHashAmount = self.anMessageHashAmount.text;
     NSString *anAmountKnown = self.anAmountKnown.titleLabel.text;
     NSString *aChargeLater = self.aChargeLater.titleLabel.text;
     NSString *anEndPoint;
     if (self.isWPayEnabled){
-        anEndPoint = [NSString stringWithFormat:GET_MSG_HASH, anAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater, self.apiVersion.selectedSegmentIndex+1];
+        anEndPoint = [NSString stringWithFormat:GET_MSG_HASH, messageHashAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater, self.apiVersion.selectedSegmentIndex+1];
     } else {
-        anEndPoint = [NSString stringWithFormat:GET_MSG_HASH_W2FA, anAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater, self.apiVersion.selectedSegmentIndex+1];
+        anEndPoint = [NSString stringWithFormat:GET_MSG_HASH_W2FA, messageHashAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater, self.apiVersion.selectedSegmentIndex+1];
         
     }
     NSString *aHashAPI = [NSString stringWithFormat:@"%@%@", BASE_URL, anEndPoint];
@@ -453,6 +473,27 @@
     [self.view endEditing:YES];
 }
 
+-(void)dismissInput {
+    [self.activeTextField resignFirstResponder];
+    self.activeTextField = nil;
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    self.activeTextField = textField;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self.activeTextField resignFirstResponder];
+    self.activeTextField = nil;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    self.activeTextField = nil;
+    return true;
+}
+
 
 @end
 
@@ -465,5 +506,7 @@
 + (BOOL)allowsAnyHTTPSCertificateForHost:(NSString *)host {
     return YES;
 }
+
+
 
 @end

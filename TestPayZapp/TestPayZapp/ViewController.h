@@ -15,6 +15,7 @@
 
 @property (retain, nonatomic) IBOutlet UITextField *aMobileNumber;
 @property (retain, nonatomic) IBOutlet UITextField *anAmount;
+@property (retain, nonatomic) IBOutlet UITextField *anMessageHashAmount;
 @property (retain, nonatomic) IBOutlet UIButton *anAmountKnown;
 @property (retain, nonatomic) IBOutlet UISegmentedControl *apiVersion;
 @property (retain, nonatomic) IBOutlet UIButton *aChargeLater;
