@@ -20,10 +20,10 @@ To be able to integrate PayZapp into your iOS App you will need the following
 
 #### Common For Both Above 
 1. Add URL scheme to your projects Info.plist file.
-Format for URLScheme: pz<Merchant ID>
-Eg: If your Merchant ID is 123456789 then URLScheme is pz123456789
 
-![](images/URlScheme.png)
+* Format for URLScheme: pz<Merchant ID>
+* Eg: If your Merchant ID is 123456789 then URLScheme is pz123456789
+* ![](images/URlScheme.png)
 
 Note: Merchant ID’s are different for different configuration environments. i.e. Its different for production and UAT environments. 
 
@@ -182,5 +182,8 @@ _Status Code and Description_
 | 50020 | Success|
 | 50021 | Failed |
 
+**Note:**
+* You can download the Example App at the github repository ![Here](https://github.com/wibmo/wibmo-iap-sdk-ios/tree/master/TestPayZapp)
+* Especially note in the example app that if amount and message hash amount are different then you should get a message hash failure as the response from the sdk.
 
    
