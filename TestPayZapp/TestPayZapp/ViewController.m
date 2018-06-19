@@ -372,7 +372,9 @@
         [aWibmoSDK setTransactionInfo:aTransactionInfo];
         [aWibmoSDK setMerchantInfo:aMerchantInfo];
         [aWibmoSDK setCustomerInfo:aCustomerInfo];
-        
+        aWibmoSDK.isBillingAddress = self.swBillingAddress.on;
+        aWibmoSDK.isShippingAddress = self.swShippingAddress.on;
+        aWibmoSDK.isCollectEmail = self.swShippingAddress.on;
         [aWibmoSDK setDelegate:self];
         
         if (self.isWPayEnabled) {

@@ -21,6 +21,9 @@
 @property (retain, nonatomic) IBOutlet UIButton *aChargeLater;
 @property (retain, nonatomic) IBOutlet UIButton *aStatusCheck;
 @property (retain, nonatomic) IBOutlet UIButton *aCheckStatus;
+@property (retain, nonatomic) IBOutlet UISwitch *swBillingAddress;
+@property (retain, nonatomic) IBOutlet UISwitch *swShippingAddress;
+@property (retain, nonatomic) IBOutlet UISwitch *swEmailAddress;
 
 - (IBAction)payWithPayZapp:(id)iSender;
 - (IBAction)amountKnown:(UIButton *)iSender;
