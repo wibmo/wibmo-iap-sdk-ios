@@ -4,3 +4,8 @@ framework module WibmoSDK {
   export *
   module * { export * }
 }
+
+module WibmoSDK.Swift {
+    header "WibmoSDK-Swift.h"
+    requires objc
+}

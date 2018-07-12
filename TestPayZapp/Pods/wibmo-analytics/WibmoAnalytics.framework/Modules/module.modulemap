@@ -1,0 +1,11 @@
+framework module WibmoAnalytics {
+  umbrella header "WibmoAnalytics-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module WibmoAnalytics.Swift {
+    header "WibmoAnalytics-Swift.h"
+    requires objc
+}

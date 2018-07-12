@@ -11,21 +11,22 @@ To be able to integrate PayZapp into your iOS App you will need the following
 * This documentation and sample App.
 
 ### Adding Wibmo SDK as dependency to iOS Application
-#### Manually 
+#### Manually (Deprecated)
 * Add libWibmoSDK.a to your app. 
 * Add include folder to your app. 
 #### Cocoa pod (Recommended)
 * In your project's podfile include under your app target pod 'wibmo-sdk’.
 * Then pod install.
 
-#### Common For Both Above 
+#### Then
 1. Add URL scheme to your projects Info.plist file.
-Format for URLScheme: pz<Merchant ID>
-Eg: If your Merchant ID is 123456789 then URLScheme is pz123456789
 
-![](images/URlScheme.png)
+* Format for URLScheme: pz<Merchant ID>
+* Eg: If your Merchant ID is 123456789 then URLScheme is pz123456789
+* ![](images/URlScheme.png)
 
-Note: Merchant ID’s are different for different configuration environments. i.e. Its different for production and UAT environments. 
+**Note:**
+Merchant ID’s are different for different configuration environments. i.e. Its different for production and UAT environments.
 
 2. In your target's Info.plist add
 Add dictionary item LSApplicationQueriesSchemes
@@ -52,7 +53,9 @@ Add dictionary item LSApplicationQueriesSchemes
 }
 ```
 
-**Note:** For application supporting only iOS 9 and above please use the below method. 
+**Note:** 
+For application supporting only iOS 9 and above please use the below method. 
+
 ```objc
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     if (iURL && [[iURL scheme] isEqualToString:@"pz123456789"]) {
@@ -65,6 +68,8 @@ Add dictionary item LSApplicationQueriesSchemes
 3. To initiate payment do :- 
 	1. Initialise WSMerchantInfo, WSTransactionInfo, WSCustomerInfo, WSUrlInfo
 	2. Initialise WibmoSDK  and make payment. Eg:- 
+
+
 ```objc
 WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo merchanInfo:aMerchantInfo customerInfo:aCustomerInfo withDelegate:self];
     [aWibmoSDK setUrlInfo:aUralInfo];
@@ -81,7 +86,8 @@ WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo
     }];	
 ```
 
-**Note:** WSUrlInfo can point to different url based on your environment. i.e. production or staging or UAT.
+**Note:** 
+WSUrlInfo can point to different url based on your environment. i.e. production or staging or UAT.
 	3. Implement WibmoSDK protocols (listed below) as per your requirement.
 ```objc
 - (void)paymentSuccessfulWithTranscation:(NSDictionary *)iTransaction;
@@ -133,7 +139,9 @@ Eg:
 }
 ```
 
-Note: Error Response Dictionary Eg: 
+**Note:**
+Error Response Dictionary Eg: 
+
 ```javascript
 {
 "resCode": "000",
@@ -182,5 +190,8 @@ _Status Code and Description_
 | 50020 | Success|
 | 50021 | Failed |
 
+**Note:**
+* You can download the Example App at the github repository [here](https://github.com/wibmo/wibmo-iap-sdk-ios/tree/master/TestPayZapp)
+* Especially note in the example app that if amount and message hash amount are different then you should get a message hash failure as the response from the sdk.
 
    

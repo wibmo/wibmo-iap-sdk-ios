@@ -1,26 +1,38 @@
 PODS:
   - Alamofire (4.7.2)
-  - ProcedureKit (4.5.0):
-    - ProcedureKit/Standard (= 4.5.0)
+  - ProcedureKit/All (4.5.0):
+    - ProcedureKit/Cloud
+    - ProcedureKit/Location
+    - ProcedureKit/Network
+  - ProcedureKit/Cloud (4.5.0):
+    - ProcedureKit/Standard
+  - ProcedureKit/Location (4.5.0):
+    - ProcedureKit/Standard
+  - ProcedureKit/Network (4.5.0):
+    - ProcedureKit/Standard
   - ProcedureKit/Standard (4.5.0)
-  - wibmo-sdk (1.0.3):
-    - Alamofire
-    - ProcedureKit
+  - wibmo-analytics (1.0.3):
+    - Alamofire (~> 4.7.2)
+    - ProcedureKit/All (~> 4.5.0)
+  - wibmo-sdk (1.0.10):
+    - wibmo-analytics (~> 1.0.3)
 
 DEPENDENCIES:
-  - wibmo-sdk
+  - wibmo-sdk (~> 1.0.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - ProcedureKit
+    - wibmo-analytics
     - wibmo-sdk
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   ProcedureKit: 023e4600e921fe0b8d94f2d19ed680df83aa28ba
-  wibmo-sdk: af11f240e316440b616f320750449b8b70544516
+  wibmo-analytics: c1058fd7cb553a43a11009326c07ec0c1f349878
+  wibmo-sdk: c31b3605aa587e66dcb03740cbbb87d4f17b604c
 
-PODFILE CHECKSUM: 3476b4e588c8ff3fa815ee74cfac7d9a829cc65a
+PODFILE CHECKSUM: cb2de9ae61eb1671dea555bee24bbad635084a27
 
 COCOAPODS: 1.5.2
