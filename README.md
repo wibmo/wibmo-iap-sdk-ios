@@ -72,7 +72,6 @@ For application supporting only iOS 9 and above please use the below method.
 
 ```objc
 WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo merchanInfo:aMerchantInfo customerInfo:aCustomerInfo withDelegate:self];
-    [aWibmoSDK setUrlInfo:aUralInfo];
     [self.navigationController presentViewController:aWibmoSDK animated:YES completion:^{
         if (self.isWPayEnabled) {
             aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
@@ -87,7 +86,7 @@ WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo
 ```
 
 **Note:** 
-WSUrlInfo can point to different url based on your environment. i.e. production or staging or UAT.
+WibmoSDK can point to different url based on your environment. i.e. production or staging.
 	3. Implement WibmoSDK protocols (listed below) as per your requirement.
 ```objc
 - (void)paymentSuccessfulWithTranscation:(NSDictionary *)iTransaction;
