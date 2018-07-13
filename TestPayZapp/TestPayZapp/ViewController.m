@@ -150,7 +150,6 @@
     }
 }
 
-
 - (void)connection:(NSURLConnection *)iConnection didFailWithError:(NSError *)iError {
     NSLog(@"Error: %@", iError);
 }
@@ -172,12 +171,8 @@
             if (iButtonIndex == 1) {
                 [[iAlertView textFieldAtIndex:0] resignFirstResponder];
                 NSString *aValue = [[iAlertView textFieldAtIndex:0] text];
-                //if (aValue) {
                 self.anAmountValue = aValue;
                 [self callCheckStatus];
-                //} else {
-                
-                //}
             }
         }
         
@@ -270,7 +265,6 @@
     }
 }
 
-
 - (void)callCheckStatus {
     self.aCheckStatus.tag = 444;
     NSString *aMerTxnId = self.merchantTransactionID;
@@ -315,7 +309,6 @@
         anEndPoint = [NSString stringWithFormat:GET_MSG_HASH, messageHashAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater, self.apiVersion.selectedSegmentIndex+1];
     } else {
         anEndPoint = [NSString stringWithFormat:GET_MSG_HASH_W2FA, messageHashAmount, ENCODE_STRING(anAppData), anAmountKnown, aChargeLater, self.apiVersion.selectedSegmentIndex+1];
-        
     }
     NSString *aHashAPI = [NSString stringWithFormat:@"%@%@", BASE_URL, anEndPoint];
     NSLog(@"HashAPI: %@", aHashAPI);
@@ -361,29 +354,19 @@
     aCustomerInfo.customerName = @"Preetham Hegde";
     aCustomerInfo.customerDateOfBirth = @"20010101";
     
-    WSUrlInfo *aUralInfo = [[WSUrlInfo alloc] init];
-    aUralInfo.baseUrl = RESTAPI_BASE_URL;
-    
-    //aUralInfo.baseUrl = PRODUCTION_URL;
-    
-    WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] init];
-    [aWibmoSDK setUrlInfo:aUralInfo];
+    WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo merchanInfo:aMerchantInfo customerInfo:aCustomerInfo withDelegate:self isProductionBuild:NO];
     [self.navigationController presentViewController:aWibmoSDK animated:YES completion:^{
-        [aWibmoSDK setTransactionInfo:aTransactionInfo];
-        [aWibmoSDK setMerchantInfo:aMerchantInfo];
-        [aWibmoSDK setCustomerInfo:aCustomerInfo];
         aWibmoSDK.isBillingAddress = self.swBillingAddress.on;
         aWibmoSDK.isShippingAddress = self.swShippingAddress.on;
         aWibmoSDK.isCollectEmail = self.swShippingAddress.on;
-        [aWibmoSDK setDelegate:self];
-        
+
         if (self.isWPayEnabled) {
             aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
-            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_ALL];
+            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_NONE];
             [aWibmoSDK initializePayment];
         } else {
             aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
-            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_ALL];
+            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_NONE];
             [aWibmoSDK initializeW2FAPayment];
         }
     }];

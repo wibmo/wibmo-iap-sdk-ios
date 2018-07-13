@@ -38,10 +38,8 @@
 
 @property (nonatomic, retain) id<WibmoSDKDelegate> delegate;
 
-- (instancetype)initWithTransactionInfo:(WSTransactionInfo *)transactionInfo
-                            merchanInfo:(WSMerchantInfo *)merchantInfo
-                           customerInfo:(WSCustomerInfo *)customerInfo
-                           withDelegate:(id<WibmoSDKDelegate>)delegate;
+- (instancetype)init __attribute((unavailable("Please use designated initializer initWithTransactionInfo: merchanInfo: customerInfo: withDelegate:")));
+- (instancetype)initWithTransactionInfo:(WSTransactionInfo *)transactionInfo merchanInfo:(WSMerchantInfo *)merchantInfo customerInfo:(WSCustomerInfo *)customerInfo withDelegate:(id<WibmoSDKDelegate>)delegate isProductionBuild:(BOOL)productionBuild;
 - (void)initializePayment;
 - (void)initializeW2FAPayment;
 
