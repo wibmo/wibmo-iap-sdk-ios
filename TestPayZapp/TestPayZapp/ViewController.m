@@ -23,9 +23,9 @@
 #define ENCODE_STRING(kString)      (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)kString, NULL, (CFStringRef)@"_.-!*'\"();:@&=+$,/?%#[]% ",kCFStringEncodingUTF8))
 
 //#define BASE_URL                        @"https://www.pcqa.enstage-sas.com/"    // QA
-#define BASE_URL                       @"https://wallet.pc.enstage-sas.com/"   // Staging
+//#define BASE_URL                       @"https://wallet.pc.enstage-sas.com/"   // Staging
 //#define BASE_URL                      @"https://www.wibmo.com/"               // Production
-//#define BASE_URL                       @"https://wallet.pcdev.enstage-sas.com/"   // Dev
+#define BASE_URL                       @"https://wallet.pcdev.enstage-sas.com/"   // Dev
 
 
 #define GET_MSG_HASH                    @"sampleMerchant/iap/generateInitReqMessageHash.jsp?txnAmount=%@&merAppData=%@&merDyn=false&txnAmountKnown=%@&chargeLater=%@&txnType=WPay&version=%ld"

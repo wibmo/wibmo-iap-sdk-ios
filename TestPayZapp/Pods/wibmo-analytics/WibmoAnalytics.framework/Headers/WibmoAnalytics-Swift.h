@@ -246,6 +246,7 @@ SWIFT_CLASS("_TtC14WibmoAnalytics12CustomerInfo")
 @property (nonatomic, copy) NSString * _Null_unspecified customerEmail;
 @property (nonatomic, copy) NSString * _Null_unspecified customerMobile;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithId:(NSString * _Nullable)id name:(NSString * _Nullable)name email:(NSString * _Nullable)email mobile:(NSString * _Nullable)mobile OBJC_DESIGNATED_INITIALIZER SWIFT_DEPRECATED_OBJC("Swift initializer 'CustomerInfo.init(id:name:email:mobile:)' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 @end
 
 
@@ -274,6 +275,9 @@ SWIFT_CLASS("_TtC14WibmoAnalytics12MerchantInfo")
 @end
 
 
+@interface NSManagedObjectContext (SWIFT_EXTENSION(WibmoAnalytics))
+- (BOOL)saveContextAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_DEPRECATED_OBJC("Swift method 'NSManagedObjectContext.saveContext()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
+@end
 
 @class NSEntityDescription;
 
@@ -318,6 +322,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WibmoAnalyti
 /// \param appVersion appVersion
 ///
 + (void)setupAnalyticsWithProductName:(NSString * _Nullable)productName programName:(NSString * _Nullable)programName bankId:(NSString * _Nullable)bankId apiKey:(NSString * _Nullable)apiKey apiUser:(NSString * _Nullable)apiUser buildEnv:(enum BuildEnv)buildEnv;
+- (BOOL)isProduction SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_OBJC("Swift method 'WibmoAnalytics.isProduction()' uses '@objc' inference deprecated in Swift 4; add '@objc' to provide an Objective-C entrypoint");
 /// Creates a new instance of AnalyticsEvent struct with productName, eventName and appInfo prepopulated
 /// \param eventName Unique name identifiying the event
 ///
