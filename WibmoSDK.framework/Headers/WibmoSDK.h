@@ -13,29 +13,19 @@
 #import "WSTransactionInfo.h"
 #import "WSCustomerInfo.h"
 #import "WSMerchantInfo.h"
-#import "WSUrlInfo.h"
 #import "WSConstant.h"
 #import "WSCardInfo.h"
 
 #define PROCESS_INAPP_PAYMENT   @"PROCESS_INAPP_PAYMENT"
 #define CALL_INAPP_PAYMENT      @"CALL_INAPP_PAYMENT"
 #define CALLBACK_TO_MERCHANT     @"CALLBACK_TO_MERCHANT"
-
+#define WSDesignatedInitializer(__SEL__) __attribute__((unavailable("Invoke the designated initializer `" # __SEL__ "` instead.")))
 @protocol WibmoSDKDelegate;
 
 @interface WibmoSDK : UIViewController
 
-@property (nonatomic, retain) WSTransactionInfo *transactionInfo;
-@property (nonatomic, retain) WSCustomerInfo *customerInfo;
-@property (nonatomic, retain) WSMerchantInfo *merchantInfo;
-@property (nonatomic, retain) WSCardInfo *cardInfo;
-@property (nonatomic, retain) WSUrlInfo *urlInfo;
 @property (nonatomic, retain) NSDictionary *deviceinfoDictionary;
 @property (nonatomic, retain) NSDictionary *urlInfoDictionary;
-@property (nonatomic, assign) BOOL isBillingAddress;
-@property (nonatomic, assign) BOOL isShippingAddress;
-@property (nonatomic, assign) BOOL isCollectEmail;
-
 @property (nonatomic, retain) id<WibmoSDKDelegate> delegate;
 
 - (instancetype)init __attribute((unavailable("Please use designated initializer initWithTransactionInfo: merchanInfo: customerInfo: withDelegate:")));
@@ -45,10 +35,9 @@
 
 @end
 
-
 @protocol WibmoSDKDelegate <NSObject>
 
-- (void)paymentSuccessfulWithTranscation:(NSDictionary *)iTransaction;
+- (void)paymentSuccessfulWithTransaction:(NSDictionary *)iTransaction;
 - (void)paymentFailedWithError:(NSError *)iError;
 - (void)paymentCancelled;
 - (void)paymentTimedOut;

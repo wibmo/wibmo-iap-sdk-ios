@@ -14,19 +14,12 @@
 
 #pragma mark - URLs
 
-#define BASE_URL                        @"https://wallet.pc.enstage-sas.com"   // Staging
-//#define BASE_URL                        @"https://www.pcqa.enstage-sas.com"    // QA
-//#define BASE_URL                        @"https://www.wibmo.com"               // Production
-
-#define RESTAPI_BASE_URL                @"https://api.pc.enstage-sas.com/"     //Rest Staging
+#define RESTAPI_BASE_URL_STAGING        @"https://api.pc.enstage-sas.com"     //Rest Staging
+#define RESTAPI_BASE_URL_PRODUCTION     @"https://api.wibmo.com"              //Rest Production
 //#define RESTAPI_BASE_URL                @"https://api.pcdev.enstage-sas.com"     //Rest Dev
+
 //#define SSL_PUBLIC_KEY                  @"*.enstage-uat.com"                    // Staging
 //#define SSL_PUBLIC_KEY                  @"*.wibmo.com"                          // Production
-#define MIXPANEL_API                    @"https://api.mixpanel.com/track/"
-
-#define GET_MSG_HASH                    @"sampleMerchant/generatewPayMessageHash.jsp?txnAmount=%@&merAppData=%@&merDyn=false"
-//#define GET_MSG_HASH                    @"testMerchant/generatewPayMessageHash.jsp?txnAmount=%@&merAppData=%@&merDyn=false"
-//#define GET_MSG_HASH                     @""
 
 #define INIT_WPAY_PAYMENT               @"/v1/wPay/init"
 #define INIT_W2FA_PAYMENT               @"/v1/w2fa/init"

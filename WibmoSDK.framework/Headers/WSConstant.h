@@ -17,7 +17,8 @@
 #define  CHARGE_LATER                   @"false";
 
 
-#define  RESTAPI_BASE_URL               @"https://api.pc.enstage-sas.com"     //Rest Staging
+#define RESTAPI_BASE_URL_STAGING        @"https://api.pc.enstage-sas.com"     //Rest Staging
+#define RESTAPI_BASE_URL_PRODUCTION     @"https://api.wibmo.com"     //Rest Production
 //#define RESTAPI_BASE_URL                @"https://api2.pcdev.enstage-sas.com"     //Rest Dev
 #define  PRODUCTION_URL                 @"https://api.wibmo.com"               // Production
 
