@@ -68,23 +68,27 @@ For application supporting only iOS 9 and above please use the below method.
 ```
 
 3. To initiate payment do :- 
-	1. Initialise WSMerchantInfo, WSTransactionInfo, WSCustomerInfo, WSUrlInfo
+	1. Initialise WSMerchantInfo, WSTransactionInfo, WSCustomerInfo
 	2. Initialise WibmoSDK  and make payment. Eg:- 
 
 
 ```objc
-WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo merchanInfo:aMerchantInfo customerInfo:aCustomerInfo withDelegate:self];
+WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo merchanInfo:aMerchantInfo customerInfo:aCustomerInfo withDelegate:self isProductionBuild:NO];
     [self.navigationController presentViewController:aWibmoSDK animated:YES completion:^{
+        aWibmoSDK.isBillingAddress = self.swBillingAddress.on;
+        aWibmoSDK.isShippingAddress = self.swShippingAddress.on;
+        aWibmoSDK.isCollectEmail = self.swShippingAddress.on;
+
         if (self.isWPayEnabled) {
             aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
-            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_ALL];
+            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_NONE];
             [aWibmoSDK initializePayment];
         } else {
             aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
-            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_ALL];
+            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_NONE];
             [aWibmoSDK initializeW2FAPayment];
         }
-    }];	
+    }];
 ```
 
 **Note:** 
