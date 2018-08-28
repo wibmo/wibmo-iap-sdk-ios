@@ -32,4 +32,6 @@ An Example app is available for viewing the usage for the pod.
   s.ios.deployment_target = '8.0'
   s.vendored_frameworks = 'WibmoSDK.framework'
   s.dependency 'wibmo-analytics', '~> 2.0.4'
+  s.dependency 'SwiftyJSON'
+  s.dependency 'Alamofire'
 end
