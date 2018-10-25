@@ -13,8 +13,8 @@
 #import "WSTransactionInfo.h"
 #import "WSCustomerInfo.h"
 #import "WSMerchantInfo.h"
-#import "WSConstant.h"
 #import "WSCardInfo.h"
+#import "WSConstant.h"
 
 #define PROCESS_INAPP_PAYMENT   @"PROCESS_INAPP_PAYMENT"
 #define CALL_INAPP_PAYMENT      @"CALL_INAPP_PAYMENT"

@@ -36,6 +36,7 @@
 @protocol WSURLDelegate <NSObject>
 - (void)urlHandler:(WSURLHandler *)iHandler didFinishLoadingWithResponse:(id)iResponse;
 - (void)urlHandler:(WSURLHandler *)iHandler didFailToLoadWithError:(NSError *)iError;
+- (void)urlHandler:(WSURLHandler *)iHandler didFinishLoadingWithHtmlResponse:(id)iResponse;
 @optional
 - (void)urlHandler:(WSURLHandler *)iHandler didReceiveResponse:(NSURLResponse *)response;
 @end

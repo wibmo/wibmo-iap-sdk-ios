@@ -11,6 +11,7 @@
 #endif
 
 #import "IAPAnalyticsConstants.h"
+#import "Reachability.h"
 #import "WS2FAInitRequest.h"
 #import "WSHeader.h"
 #import "WSLoadingView.h"
