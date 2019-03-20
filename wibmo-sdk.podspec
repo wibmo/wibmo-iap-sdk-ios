@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/wibmo/wibmo-iap-sdk-ios.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'akhtarraza' => 'akthar.khan@wibmo.com' }
-  s.source           = { :git => 'https://git.enstage-sas.com/wibmo-core-client/wibmo-iap-sdk-ios-swift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wibmo/wibmo-iap-sdk-ios.git', :tag => s.version.to_s }
   s.swift_version    = '4.2'
 
   s.ios.deployment_target = '9.0'
