@@ -9,12 +9,9 @@ To be able to integrate PayZapp into your iOS App you will need the following
 * Access to WibmoSdk
 * **Merchant ID**, **Merchant App ID** and **Hash Key** from PayZapp UAT/production environment.
 * This documentation and sample App.
-* Latest version of sdk is 2.0.4 available via cocoapods is compiled using Swift 4.1 compiler and Xcode 9.4.1
+* Latest version of sdk is 3.0.0 is available via cocoapods which is compiled using Xcode 10.1 and Swift 4.2 compiler.
 
 ### Adding Wibmo SDK as dependency to iOS Application
-#### Manually (Deprecated)
-* Add libWibmoSDK.a to your app. 
-* Add include folder to your app. 
 
 #### Cocoa pod (Recommended)
 * In your project's podfile include under your app target pod 'wibmo-sdk’.
@@ -35,7 +32,7 @@ Add dictionary item LSApplicationQueriesSchemes
 ![](images/LSApplicationQueriesSchemes.png)
 
 ### Usage 
-1. \#import “WibmoSDK.h" in your ViewController.
+1. \#import WibmoSDK in your ViewController.
 2. Include in your AppDelegate methods, and post appropriate notification.
 
 ```objc
@@ -56,7 +53,7 @@ Add dictionary item LSApplicationQueriesSchemes
 ```
 
 **Note:** 
-For application supporting only iOS 9 and above please use the below method. 
+For application supporting iOS 9 and above please use the below method. 
 
 ```objc
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
@@ -67,80 +64,167 @@ For application supporting only iOS 9 and above please use the below method.
 }
 ```
 
-3. To initiate payment do :- 
-	1. Initialise WSMerchantInfo, WSTransactionInfo, WSCustomerInfo
-	2. Initialise WibmoSDK  and make payment. Eg:- 
+```swift
+func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if url.scheme == "pz123456789" {
+            NotificationCenter.default.post(name: Notification.Name(rawValue: kAppIAPProcessNotification), object: url.absoluteString)
+        }
+        return true
+    }
+```
 
+
+3. To initiate payment do :-
+	1. Generate Message Hash by capturing relevant details like transaction amount, merchantAppData, txnType(WPay/W2fa)
+	2. Initialise WSMerchantInfo
+	3. Initialise WibmoSDK and set delegate and datasource
+	4. Invoke performIAPTransactionFrom api to initiate the transaction.
 
 ```objc
-WibmoSDK *aWibmoSDK = [[WibmoSDK alloc] initWithTransactionInfo:aTransactionInfo merchanInfo:aMerchantInfo customerInfo:aCustomerInfo withDelegate:self isProductionBuild:NO];
-    [self.navigationController presentViewController:aWibmoSDK animated:YES completion:^{
-        aWibmoSDK.isBillingAddress = self.swBillingAddress.on;
-        aWibmoSDK.isShippingAddress = self.swShippingAddress.on;
-        aWibmoSDK.isCollectEmail = self.swShippingAddress.on;
+WSTransactionInfo *transactionInfo = [[WSTransactionInfo alloc] initWithMsgHash:messageHash[@"msgHash"] txnCurrency:kTxnCurrencyCode chargeLater:YES merAppData:merchantAppData merTxnId:messageHash[@"merTxnId"] restrictedPaymentType:@[WSPaymentOption.kPaymentOptionNone] txnAmtKnown:NO merDataField:@"Merchant Data" supportedPaymentType:@[WSPaymentOption.kPaymentOptionAllCards] txnDate:messageHash[@"txnDate"] txnDesc:@"Transaction from sample merchant for rupee 1" txnAmount:self.amount.text];
 
-        if (self.isWPayEnabled) {
-            aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
-            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_NONE];
-            [aWibmoSDK initializePayment];
-        } else {
-            aTransactionInfo.supportedPaymentType = @[PAYMENT_TYPE_ALL];
-            aTransactionInfo.restrictedPaymentType = @[PAYMENT_TYPE_NONE];
-            [aWibmoSDK initializeW2FAPayment];
-        }
-    }];
+self.paymentSdk = [[WibmoSDK alloc] initWithTransactionDetails:transactionInfo datasource:self delegate:self];
+
+[self.paymentSdk performIAPTransactionFrom:self];
+```
+
+```swift
+let transactionInfo = WSTransactionInfo(msgHash: msgHash, txnCurrency: "356", chargeLater: chargeLater.isOn, merAppData: "AppDATA", merTxnId: txnId, restrictedPaymentType: [WSPaymentOption.kPaymentOptionNone], txnAmtKnown: amountKnown.isOn, merDataField: "merData", supportedPaymentType: [WSPaymentOption.kPaymentOptionAllCards], txnDate: date, txnDesc: "Transaction from sample merchant for amount 1", txnAmount: amount.text!)
+
+wibmoPaymentSdk = WibmoSDK(transactionDetails: transactionInfo, datasource: self, delegate: self)
+
+wibmoPaymentSdk?.performIAPTransaction(from: self)
 ```
 
 **Note:** 
 WibmoSDK can point to different url based on your environment. i.e. production or staging.
 	3. Implement WibmoSDK protocols (listed below) as per your requirement.
-```objc
-- (void)paymentSuccessfulWithTranscation:(NSDictionary *)iTransaction;
-- (void)paymentFailedWithError:(NSError *)iError;
-- (void)paymentCancelled;
-- (void)paymentTimedOut;	  
-```
 
 Eg:
 ```objc
-- (void)paymentSuccessfulWithTranscation:(NSDictionary *)iTransaction {
-    NSString *aTransactionID = [iTransaction valueForKey:@"wibmoTxnId"];
-    self.aPaymentDetails = iTransaction;
-    [self.navigationController dismissViewControllerAnimated:YES completion:^{
-        NSString *aMessage = [NSString stringWithFormat:@"Your payment was made successfully.\n\nTransaction ID: %@", aTransactionID];
-        if ([aTransactionID isKindOfClass:[NSNull class]]) {
-            aMessage = [NSString stringWithFormat:@"Your payment was made successfully."];
-        }
-        if ([iTransaction valueForKey:@"dataPickUpCode"]) {
-            aMessage = [aMessage stringByAppendingFormat:@"\n\nPickUp Code: %@", [iTransaction valueForKey:@"dataPickUpCode"]];
-        }
+#pragma -mark Payment DataSource
+- (enum WSBuildType)buildType {
+    return WSBuildTypeStaging;
+}
+
+- (enum WSIAPVersion)iapVersion {
+    return WSIAPVersionV2;
+}
+
+- (WSMerchantInfo * _Nonnull)merchantInfoForTransaction:(WSTransactionInfo * _Nonnull)transaction {
+    WSMerchantInfo *merchantInfo = [[WSMerchantInfo alloc] initWithMerName:@"SampleMerchant" merCountryCode:@"IN" merId:@"81516121" merAppId:@"1" merUrlScheme:nil];
+    return merchantInfo;
+}
+
+- (WSCustomerInfo * _Nonnull)customerInfoForTransaction:(WSTransactionInfo * _Nonnull)transaction {
+    WSCustomerInfo *customerInfo = [[WSCustomerInfo alloc] initWithCustName:@"Guest User" custDob:@"01/01/2000" custEmail:@"guest_user@xyz.com" custMobile:@"9000590005"];
+    return customerInfo;
+}
+
+- (BOOL)isWpayTransaction {
+    return self.paymentType.selectedSegmentIndex == 0;
+}
+
+- (WSCardInfo * _Nullable)cardInfoForTransaction:(WSTransactionInfo * _Nonnull)transaction  {
+    return nil;
+}
+
+- (BOOL)requiresBillingAddressForTransaction:(WSTransactionInfo * _Nonnull)transaction {
+    return NO;
+}
+
+- (BOOL)requiresShippingAddressForTransaction:(WSTransactionInfo * _Nonnull)transaction  {
+    return NO;
+}
+
+- (BOOL)requiresEmailIdForTransaction:(WSTransactionInfo * _Nonnull)transaction {
+    return NO;
+}
+```
+
+```swift
+extension ViewController: WSPaymentDatasource {
+
+    func requiresBillingAddressFor(transaction: WSTransactionInfo) -> Bool {
+        return billingAddrRequired.isOn
+    }
+    
+    func requiresShippingAddressFor(transaction: WSTransactionInfo) -> Bool {
+        return shippingAddrRequired.isOn
+    }
+    
+    func requiresEmailIdFor(transaction: WSTransactionInfo) -> Bool {
+        return emailIdRequired.isOn
+    }
+    
+    func cardInfoFor(transaction: WSTransactionInfo) -> WSCardInfo? {
+        return nil
+    }
+    
+    func buildType() -> WSBuildType {
+        return .staging //.production
+    }
+    
+    func iapVersion() -> WSIAPVersion {
+        return .v2
+    }
+    
+    func merchantInfoFor(transaction: WSTransactionInfo) -> WSMerchantInfo {
+        let merchantInfo = WSMerchantInfo(merName: "Sample Test Merchant", merCountryCode: "IN", merId: "81516121", merAppId: "1")
         
-        [[[UIAlertView alloc] initWithTitle:@"Congratulations!" message:aMessage delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-    }];
+        return merchantInfo
+    }
+    
+    func customerInfoFor(transaction: WSTransactionInfo) -> WSCustomerInfo {
+        let customerInfo = WSCustomerInfo(custName: "Guest User", custDob: "01012000", custEmail: "test@enstage.com", custMobile: "9999999999")
+        return customerInfo
+    }
+    
+    func isWpayTransaction() -> Bool {
+        return (paymentType.selectedSegmentIndex == 0)
+    }
+}
+```
+
+```objc
+#pragma -mark Payment Delegate
+
+- (void)paymentFailedWithError:(NSError * _Nonnull)error {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)paymentFailedWithError:(NSError *)iError {
-    [self.navigationController dismissViewControllerAnimated:NO completion:^{
-        self.merchantTransactionID = nil;
-        NSDictionary *errorDic = iError.userInfo;
-        //Handle Error 
-    }];
-}
 
-- (void)paymentCancelled {
-    [self.navigationController dismissViewControllerAnimated:YES completion:^{
-        self.merchantTransactionID = nil;
-        NSString *aMessage = [NSString stringWithFormat:@"Your payment was cancelled."];
-        [[[UIAlertView alloc] initWithTitle:@"Failed!" message:aMessage delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-    }];
+- (void)paymentSuccessfullForTransaction:(NSDictionary<NSString *,id> * _Nonnull)transaction {
+    NSString *message = [NSString stringWithFormat:@"Transaction completed succesfully, Wibmo Transaction Id for reference is : %@",transaction[@"wibmoTxnId"]];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Success" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
+```
 
-- (void)paymentTimedOut {
-    [self.navigationController dismissViewControllerAnimated:YES completion:^{
-        self.merchantTransactionID = nil;
-        NSString *aMessage = [NSString stringWithFormat:@"Your payment was timed out."];
-        [[[UIAlertView alloc] initWithTitle:@"Sorry!" message:aMessage delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-    }];
+```swift
+extension ViewController: WSPaymentDelegate {
+    func paymentSuccessfullFor(transaction: Dictionary<String, Any>) {
+        let alert = UIAlertController(title: "Success", message: "Transaction compeleted succesfully.", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        self.transactionStatus = transaction
+        self.transactionStatusLabel.text = transaction.description
+        print(transaction.description)
+    }
+    
+    func paymentFailed(error: Error) {
+        let alert = UIAlertController(title: "Error", message: "Transaction failed to complete. Error: \(error.localizedDescription)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        print(error.localizedDescription)
+    }
 }
 ```
 
