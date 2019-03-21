@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.mobileNumber.text = "9986477748"
+        self.mobileNumber.text = "9999999999"
         self.amount.text = "100"
         self.msgHashAmount.text = "100"
         transactionStatusLabel.text = nil
@@ -194,7 +194,7 @@ extension ViewController: WSPaymentDatasource {
     }
     
     func customerInfoFor(transaction: WSTransactionInfo) -> WSCustomerInfo {
-        let customerInfo = WSCustomerInfo(custName: "Akhtar Raza", custDob: "19880405", custEmail: "test@enstage.com", custMobile: "9986477748")
+        let customerInfo = WSCustomerInfo(custName: "Guest User", custDob: "20000101", custEmail: "test@enstage.com", custMobile: "9999999999")
         return customerInfo
     }
     
