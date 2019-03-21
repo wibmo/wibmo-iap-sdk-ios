@@ -80,7 +80,7 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 	3. Initialise WibmoSDK and set delegate and datasource
 	4. Invoke performIAPTransactionFrom api to initiate the transaction.
 	
-**Note:**  This method should be invoked only on main thread.
+**Note:**  ```objc performIAPTransaction(from:)``` This method should be invoked only on main thread.
 
 ```objc
 WSTransactionInfo *transactionInfo = [[WSTransactionInfo alloc] initWithMsgHash:messageHash[@"msgHash"] txnCurrency:kTxnCurrencyCode chargeLater:YES merAppData:merchantAppData merTxnId:messageHash[@"merTxnId"] restrictedPaymentType:@[WSPaymentOption.kPaymentOptionNone] txnAmtKnown:NO merDataField:@"Merchant Data" supportedPaymentType:@[WSPaymentOption.kPaymentOptionAllCards] txnDate:messageHash[@"txnDate"] txnDesc:@"Transaction from sample merchant for rupee 1" txnAmount:self.amount.text];
