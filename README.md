@@ -9,7 +9,7 @@ To be able to integrate PayZapp into your iOS App you will need the following
 * Access to WibmoSdk
 * **Merchant ID**, **Merchant App ID** and **Hash Key** from PayZapp UAT/production environment.
 * This documentation and sample App.
-* Latest version of sdk is 3.0.0 is available via cocoapods which is compiled using Xcode 10.1 and Swift 4.2.1 compiler.
+* Latest version of sdk is 3.0.1 is available via cocoapods which is compiled using Xcode 10.2 and Swift 4.2.1 compiler.
 
 ### Adding Wibmo SDK as dependency to iOS Application
 
