@@ -6,7 +6,7 @@ target 'IAPDemo' do
   use_frameworks!
 
   # Pods for IAPDemo
-  pod 'wibmo-sdk', '~>3.0.1'
+  pod 'wibmo-sdk', '~>3.0.2'
 
 end
 
