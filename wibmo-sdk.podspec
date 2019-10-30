@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '3.0.5'
+  s.version          = '3.0.6'
   s.summary          = 'A framework for merchants to enable PayZapp IAP Transactions from their app.'
 
   s.description      = <<-DESC
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/wibmo/wibmo-iap-sdk-ios.git', :tag => s.version.to_s }
   s.swift_version    = '5.0'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.vendored_frameworks = 'WibmoSDK.framework'
   s.dependency 'SwiftyJSON', '~> 5'
