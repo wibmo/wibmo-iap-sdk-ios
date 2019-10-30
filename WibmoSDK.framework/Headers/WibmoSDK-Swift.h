@@ -203,7 +203,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 typedef SWIFT_ENUM(NSInteger, WSBuildType, closed) {
   WSBuildTypeStaging = 0,
-  WSBuildTypeProduction = 1,
+  WSBuildTypeStaging2 = 1,
+  WSBuildTypeQa = 2,
+  WSBuildTypeUat = 3,
+  WSBuildTypeBeta = 4,
+  WSBuildTypeProduction = 5,
 };
 
 
@@ -521,7 +525,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 typedef SWIFT_ENUM(NSInteger, WSBuildType, closed) {
   WSBuildTypeStaging = 0,
-  WSBuildTypeProduction = 1,
+  WSBuildTypeStaging2 = 1,
+  WSBuildTypeQa = 2,
+  WSBuildTypeUat = 3,
+  WSBuildTypeBeta = 4,
+  WSBuildTypeProduction = 5,
 };
 
 
