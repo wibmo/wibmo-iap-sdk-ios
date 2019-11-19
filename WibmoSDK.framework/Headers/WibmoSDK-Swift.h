@@ -184,6 +184,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -200,6 +201,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="WibmoSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+@interface UIDevice (SWIFT_EXTENSION(WibmoSDK))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull modalName;)
++ (NSString * _Nonnull)modalName SWIFT_WARN_UNUSED_RESULT;
++ (void)setModalName:(NSString * _Nonnull)value;
+@end
 
 typedef SWIFT_ENUM(NSInteger, WSBuildType, closed) {
   WSBuildTypeStaging = 0,
@@ -274,6 +282,7 @@ SWIFT_PROTOCOL("_TtP8WibmoSDK19WSPaymentDatasource_")
 SWIFT_PROTOCOL("_TtP8WibmoSDK17WSPaymentDelegate_")
 @protocol WSPaymentDelegate
 - (void)paymentSuccessfullForTransaction:(NSDictionary<NSString *, id> * _Nonnull)transaction;
+- (void)paymentFailedForTransaction:(NSDictionary<NSString *, id> * _Nonnull)transaction with:(NSError * _Nonnull)error;
 - (void)paymentFailedWithError:(NSError * _Nonnull)error;
 @end
 
@@ -507,6 +516,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -523,6 +533,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="WibmoSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+@interface UIDevice (SWIFT_EXTENSION(WibmoSDK))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull modalName;)
++ (NSString * _Nonnull)modalName SWIFT_WARN_UNUSED_RESULT;
++ (void)setModalName:(NSString * _Nonnull)value;
+@end
 
 typedef SWIFT_ENUM(NSInteger, WSBuildType, closed) {
   WSBuildTypeStaging = 0,
@@ -597,6 +614,7 @@ SWIFT_PROTOCOL("_TtP8WibmoSDK19WSPaymentDatasource_")
 SWIFT_PROTOCOL("_TtP8WibmoSDK17WSPaymentDelegate_")
 @protocol WSPaymentDelegate
 - (void)paymentSuccessfullForTransaction:(NSDictionary<NSString *, id> * _Nonnull)transaction;
+- (void)paymentFailedForTransaction:(NSDictionary<NSString *, id> * _Nonnull)transaction with:(NSError * _Nonnull)error;
 - (void)paymentFailedWithError:(NSError * _Nonnull)error;
 @end
 
