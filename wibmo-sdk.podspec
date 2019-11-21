@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '3.0.8'
+  s.version          = '3.0.9'
   s.summary          = 'A framework for merchants to enable PayZapp IAP Transactions from their app.'
 
   s.description      = <<-DESC
