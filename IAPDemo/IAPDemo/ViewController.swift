@@ -204,6 +204,15 @@ extension ViewController: WSPaymentDatasource {
 }
 
 extension ViewController: WSPaymentDelegate {
+    func paymentFailedFor(transaction: [String : Any], with error: Error) {
+        print("TxnId :", transaction)
+        let alert = UIAlertController(title: "Error", message: "Transaction failed to complete. Error: \(error.localizedDescription)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+        print(error.localizedDescription)
+    }
+    
     func paymentSuccessfullFor(transaction: Dictionary<String, Any>) {
         let alert = UIAlertController(title: "Success", message: "Transaction compeleted succesfully.", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
