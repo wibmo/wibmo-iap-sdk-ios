@@ -513,6 +513,7 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GCMC8WV23;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IAPDemo",
@@ -549,6 +550,8 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GCMC8WV23;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IAPDemo",
