@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '3.0.11'
+  s.version          = '3.1.0'
   s.summary          = 'A framework for merchants to enable PayZapp IAP Transactions from their app.'
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/wibmo/wibmo-iap-sdk-ios.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'akhtarkhan' => 'akthar.khan@wibmo.com' }
+  s.author           = { 'Wibmo iOS' => 'iOS@wibmo.com' }
   s.source           = { :git => 'https://github.com/wibmo/wibmo-iap-sdk-ios.git', :tag => s.version.to_s }
   s.swift_version    = '5.0'
 
