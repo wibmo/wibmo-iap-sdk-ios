@@ -217,13 +217,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull moda
 @end
 
 typedef SWIFT_ENUM(NSInteger, WSBuildType, closed) {
-  WSBuildTypeStaging = 0,
-  WSBuildTypeStaging2 = 1,
-  WSBuildTypeStagingV2 = 2,
-  WSBuildTypeQa = 3,
-  WSBuildTypeUat = 4,
-  WSBuildTypeBeta = 5,
-  WSBuildTypeProduction = 6,
+  WSBuildTypeDev = 0,
+  WSBuildTypeStaging = 1,
+  WSBuildTypeStaging2 = 2,
+  WSBuildTypeStagingV2 = 3,
+  WSBuildTypeQa = 4,
+  WSBuildTypeUat = 5,
+  WSBuildTypeBeta = 6,
+  WSBuildTypeProduction = 7,
 };
 
 
@@ -553,13 +554,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull moda
 @end
 
 typedef SWIFT_ENUM(NSInteger, WSBuildType, closed) {
-  WSBuildTypeStaging = 0,
-  WSBuildTypeStaging2 = 1,
-  WSBuildTypeStagingV2 = 2,
-  WSBuildTypeQa = 3,
-  WSBuildTypeUat = 4,
-  WSBuildTypeBeta = 5,
-  WSBuildTypeProduction = 6,
+  WSBuildTypeDev = 0,
+  WSBuildTypeStaging = 1,
+  WSBuildTypeStaging2 = 2,
+  WSBuildTypeStagingV2 = 3,
+  WSBuildTypeQa = 4,
+  WSBuildTypeUat = 5,
+  WSBuildTypeBeta = 6,
+  WSBuildTypeProduction = 7,
 };
 
 
