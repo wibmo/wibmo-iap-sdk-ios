@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wibmo-sdk'
-  s.version          = '3.1.1'
+  s.version          = '3.1.2'
   s.summary          = 'A framework for merchants to enable PayZapp IAP Transactions from their app.'
 
   s.description      = <<-DESC
@@ -24,6 +24,9 @@ Pod::Spec.new do |s|
   s.swift_version    = '5.0'
 
   s.ios.deployment_target = '10.0'
+
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.vendored_frameworks = 'WibmoSDK.framework'
   s.dependency 'SwiftyJSON', '~> 5'
