@@ -1,0 +1,11 @@
+framework module WibmoSDK {
+  umbrella header "WibmoSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module WibmoSDK.Swift {
+    header "WibmoSDK-Swift.h"
+    requires objc
+}
